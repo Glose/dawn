@@ -39,19 +39,19 @@ class Epub(zipfile.ZipFile):
 			opftree = ET.parse(f).getroot()
 		self.version = version or opftree.get('version')
 		
-		self.spec = SPECS[self.version](self, opftree)
+		self.__spec = SPECS[self.version](self, opftree)
 		self.manifest = Manifest()
 		self.spine = Spine()
 		self.toc = Toc()
 		self.meta = {}
 		
-		for iid, href in self.spec.read_manifest():
+		for iid, href in self.__spec.read_manifest():
 			self.manifest[iid] = href
-		for iid in self.spec.read_spine():
+		for iid in self.__spec.read_spine():
 			self.spine.add(self.manifest[iid])
-		for title, href, children in self.spec.read_toc():
+		for title, href, children in self.__spec.read_toc():
 			self.toc.append(href, title, children)
-		self.meta.update(dict(self.spec.read_meta()))
+		self.meta.update(dict(self.__spec.read_meta()))
 		uid_id = opftree.get('unique-identifier')
 		self.uid = next(filter(lambda i: i.id == uid_id, self.meta['identifiers']), None)
 	
@@ -61,7 +61,7 @@ class Epub(zipfile.ZipFile):
 		self.opf = opf or 'content.opf'
 		self.version = version
 		self.uid = uuid.uuid4()
-		self.spec = SPECS[self.version](self, opftree)
+		self.__spec = SPECS[self.version](self, opftree)
 		self.manifest = Manifest()
 		self.spine = Spine()
 		self.toc = Toc()
@@ -80,7 +80,7 @@ class Epub(zipfile.ZipFile):
 		})
 		super().writestr('META-INF/container.xml', ET.tostring(container), compress_type=zipfile.ZIP_STORED)
 		
-		self.spec.write_exit()
+		self.__spec.write_exit()
 		return super().__exit__(*args)
 	
 	def write(self, *args, **kwargs):
@@ -91,15 +91,15 @@ class Epub(zipfile.ZipFile):
 			raise NotImplementedError('item should be a path relative to the opfdir or an Item')
 		if not isinstance(item, self.manifest.Item):
 			item = self.manifest.add(item)
-		super().writestr(self.opfpath(item.href), data, compress_type=compress_type)
+		super().writestr(self.__opfpath(item.href), data, compress_type=compress_type)
 		return item
 	
 	def open(self, item, mode='r', pwd=None):
 		if isinstance(item, self.manifest.Item):
 			item = item.href
-		return super().open(self.opfpath(item), pwd=pwd)
+		return super().open(self.__opfpath(item), pwd=pwd)
 	
-	def opfpath(self, path):
+	def __opfpath(self, path):
 		return posixpath.join(posixpath.dirname(self.opf), path)
 
 
