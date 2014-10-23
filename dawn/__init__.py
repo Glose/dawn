@@ -1,15 +1,16 @@
 import mimetypes
+import posixpath
 import oset
 import uuid
 import xml.etree.ElementTree as ET
 import zipfile
 
 
-SPECS = {}
 NS = {
 	'container': 'urn:oasis:names:tc:opendocument:xmlns:container',
 	'opf': 'http://www.idpf.org/2007/opf',
 	'dc': 'http://purl.org/dc/elements/1.1/',
+	'ncx': 'http://www.daisy.org/z3986/2005/ncx/',
 }
 
 def getxmlattr(tag, attr, fallback=None):
@@ -46,10 +47,10 @@ class Epub(zipfile.ZipFile):
 		
 		if mode == 'r':
 			for iid, href in self.spec.read_manifest():
-				self.manifest.add(href, iid=iid)
+				self.manifest[iid] = href
 			for iid in self.spec.read_spine():
-				self.spine.add(self.manifest.byiid(iid))
-			for href, title, children in self.spec.read_toc():
+				self.spine.add(self.manifest[iid])
+			for title, href, children in self.spec.read_toc():
 				self.toc.append(href, title, children)
 			self.meta.update(dict(self.spec.read_meta()))
 			uid_id = self.getopf().get('unique-identifier')
@@ -92,10 +93,10 @@ class Epub(zipfile.ZipFile):
 			return ET.parse(f).getroot()
 	
 	def opfpath(self, path):
-		return '{}/{}'.format(self.opf.rsplit('/', 1)[0], path)
+		return posixpath.join(posixpath.dirname(self.opf), path)
 
 
-class Manifest(set):
+class Manifest(dict):
 	class Item:
 		def __init__(self, iid, href):
 			self.iid = iid
@@ -111,20 +112,21 @@ class Manifest(set):
 		def __hash__(self):
 			return hash(self.iid)
 	
-	def add(self, item, iid=None):
-		if isinstance(item, str):
-			item = self.Item(iid or 'item-{}'.format(len(self)), item)
-		if not isinstance(item, self.Item):
-			raise TypeError('The manifest needs to be a set of Manifest.Item')
-		super().add(item)
+	def add(self, item):
+		self['item-{}'.format(len(self))] = item
 		return item
+	
+	def __setitem__(self, k, v):
+		if isinstance(v, str):
+			v = self.Item(k, v)
+		if not isinstance(v, self.Item):
+			raise TypeError('The manifest needs to be a dict of Manifest.Item')
+		super().__setitem__(k, v)
+		return v
 	
 	def byhref(self, href):
 		href = href.rsplit('#', 1)[0]
-		return next(filter(lambda item: item.href == href, self))
-	
-	def byiid(self, iid):
-		return next(filter(lambda item: item.iid == iid, self))
+		return next(filter(lambda item: item.href == href, self.values()))
 
 
 class Spine(oset.oset):
@@ -155,20 +157,27 @@ class Toc(list):
 
 
 class Spec:
+	class AttributeString(str):
+		pass
+	
 	def __init__(self, epub):
 		self.opf = epub.getopf()
 		self.epub = epub
 	
 	def read_manifest(self):
+		# yields (id, href)
 		raise NotImplementedError
 	
 	def read_spine(self):
+		# yields id
 		raise NotImplementedError
 	
 	def read_toc(self):
+		# yields title, href, children
 		raise NotImplementedError
 	
 	def read_meta(self):
+		# yields key, val
 		raise NotImplementedError
 	
 	def write_exit(self):
@@ -176,9 +185,6 @@ class Spec:
 
 
 class Spec20(Spec):
-	class AttributeString(str):
-		pass
-	
 	def read_manifest(self):
 		for item in self.opf.findall('./opf:manifest/', NS):
 			yield item.get('id'), item.get('href')
@@ -188,7 +194,21 @@ class Spec20(Spec):
 			yield item.get('idref')
 	
 	def read_toc(self):
-		return []
+		toc_id = self.opf.find('./opf:spine', NS).get('toc')
+		if not toc_id:
+			return []
+		
+		def find_childs(tag):
+			for np in tag.findall('./ncx:navMap/ncx:navPoint', NS):
+				yield (
+					np.find('./ncx:navLabel/ncx:text', NS).text,
+					np.find('./ncx:content', NS).get('src'),
+					find_childs(np),
+				)
+		
+		with self.epub.open(self.epub.manifest[toc_id]) as f:
+			ncx = ET.parse(f).getroot()
+		yield from find_childs(ncx)
 	
 	def read_meta(self):
 		metadata = self.opf.find('./opf:metadata', NS)
@@ -217,9 +237,10 @@ class Spec20(Spec):
 		# Drop coverage
 		# Drop rights
 
-SPECS['2.0'] = Spec20
-
-
 class Spec30(Spec):
 	pass
-SPECS['3.0'] = Spec30
+
+SPECS = {
+	'2.0': Spec20,
+	'3.0': Spec30,
+}
