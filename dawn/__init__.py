@@ -21,40 +21,51 @@ def getxmlattr(tag, attr, fallback=None):
 
 
 class Epub(zipfile.ZipFile):
-	def __init__(self, infile, mode='r', opf=None, version=None):
+	def __init__(self, infile, mode='r', **kwargs):
 		super().__init__(infile, mode=mode)
 		if mode == 'r':
-			if opf is not None:
-				raise TypeError('Can\'t set a custom opf when opening an epub in read mode')
-			with super().open('META-INF/container.xml') as f:
-				tree = ET.parse(f)
-			self.opf = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
-			self.version = version or self.getopf().get('version')
+			self.__init_read(**kwargs)
 		elif mode == 'w':
-			if version is None:
-				raise TypeError('Version is required when opening an ePub in \'w\' mode')
-			self.opf = opf or 'content.opf'
-			self.version = version
-			self.uid = uuid.uuid4()
+			self.__init_write(**kwargs)
 		else:
 			raise TypeError('mode should be \'r\' or \'w\'')
+	
+	def __init_read(self, version=None):
+		with super().open('META-INF/container.xml') as f:
+			tree = ET.parse(f)
+		self.opf = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
 		
-		self.spec = SPECS[self.version](self)
+		with super().open(self.opf) as f:
+			opftree = ET.parse(f).getroot()
+		self.version = version or opftree.get('version')
+		
+		self.spec = SPECS[self.version](self, opftree)
 		self.manifest = Manifest()
 		self.spine = Spine()
 		self.toc = Toc()
 		self.meta = {}
 		
-		if mode == 'r':
-			for iid, href in self.spec.read_manifest():
-				self.manifest[iid] = href
-			for iid in self.spec.read_spine():
-				self.spine.add(self.manifest[iid])
-			for title, href, children in self.spec.read_toc():
-				self.toc.append(href, title, children)
-			self.meta.update(dict(self.spec.read_meta()))
-			uid_id = self.getopf().get('unique-identifier')
-			self.uid = next(filter(lambda i: i.id == uid_id, self.meta['identifiers']), None)
+		for iid, href in self.spec.read_manifest():
+			self.manifest[iid] = href
+		for iid in self.spec.read_spine():
+			self.spine.add(self.manifest[iid])
+		for title, href, children in self.spec.read_toc():
+			self.toc.append(href, title, children)
+		self.meta.update(dict(self.spec.read_meta()))
+		uid_id = opftree.get('unique-identifier')
+		self.uid = next(filter(lambda i: i.id == uid_id, self.meta['identifiers']), None)
+	
+	def __init_write(self, version=None, opf=None):
+		if version is None:
+			raise TypeError('Version is required when opening an ePub in \'w\' mode')
+		self.opf = opf or 'content.opf'
+		self.version = version
+		self.uid = uuid.uuid4()
+		self.spec = SPECS[self.version](self, opftree)
+		self.manifest = Manifest()
+		self.spine = Spine()
+		self.toc = Toc()
+		self.meta = {}
 	
 	def __exit__(self, *args):
 		super().writestr('mimetype', b'application/epub+zip', compress_type=zipfile.ZIP_STORED)
@@ -64,7 +75,7 @@ class Epub(zipfile.ZipFile):
 			'xmlns': self.opfns,
 		})
 		ET.SubElement(ET.SubElement(root, 'rootfiles'), 'rootfile', attrib={
-			'full-path': self.opfpath('content.opf'),
+			'full-path': self.opf,
 			'media-type': 'application/oebps-package+xml',
 		})
 		super().writestr('META-INF/container.xml', ET.tostring(container), compress_type=zipfile.ZIP_STORED)
@@ -87,10 +98,6 @@ class Epub(zipfile.ZipFile):
 		if isinstance(item, self.manifest.Item):
 			item = item.href
 		return super().open(self.opfpath(item), pwd=pwd)
-	
-	def getopf(self):
-		with super().open(self.opf) as f:
-			return ET.parse(f).getroot()
 	
 	def opfpath(self, path):
 		return posixpath.join(posixpath.dirname(self.opf), path)
@@ -160,8 +167,8 @@ class Spec:
 	class AttributeString(str):
 		pass
 	
-	def __init__(self, epub):
-		self.opf = epub.getopf()
+	def __init__(self, epub, opf):
+		self.opf = opf
 		self.epub = epub
 	
 	def read_manifest(self):
