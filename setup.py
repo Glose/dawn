@@ -11,6 +11,9 @@ setup(
 	author_email='hello+dawn@glose.com',
 	url='http://github.com/Glose/dawn',
 	packages=['dawn'],
+	install_requires=[
+		'oset>=0.1.3',
+	],
 	test_suite='test',
 	classifiers=[
 		'Development Status :: 4 - Beta',
