@@ -12,6 +12,7 @@ setup(
 	url='http://github.com/Glose/dawn',
 	packages=['dawn'],
 	install_requires=[
+		'lxml>=3.4.0',
 		'oset>=0.1.3',
 	],
 	test_suite='test',

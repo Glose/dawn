@@ -1,12 +1,13 @@
 import collections
 import datetime
-import io
 import mimetypes
 import posixpath
 import oset
 import uuid
-import xml.etree.ElementTree as ET
 import zipfile
+
+from lxml import etree
+from lxml import builder
 
 
 NS = {
@@ -15,18 +16,30 @@ NS = {
 	'dc': 'http://purl.org/dc/elements/1.1/',
 	'ncx': 'http://www.daisy.org/z3986/2005/ncx/',
 }
+RNS = {v: k for k, v in NS.items()}
 
-def getxmlattr(tag, attr, fallback=None):
+def getxmlattr(tag, attr):
 	if ':' in attr:
 		ns, attr = attr.split(':', 1)
-		attr = '{{{}}}{}'.format(NS[ns], attr)
-	return tag.get(attr, fallback)
+		return tag.get('{{{}}}{}'.format(NS[ns], attr))
+	else:
+		try:
+			return tag.attrib[attr]
+		except KeyError:
+			qname = etree.QName(tag.tag)
+			return tag.get('{{{}}}{}'.format(RNS[qname.namespace], attr))
 
-def tostring(et, ns):
-	res = io.BytesIO()
-	ET.ElementTree(et).write(res)#, default_namespace=NS[ns])
-	res.seek(0)
-	return res.read()
+
+def ns(name, default_ns=None):
+	if ':' in name:
+		ns, name = name.split(':', 1)
+	else:
+		ns = default_ns
+	if ns is None:
+		return name
+	else:
+		return '{{{}}}{}'.format(NS[ns], name)
+
 
 class Epub(zipfile.ZipFile):
 	_version = None
@@ -63,13 +76,13 @@ class Epub(zipfile.ZipFile):
 		if self.opf is not None:
 			raise TypeError('Can\'t set the opfpath when opening in \'r\' mode')
 		
-		with super().open('META-INF/container.xml') as f:
-			tree = ET.parse(f)
+		with self._open('META-INF/container.xml') as f:
+			tree = etree.parse(f)
 		self.opf = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
 		
 		if self.version is None:
-			with super().open(self.opf) as f:
-				opftree = ET.parse(f).getroot()
+			with self._open(self.opf) as f:
+				opftree = etree.parse(f).getroot()
 			self.version = opftree.get('version')
 		
 		self._read(opftree)
@@ -88,14 +101,22 @@ class Epub(zipfile.ZipFile):
 		self.uid['scheme'] = 'uuid'
 		self.meta['identifiers'] = [self.uid]
 		
-		super().writestr('mimetype', b'application/epub+zip', compress_type=zipfile.ZIP_STORED)
+		self._writestr('mimetype', b'application/epub+zip', compress_type=zipfile.ZIP_STORED)
 		
-		container = ET.Element('container:container', version='1.0')
-		ET.SubElement(ET.SubElement(container, 'container:rootfiles'), 'container:rootfile', attrib={
-			'full-path': self.opf,
-			'media-type': 'application/oebps-package+xml',
-		})
-		super().writestr('META-INF/container.xml', tostring(container, 'container'), compress_type=zipfile.ZIP_STORED)
+		E = builder.ElementMaker(namespace=NS['container'], nsmap=NS)
+		container = E.container(
+			E.rootfiles(
+				E.rootfile({
+					'full-path': self.opf,
+					'media-type': 'application/oebps-package+xml',
+				}),
+			),
+		)
+		self._writestr(
+			'META-INF/container.xml',
+			etree.tostring(container, pretty_print=True),
+			compress_type=zipfile.ZIP_STORED,
+		)
 	
 	def _read(self, opf):
 		raise NotImplementedError
@@ -106,21 +127,30 @@ class Epub(zipfile.ZipFile):
 	def write(self, *args, **kwargs):
 		raise NotImplementedError('Use writestr')
 	
-	def writestr(self, item, data, iid=None, compress_type=zipfile.ZIP_DEFLATED):
+	def _writestr(self, *args, **kwargs):
+		super().writestr(*args, **kwargs)
+	
+	def writestr(self, item, data, iid=None, **kwargs):
 		if isinstance(item, zipfile.ZipInfo):
 			raise NotImplementedError('item should be a path relative to the opfdir or an Item')
 		if not isinstance(item, self.manifest.Item):
 			item = self.manifest.add(item)
-		super().writestr(self.__opfpath(item.href), data, compress_type=compress_type)
+		self._writestr(self.__opfpath(item.href), data, **kwargs)
 		return item
 	
-	def open(self, item, mode='r', pwd=None):
+	def _open(self, *args, **kwargs):
+		return super().open(*args, **kwargs)
+	
+	def open(self, item, *args, **kwargs):
 		if isinstance(item, self.manifest.Item):
 			item = item.href
-		return super().open(self.__opfpath(item), pwd=pwd)
+		return self._open(self.__opfpath(item), *args, **kwargs)
 	
 	def __opfpath(self, path):
 		return posixpath.join(posixpath.dirname(self.opf), path)
+	
+	def __repr__(self):
+		return '<Epub {} (len(manifest): {}, len(spine): {})>'.format(self.version, len(self.manifest), len(self.spine))
 
 
 class Manifest(dict):
@@ -140,8 +170,9 @@ class Manifest(dict):
 			return hash(self.iid)
 	
 	def add(self, item):
-		self['item-{}'.format(len(self))] = item
-		return item
+		key = 'item-{}'.format(len(self))
+		self[key] = item
+		return self[key]
 	
 	def __setitem__(self, k, v):
 		if isinstance(v, str):
@@ -149,7 +180,6 @@ class Manifest(dict):
 		if not isinstance(v, self.Item):
 			raise TypeError('The manifest needs to be a dict of Manifest.Item')
 		super().__setitem__(k, v)
-		return v
 	
 	def byhref(self, href):
 		href = href.rsplit('#', 1)[0]
@@ -208,28 +238,28 @@ class Epub20(Epub):
 	
 	def _read_manifest(self, opf):
 		for item in opf.findall('./opf:manifest/', NS):
-			self.manifest[item.get('id')] = item.get('href')
+			self.manifest[getxmlattr(item, 'id')] = getxmlattr(item, 'href')
 	
 	def _read_spine(self, opf):
 		for item in opf.findall('./opf:spine/', NS):
-			item = self.manifest[item.get('idref')]
+			item = self.manifest[getxmlattr(item, 'idref')]
 			self.spine.add(item)
 	
 	def _read_toc(self, opf):
-		toc_id = opf.find('./opf:spine', NS).get('toc')
+		toc_id = getxmlattr(opf.find('./opf:spine', NS), 'toc')
 		if not toc_id:
 			return
 		
 		def parse(tag):
 			for np in tag.findall('./ncx:navMap/ncx:navPoint', NS):
 				self.toc.append(
-					np.find('./ncx:content', NS).get('src'),
+					getxmlattr(np.find('./ncx:content', NS), 'src'),
 					np.find('./ncx:navLabel/ncx:text', NS).text,
 					parse(np),
 				)
 		
 		with self.open(self.manifest[toc_id]) as f:
-			ncx = ET.parse(f).getroot()
+			ncx = etree.parse(f).getroot()
 		
 		parse(ncx)
 		title_tag = ncx.find('./ncx:docTitle/ncx:text', NS)
@@ -238,18 +268,18 @@ class Epub20(Epub):
 	
 	__meta = [
 		# tag, attributes, multiple
-		('dc:title', ('lang',), True),
-		('dc:creator', ('opf:role', 'opf:file-as'), True),
-		('dc:subject', (), True),
-		('dc:description', (), False),
-		('dc:publisher', (), False),
-		('dc:contributor', ('opf:role', 'opf:file-as'), True),
-		('dc:date', ('opf:event',), True),
+		('title', ('lang',), True),
+		('creator', ('opf:role', 'opf:file-as'), True),
+		('subject', (), True),
+		('description', (), False),
+		('publisher', (), False),
+		('contributor', ('opf:role', 'opf:file-as'), True),
+		('date', ('opf:event',), True),
 		# Drop type
 		# Drop format
-		('dc:identifier', ('id', 'opf:scheme'), True),
-		('dc:source', (), False),
-		('dc:language', (), True),
+		('identifier', ('id', 'opf:scheme'), True),
+		('source', (), False),
+		('language', (), True),
 		# Drop relation
 		# Drop coverage
 		# Drop rights
@@ -258,80 +288,73 @@ class Epub20(Epub):
 	def _read_meta(self, opf):
 		metadata = opf.find('./opf:metadata', NS)
 		def extract(tag, attrs):
-			for item in metadata.findall(tag, NS):
+			for item in metadata.findall('dc:' + tag, NS):
 				res = AttributedString(item.text)
 				for k in attrs:
 					res[k.split(':', 1)[-1]] = getxmlattr(item, k)
 				yield res
 		for tag, attrs, multi in self.__meta:
-			key = tag.split(':', 1)[-1]
-			if multi:
-				key += 's'
 			f = list if multi else lambda it: next(it, None)
-			self.meta[key] = f(extract(tag, attrs))
+			self.meta[tag + ('s' if multi else '')] = f(extract(tag, attrs))
 	
 	def _write_opf(self):
-		opf = ET.Element('package', attrib={
-			'version': self.version,
-			'unique-identifier': self.uid['id'],
-		})
-		meta = ET.SubElement(opf, 'metadata')
-		ET.SubElement(meta, 'dc:format').text = 'application/epub+zip'
-		ET.SubElement(meta, 'dc:date', attrib={
-			'opf:event': 'publication',
-		}).text = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+		Eopf = builder.ElementMaker(namespace=NS['opf'], nsmap=NS)
+		Edc = builder.ElementMaker(namespace=NS['dc'], nsmap=NS)
 		
+		meta = Eopf.metadata(
+			Edc.format('application/epub+zip'),
+			Edc.date(
+				datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+				{ns('opf:event'): 'publication'},
+			),
+		)
 		for tag, attrs, multi in self.__meta:
-			key = tag.split(':', 1)[-1]
-			if multi:
-				key += 's'
-			todo = self.meta.get(key)
+			todo = self.meta.get(tag + ('s' if multi else ''))
 			if not todo:
 				continue
 			if not multi:
 				todo = [todo]
 			for astr in todo:
-				ET.SubElement(meta, tag, attrib={
-					k: astr[k.split(':', 1)[-1]]
-					for k in attrs
-				}).text = str(astr)
+				meta.append(getattr(Edc, tag)(
+					str(astr),
+					{ns(k): astr[k.split(':', 1)[-1]] for k in attrs},
+				))
 		
-		manifest = ET.SubElement(opf, 'manifest')
-		for item in self.manifest.values():
-			ET.SubElement(manifest, 'item', attrib={
-				'id': item.iid,
-				'href': item.href,
-				'media-type': item.mimetype,
-			})
-		
-		spine = ET.SubElement(opf, 'spine')
-		for item in self.spine:
-			ET.SubElement(spine, 'itemref', idref=item.iid)
-		
-		super().writestr(self.opf, tostring(opf, 'opf'))
+		package = Eopf.package(
+			meta,
+			Eopf.manifest(*(
+				Eopf.item({
+					'id': item.iid,
+					'href': item.href,
+					'media-type': item.mimetype,
+				})
+				for item in self.manifest.values()
+			)),
+			Eopf.spine(*(
+				Eopf.itemref({'idref': item.iid})
+				for item in self.spine
+			)),
+		)
+		self._writestr(self.opf, etree.tostring(package, pretty_print=True))
 	
 	def _write_toc(self):
-		toc = ET.Element('ncx', version='2055-1')
-		ET.SubElement(toc, 'head')
-		ET.SubElement(
-			ET.SubElement(toc, 'docTitle'),
-			'text',
-		).text = self.toc.title
+		E = builder.ElementMaker(namespace=NS['ncx'], nsmap=NS)
 		
-		def navmap(toc, parent):
-			nm = ET.SubElement(parent, 'navMap')
+		def navmap(toc):
 			for item in toc:
-				np = ET.SubElement(nm, 'navPoint')
-				ET.SubElement(
-					ET.SubElement(np, 'navLabel'),
-					'text',
-				).text = item.title
-				ET.SubElement(np, 'content', src=item.href)
-				if item.children:
-					navmap(item.children, np)
+				yield E.navPoint(
+					E.navLabel(E.text(item.title)),
+					E.navMap(*(navmap(item.children))),
+				)
 		
-		navmap(self.toc, toc)
-		self.writestr('toc.ncx', tostring(toc, 'ncx'))
+		toc = E.ncx(
+			{'version': '2005-1'},
+			E.head(),
+			E.docTitle(E.text(self.toc.title)),
+			E.navMap(*navmap(self.toc)),
+		)
+		
+		self.writestr('toc.ncx', etree.tostring(toc, pretty_print=True))
 	
 	def _read(self, opf):
 		self._read_manifest(opf)
@@ -339,10 +362,10 @@ class Epub20(Epub):
 		self._read_toc(opf)
 		self._read_meta(opf)
 	
-	def __exit__(self, *args):
-		self._write_opf()
+	def _write(self):
 		self._write_toc()
-		super().__exit__(*args)
+		self._write_opf()
+
 
 class Epub30(Epub):
 	_version = '3.0'
