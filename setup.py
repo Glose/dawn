@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
 	name='dawn',
-	version='0.0.1',
+	version='0.1.1',
 	description='Open and modify ePubs',
 	author='Arthur Darcet',
 	author_email='hello+dawn@glose.com',
@@ -13,7 +13,6 @@ setup(
 	packages=['dawn'],
 	install_requires=[
 		'lxml>=3.4.0',
-		'oset>=0.1.3',
 	],
 	test_suite='test',
 	classifiers=[
