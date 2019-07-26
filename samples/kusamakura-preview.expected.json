@@ -1,0 +1,81 @@
+{
+    "uid": "urn:uuid:f86268a4-683a-4bba-acf1-f78e8e39e580",
+    "version": "3.0",
+    "spine": [
+        "\u8868\u7d19",
+        "\u76ee\u6b21",
+        "\u4e00"
+    ],
+    "manifest": {
+        "hstyle": [
+            "hstyle",
+            "css/horizontal.css"
+        ],
+        "vstyle": [
+            "vstyle",
+            "css/vertical.css"
+        ],
+        "\u8868\u7d19": [
+            "\u8868\u7d19",
+            "xhtml/\u8868\u7d19.xhtml"
+        ],
+        "\u76ee\u6b21": [
+            "\u76ee\u6b21",
+            "xhtml/\u76ee\u6b21.xhtml"
+        ],
+        "\u4e00": [
+            "\u4e00",
+            "xhtml/\u4e00.xhtml"
+        ],
+        "\u590f\u76ee\u6f31\u77f3": [
+            "\u590f\u76ee\u6f31\u77f3",
+            "images/\u590f\u76ee\u6f31\u77f3.jpg"
+        ],
+        "\u66f8\u30c7\u30b8": [
+            "\u66f8\u30c7\u30b8",
+            "images/\u66f8\u30c7\u30b8.png"
+        ],
+        "\u4e00_overlay": [
+            "\u4e00_overlay",
+            "xhtml/\u4e00.smil"
+        ],
+        "\u4e00_audio": [
+            "\u4e00_audio",
+            "audio/fmse004b.mp3"
+        ],
+        "foobar": [
+            "foobar",
+            "fonts/foobar.ttf"
+        ],
+        "ncxtoc": [
+            "ncxtoc",
+            "xhtml/toc.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:f86268a4-683a-4bba-acf1-f78e8e39e580"
+        ],
+        "publisher": null,
+        "languages": [
+            "ja-jp"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "\u8349\u6795"
+        ]
+    }
+}

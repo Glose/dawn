@@ -1,0 +1,256 @@
+{
+    "uid": "9781573878296",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "titlepage",
+        "copyright",
+        "toc",
+        "foreword001",
+        "introduction001",
+        "chapter001",
+        "chapter002",
+        "chapter003",
+        "chapter004",
+        "chapter005",
+        "chapter006",
+        "chapter007",
+        "chapter008",
+        "chapter009",
+        "chapter010",
+        "appendix001",
+        "appendix002",
+        "appendix003",
+        "author_bio001",
+        "index",
+        "ncx"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.xhtml"
+        ],
+        "cover-image": [
+            "cover-image",
+            "images/9781573878296.jpg"
+        ],
+        "style": [
+            "style",
+            "css/stylesheet.css"
+        ],
+        "ncx": [
+            "ncx",
+            "ncx.xhtml"
+        ],
+        "ncx1": [
+            "ncx1",
+            "toc.ncx"
+        ],
+        "page-template": [
+            "page-template",
+            "css/page-template.xpgt"
+        ],
+        "copyright": [
+            "copyright",
+            "copyright.xhtml"
+        ],
+        "toc": [
+            "toc",
+            "toc.xhtml"
+        ],
+        "Art_1.jpg": [
+            "Art_1.jpg",
+            "images/Art_1.jpg"
+        ],
+        "Art_2.jpg": [
+            "Art_2.jpg",
+            "images/Art_2.jpg"
+        ],
+        "Art_3.jpg": [
+            "Art_3.jpg",
+            "images/Art_3.jpg"
+        ],
+        "Art_4.jpg": [
+            "Art_4.jpg",
+            "images/Art_4.jpg"
+        ],
+        "Art_5.jpg": [
+            "Art_5.jpg",
+            "images/Art_5.jpg"
+        ],
+        "Art_6.jpg": [
+            "Art_6.jpg",
+            "images/Art_6.jpg"
+        ],
+        "Art_7.jpg": [
+            "Art_7.jpg",
+            "images/Art_7.jpg"
+        ],
+        "Art_8.jpg": [
+            "Art_8.jpg",
+            "images/Art_8.jpg"
+        ],
+        "Art_P1.jpg": [
+            "Art_P1.jpg",
+            "images/Art_P1.jpg"
+        ],
+        "Art_P2.jpg": [
+            "Art_P2.jpg",
+            "images/Art_P2.jpg"
+        ],
+        "box.jpg": [
+            "box.jpg",
+            "images/box.jpg"
+        ],
+        "titlepage": [
+            "titlepage",
+            "titlepage.xhtml"
+        ],
+        "foreword001": [
+            "foreword001",
+            "foreword001.xhtml"
+        ],
+        "introduction001": [
+            "introduction001",
+            "introduction001.xhtml"
+        ],
+        "chapter001": [
+            "chapter001",
+            "chapter001.xhtml"
+        ],
+        "chapter002": [
+            "chapter002",
+            "chapter002.xhtml"
+        ],
+        "chapter003": [
+            "chapter003",
+            "chapter003.xhtml"
+        ],
+        "chapter004": [
+            "chapter004",
+            "chapter004.xhtml"
+        ],
+        "chapter005": [
+            "chapter005",
+            "chapter005.xhtml"
+        ],
+        "chapter006": [
+            "chapter006",
+            "chapter006.xhtml"
+        ],
+        "chapter007": [
+            "chapter007",
+            "chapter007.xhtml"
+        ],
+        "chapter008": [
+            "chapter008",
+            "chapter008.xhtml"
+        ],
+        "chapter009": [
+            "chapter009",
+            "chapter009.xhtml"
+        ],
+        "chapter010": [
+            "chapter010",
+            "chapter010.xhtml"
+        ],
+        "appendix001": [
+            "appendix001",
+            "appendix001.xhtml"
+        ],
+        "appendix002": [
+            "appendix002",
+            "appendix002.xhtml"
+        ],
+        "appendix003": [
+            "appendix003",
+            "appendix003.xhtml"
+        ],
+        "author_bio001": [
+            "author_bio001",
+            "author_bio001.xhtml"
+        ],
+        "index": [
+            "index",
+            "index.xhtml"
+        ],
+        "Times_New_Roman": [
+            "Times_New_Roman",
+            "fonts/times.ttf"
+        ],
+        "Times_New_Roman_bold": [
+            "Times_New_Roman_bold",
+            "fonts/timesbd.ttf"
+        ],
+        "Times_New_Roman_italic": [
+            "Times_New_Roman_italic",
+            "fonts/timesi.ttf"
+        ],
+        "Times_New_Roman_bolditalic": [
+            "Times_New_Roman_bolditalic",
+            "fonts/timesbi.ttf"
+        ],
+        "HelveticaLTStd-Bold": [
+            "HelveticaLTStd-Bold",
+            "fonts/HelveticaLTStd-Bold.otf"
+        ],
+        "HelveticaLTStd-Obl": [
+            "HelveticaLTStd-Obl",
+            "fonts/HelveticaLTStd-Obl.otf"
+        ],
+        "HelveticaLTStd-Roman": [
+            "HelveticaLTStd-Roman",
+            "fonts/HelveticaLTStd-Roman.otf"
+        ],
+        "HelveticaLTStd-BoldObl": [
+            "HelveticaLTStd-BoldObl",
+            "fonts/HelveticaLTStd-BoldObl.otf"
+        ],
+        "Century_Gothic": [
+            "Century_Gothic",
+            "fonts/GOTHIC.TTF"
+        ],
+        "Century_Gothic-Obl": [
+            "Century_Gothic-Obl",
+            "fonts/GOTHICI.TTF"
+        ],
+        "Century_Gothic-Roman": [
+            "Century_Gothic-Roman",
+            "fonts/GOTHICBI.TTF"
+        ],
+        "Century_GothicObl": [
+            "Century_GothicObl",
+            "fonts/GOTHICB.TTF"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Fred Leise",
+            "Kate Mertes",
+            "Nan Badgett"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "9781573878296"
+        ],
+        "publisher": "Information Today, Inc.",
+        "languages": [
+            "en-US"
+        ],
+        "source": "urn:isbn:9781573878296",
+        "subjects": [],
+        "titles": [
+            "Indexing for Editors and Authors: A Practical Guide to Understanding Indexes"
+        ]
+    }
+}

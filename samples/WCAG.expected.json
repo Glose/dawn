@@ -1,0 +1,203 @@
+{
+    "uid": "41f1328c-0571-4e71-8be8-e65bc148281a",
+    "version": "3.0",
+    "spine": [
+        "item_34",
+        "item_35",
+        "item_36"
+    ],
+    "manifest": {
+        "item_1": [
+            "item_1",
+            "images/wcag-p2-1.jpg"
+        ],
+        "item_2": [
+            "item_2",
+            "images/wcag-p14-1.jpg"
+        ],
+        "item_3": [
+            "item_3",
+            "images/wcag-p15-1-1.jpg"
+        ],
+        "item_4": [
+            "item_4",
+            "images/wcag-p16-1.jpg"
+        ],
+        "item_5": [
+            "item_5",
+            "images/wcag-p16-2.jpg"
+        ],
+        "item_6": [
+            "item_6",
+            "images/wcag-p17-1.jpg"
+        ],
+        "item_7": [
+            "item_7",
+            "images/wcag-p17-2.jpg"
+        ],
+        "item_8": [
+            "item_8",
+            "images/wcag-p18-1.jpg"
+        ],
+        "item_9": [
+            "item_9",
+            "images/wcag-p18-2.jpg"
+        ],
+        "item_10": [
+            "item_10",
+            "images/wcag-p19-1.jpg"
+        ],
+        "item_11": [
+            "item_11",
+            "images/wcag-p19-2.jpg"
+        ],
+        "item_12": [
+            "item_12",
+            "images/wcag-p19-3.jpg"
+        ],
+        "item_13": [
+            "item_13",
+            "images/wcag-p19-4.jpg"
+        ],
+        "item_14": [
+            "item_14",
+            "images/wcag-p19-5.jpg"
+        ],
+        "item_15": [
+            "item_15",
+            "images/wcag-p20-1.jpg"
+        ],
+        "item_16": [
+            "item_16",
+            "images/wcag-p20-2.jpg"
+        ],
+        "item_17": [
+            "item_17",
+            "images/wcag-p21-1.jpg"
+        ],
+        "item_18": [
+            "item_18",
+            "images/wcag-p22-1.jpg"
+        ],
+        "item_19": [
+            "item_19",
+            "images/wcag-p22-2.jpg"
+        ],
+        "item_20": [
+            "item_20",
+            "images/wcag-p22-3.jpg"
+        ],
+        "item_21": [
+            "item_21",
+            "images/wcag-p22-4.jpg"
+        ],
+        "item_22": [
+            "item_22",
+            "images/wcag-p24-1.jpg"
+        ],
+        "item_23": [
+            "item_23",
+            "images/wcag-p24-2.jpg"
+        ],
+        "item_24": [
+            "item_24",
+            "images/wcag-p25-1.jpg"
+        ],
+        "item_25": [
+            "item_25",
+            "images/wcag-p25-2.jpg"
+        ],
+        "item_26": [
+            "item_26",
+            "images/wcag-p26-1.jpg"
+        ],
+        "item_27": [
+            "item_27",
+            "images/wcag-p26-2.jpg"
+        ],
+        "item_28": [
+            "item_28",
+            "images/wcag-p26-3.jpg"
+        ],
+        "item_29": [
+            "item_29",
+            "images/wcag-p27-1.jpg"
+        ],
+        "item_30": [
+            "item_30",
+            "images/wcag-p30-1.jpg"
+        ],
+        "item_31": [
+            "item_31",
+            "images/wcag-p30-2.jpg"
+        ],
+        "item_32": [
+            "item_32",
+            "images/wcag-p31-1.jpg"
+        ],
+        "item_33": [
+            "item_33",
+            "images/wcag-p31-2.jpg"
+        ],
+        "item_34": [
+            "item_34",
+            "xhtml/WCAG-ch1-1.xhtml"
+        ],
+        "item_35": [
+            "item_35",
+            "xhtml/WCAG-ch1-2.xhtml"
+        ],
+        "item_36": [
+            "item_36",
+            "xhtml/toc.xhtml"
+        ],
+        "item_37": [
+            "item_37",
+            "css/images/iconmonstr-info-8-icon-20x20.png"
+        ],
+        "item_38": [
+            "item_38",
+            "css/images/iconmonstr-info-8-icon.png"
+        ],
+        "item_39": [
+            "item_39",
+            "css/images/iconmonstr-window-new-icon-20x20.png"
+        ],
+        "item_40": [
+            "item_40",
+            "css/images/iconmonstr-window-new-icon.png"
+        ],
+        "item_41": [
+            "item_41",
+            "css/default.css"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "41f1328c-0571-4e71-8be8-e65bc148281a"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": "urn:isbn:9780618596645",
+        "subjects": [],
+        "titles": [
+            "World Cultures and Geography",
+            "Legends of Landforms",
+            "Why Snails Have Shells"
+        ]
+    }
+}

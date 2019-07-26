@@ -1,0 +1,2187 @@
+{
+    "uid": "http://www.w3.org/TR/2012/NOTE-jlreq-20120403/ja/",
+    "version": "3.0",
+    "spine": [
+        "d4e19",
+        "d4e180",
+        "d4e203",
+        "introduction",
+        "how_this_document_was_created",
+        "basic_principles_for_development_of_this_document",
+        "the_structure_of_this_document",
+        "reference_of_definition_and_others",
+        "basics_of_japanese_composition",
+        "kanji_hiragana_and_katakana",
+        "principles_of_arrangement_of_kanji_and_kana_characters",
+        "page_formats_for_japanese_documents",
+        "basic_templates_of_page_formats",
+        "elements_of_page_formats",
+        "elements_of_kihonhanmen",
+        "kihonhanmen_and_examples_of_real_page_format",
+        "vertical_writing_mode_and_horizontal_writing_mode",
+        "major_differences_between_vertical_writing_mode_and_horizontal_writing_mode",
+        "specifying_the_kihonhanmen",
+        "considerations_in_designing_the_kihonhanmen",
+        "page_wise_arrangement_of_kihonhanmen_elements",
+        "line_positioning_based_on_the_kihonhanmen_design",
+        "character_positioning_based_on_kihonhanmen_design",
+        "running_heads_and_page_numbers",
+        "principles_of_arrangement_of_running_heads_and_page_numbers",
+        "ways_of_arranging_running_heads_and_page_numbers",
+        "line-composition",
+        "positioning_of_punctuation_marks",
+        "exceptional_positioning_of_ideographic_comma_and_katakana_middle_dot",
+        "positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots",
+        "positioning_of_opening_brackets_at_line_head",
+        "positioning_of_dividing_punctuation_marks",
+        "characters_not_starting_a_line",
+        "characters_not_ending_a_line",
+        "positioning_of_closing_brackets_full_stops_commas_and_middle_dots_at_line_end",
+        "unbreakable_character_sequences",
+        "character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing",
+        "examples_of_line_adjustment",
+        "japanese_and_western_mixed_text_composition",
+        "mixed_text_composition_in_horizontal_writing_mode",
+        "mixed_text_composition_in_vertical_writing_mode",
+        "method_for_setting_fullwidth_latin_letters_and_european_numerals",
+        "handling_of_tatechuyoko",
+        "handling_of_western_text_in_japanese_text_using_proportional_western_fonts",
+        "ruby_and_emphasis_dots",
+        "choice_of_base_characters_to_be_annotated_by_ruby",
+        "choice_of_size_for_ruby_characters",
+        "choice_of_sides_for_ruby_with_respect_to_base_characters",
+        "positioning_of_monoruby_with_respect_to_base_characters",
+        "positioning_of_groupruby_with_respect_to_base_characters",
+        "positioning_of_jukugoruby_with_respect_to_base_characters",
+        "adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters",
+        "composition_of_emphasis_dots",
+        "inline_cutting_note",
+        "character_size_for_inline_cutting_notes_and_line_gaps",
+        "handling_an_inline_cutting_note_when_it_straddles_two_kihonhanmen_lines",
+        "paragraph_adjustment_rules",
+        "line_head_indent_and_line_end_indent",
+        "single_line_alignment_processing",
+        "widow_adjustment_of_paragraphs",
+        "tab_setting",
+        "types_of_tab_settings",
+        "the_method_of_setting_the_target_text",
+        "other_rules_of_japanese_typesetting",
+        "furiwake_processing",
+        "jidori_processing",
+        "processing_of_math_symbols_and_math_operators",
+        "line_adjustment",
+        "reduction_and_addition_of_intercharacter_space",
+        "procedures_for_intercharacter_space_reduction",
+        "procedures_for_intercharacter_space_expansion",
+        "about_character_classes",
+        "grouping_of_characters_and_symbols_depending_on_their_positioning",
+        "positioning_methods_for_each_character_class",
+        "hanmen-design",
+        "elements_of_block_heading",
+        "font_selection_and_font_size_of_heading",
+        "how_to_handle_headings_with_new_recto_page_break_and_bew_column",
+        "handling_of_spaces_just_before_the_new_recto_page_breaks_and_new_edges",
+        "processing_of_gyoudori",
+        "processing_of_gyoudori_heading_set_in_the_bottom_of_the_page",
+        "processing_when_one_line_space_before_low_level_heading_is_set",
+        "processing_of_runin_heading",
+        "processing_of_cutin_heading",
+        "processing_of_column_spanning_heading",
+        "processing_of_notes",
+        "note_numbers",
+        "the_processing_of_the_reference_mark",
+        "processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode",
+        "processing_of_footnotes_in_horizontal_writing_mode",
+        "processing_of_sidenote_in_vertical_writing_mode",
+        "processing_of_headnote_footnote_and_sidenote",
+        "positioning_of_illustrations",
+        "basic_concepts_about_illustration_positioning",
+        "requirements_for_illustration_positioning_in_vertical_mayout",
+        "requirements_for_illustration_positioning_in_horizontal_layout",
+        "basic_ideas_about_illustration_positioning_in_JISX4051",
+        "processing_of_tables",
+        "direction_of_tables_themselves",
+        "an_example_of_layout_with_a_table",
+        "kinds_of_tables_from_alocation_to_page_position",
+        "processing_of_tables_allocated_in_a_spread",
+        "processing_of_dividable_tables",
+        "block_direction_setting_process_of_lines_paragraphs",
+        "processing_of_spaces_between_paragraphs",
+        "adjustment_of_processing_of_realm_in_block_direction",
+        "character_classes",
+        "cl-01",
+        "cl-02",
+        "cl-03",
+        "cl-04",
+        "cl-05",
+        "cl-06",
+        "cl-07",
+        "cl-08",
+        "cl-09",
+        "cl-10",
+        "cl-11",
+        "cl-12",
+        "cl-13",
+        "cl-14",
+        "cl-15",
+        "cl-16",
+        "cl-17",
+        "cl-18",
+        "cl-19",
+        "cl-20",
+        "cl-21",
+        "cl-22",
+        "cl-23",
+        "cl-24",
+        "cl-25",
+        "cl-26",
+        "cl-27",
+        "cl-28",
+        "cl-29",
+        "cl-30",
+        "spacing_between_characters",
+        "legend_of_table_2",
+        "notes_a2",
+        "possibilities_for_linebreaking_between_characters",
+        "legend_of_table_3",
+        "notes_a3",
+        "addendum_a3",
+        "opportunities_for_intercharacter_space_reduction_during_line_adjustment",
+        "legend_of_tables_4_5_6",
+        "notes_a4",
+        "opportunities_for_intercharacter_space_expansion_during_line_adjustment",
+        "legend_of_table_7",
+        "notes_a5",
+        "positioning_of_jukugoruby",
+        "principles_of_jukugoruby_distribution_1",
+        "principles_of_jukugoruby_distribution_2",
+        "principles_of_jukugoruby_distribution_with_intercharacter_space_expansion",
+        "examples_of_jukugoruby_distribution_with_intercharacter_space_expansion",
+        "terminology",
+        "references",
+        "revision_log",
+        "acknowledgments"
+    ],
+    "manifest": {
+        "__nav": [
+            "__nav",
+            "xhtml/nav.xhtml"
+        ],
+        "d4e19": [
+            "d4e19",
+            "xhtml/d4e19.xhtml"
+        ],
+        "d4e180": [
+            "d4e180",
+            "xhtml/d4e180.xhtml"
+        ],
+        "d4e203": [
+            "d4e203",
+            "xhtml/d4e203.xhtml"
+        ],
+        "introduction": [
+            "introduction",
+            "xhtml/introduction.xhtml"
+        ],
+        "how_this_document_was_created": [
+            "how_this_document_was_created",
+            "xhtml/how_this_document_was_created.xhtml"
+        ],
+        "basic_principles_for_development_of_this_document": [
+            "basic_principles_for_development_of_this_document",
+            "xhtml/basic_principles_for_development_of_this_document.xhtml"
+        ],
+        "the_structure_of_this_document": [
+            "the_structure_of_this_document",
+            "xhtml/the_structure_of_this_document.xhtml"
+        ],
+        "reference_of_definition_and_others": [
+            "reference_of_definition_and_others",
+            "xhtml/reference_of_definition_and_others.xhtml"
+        ],
+        "basics_of_japanese_composition": [
+            "basics_of_japanese_composition",
+            "xhtml/basics_of_japanese_composition.xhtml"
+        ],
+        "kanji_hiragana_and_katakana": [
+            "kanji_hiragana_and_katakana",
+            "xhtml/kanji_hiragana_and_katakana.xhtml"
+        ],
+        "principles_of_arrangement_of_kanji_and_kana_characters": [
+            "principles_of_arrangement_of_kanji_and_kana_characters",
+            "xhtml/principles_of_arrangement_of_kanji_and_kana_characters.xhtml"
+        ],
+        "page_formats_for_japanese_documents": [
+            "page_formats_for_japanese_documents",
+            "xhtml/page_formats_for_japanese_documents.xhtml"
+        ],
+        "basic_templates_of_page_formats": [
+            "basic_templates_of_page_formats",
+            "xhtml/basic_templates_of_page_formats.xhtml"
+        ],
+        "elements_of_page_formats": [
+            "elements_of_page_formats",
+            "xhtml/elements_of_page_formats.xhtml"
+        ],
+        "elements_of_kihonhanmen": [
+            "elements_of_kihonhanmen",
+            "xhtml/elements_of_kihonhanmen.xhtml"
+        ],
+        "kihonhanmen_and_examples_of_real_page_format": [
+            "kihonhanmen_and_examples_of_real_page_format",
+            "xhtml/kihonhanmen_and_examples_of_real_page_format.xhtml"
+        ],
+        "vertical_writing_mode_and_horizontal_writing_mode": [
+            "vertical_writing_mode_and_horizontal_writing_mode",
+            "xhtml/vertical_writing_mode_and_horizontal_writing_mode.xhtml"
+        ],
+        "major_differences_between_vertical_writing_mode_and_horizontal_writing_mode": [
+            "major_differences_between_vertical_writing_mode_and_horizontal_writing_mode",
+            "xhtml/major_differences_between_vertical_writing_mode_and_horizontal_writing_mode.xhtml"
+        ],
+        "specifying_the_kihonhanmen": [
+            "specifying_the_kihonhanmen",
+            "xhtml/specifying_the_kihonhanmen.xhtml"
+        ],
+        "considerations_in_designing_the_kihonhanmen": [
+            "considerations_in_designing_the_kihonhanmen",
+            "xhtml/considerations_in_designing_the_kihonhanmen.xhtml"
+        ],
+        "page_wise_arrangement_of_kihonhanmen_elements": [
+            "page_wise_arrangement_of_kihonhanmen_elements",
+            "xhtml/page_wise_arrangement_of_kihonhanmen_elements.xhtml"
+        ],
+        "line_positioning_based_on_the_kihonhanmen_design": [
+            "line_positioning_based_on_the_kihonhanmen_design",
+            "xhtml/line_positioning_based_on_the_kihonhanmen_design.xhtml"
+        ],
+        "character_positioning_based_on_kihonhanmen_design": [
+            "character_positioning_based_on_kihonhanmen_design",
+            "xhtml/character_positioning_based_on_kihonhanmen_design.xhtml"
+        ],
+        "running_heads_and_page_numbers": [
+            "running_heads_and_page_numbers",
+            "xhtml/running_heads_and_page_numbers.xhtml"
+        ],
+        "principles_of_arrangement_of_running_heads_and_page_numbers": [
+            "principles_of_arrangement_of_running_heads_and_page_numbers",
+            "xhtml/principles_of_arrangement_of_running_heads_and_page_numbers.xhtml"
+        ],
+        "ways_of_arranging_running_heads_and_page_numbers": [
+            "ways_of_arranging_running_heads_and_page_numbers",
+            "xhtml/ways_of_arranging_running_heads_and_page_numbers.xhtml"
+        ],
+        "line-composition": [
+            "line-composition",
+            "xhtml/line-composition.xhtml"
+        ],
+        "positioning_of_punctuation_marks": [
+            "positioning_of_punctuation_marks",
+            "xhtml/positioning_of_punctuation_marks.xhtml"
+        ],
+        "exceptional_positioning_of_ideographic_comma_and_katakana_middle_dot": [
+            "exceptional_positioning_of_ideographic_comma_and_katakana_middle_dot",
+            "xhtml/exceptional_positioning_of_ideographic_comma_and_katakana_middle_dot.xhtml"
+        ],
+        "positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots": [
+            "positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots",
+            "xhtml/positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots.xhtml"
+        ],
+        "positioning_of_opening_brackets_at_line_head": [
+            "positioning_of_opening_brackets_at_line_head",
+            "xhtml/positioning_of_opening_brackets_at_line_head.xhtml"
+        ],
+        "positioning_of_dividing_punctuation_marks": [
+            "positioning_of_dividing_punctuation_marks",
+            "xhtml/positioning_of_dividing_punctuation_marks.xhtml"
+        ],
+        "characters_not_starting_a_line": [
+            "characters_not_starting_a_line",
+            "xhtml/characters_not_starting_a_line.xhtml"
+        ],
+        "characters_not_ending_a_line": [
+            "characters_not_ending_a_line",
+            "xhtml/characters_not_ending_a_line.xhtml"
+        ],
+        "positioning_of_closing_brackets_full_stops_commas_and_middle_dots_at_line_end": [
+            "positioning_of_closing_brackets_full_stops_commas_and_middle_dots_at_line_end",
+            "xhtml/positioning_of_closing_brackets_full_stops_commas_and_middle_dots_at_line_end.xhtml"
+        ],
+        "unbreakable_character_sequences": [
+            "unbreakable_character_sequences",
+            "xhtml/unbreakable_character_sequences.xhtml"
+        ],
+        "character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing": [
+            "character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing",
+            "xhtml/character_sequences_which_do_not_allow_space_insertion_as_part_of_line_adjustment_processing.xhtml"
+        ],
+        "examples_of_line_adjustment": [
+            "examples_of_line_adjustment",
+            "xhtml/examples_of_line_adjustment.xhtml"
+        ],
+        "japanese_and_western_mixed_text_composition": [
+            "japanese_and_western_mixed_text_composition",
+            "xhtml/japanese_and_western_mixed_text_composition.xhtml"
+        ],
+        "mixed_text_composition_in_horizontal_writing_mode": [
+            "mixed_text_composition_in_horizontal_writing_mode",
+            "xhtml/mixed_text_composition_in_horizontal_writing_mode.xhtml"
+        ],
+        "mixed_text_composition_in_vertical_writing_mode": [
+            "mixed_text_composition_in_vertical_writing_mode",
+            "xhtml/mixed_text_composition_in_vertical_writing_mode.xhtml"
+        ],
+        "method_for_setting_fullwidth_latin_letters_and_european_numerals": [
+            "method_for_setting_fullwidth_latin_letters_and_european_numerals",
+            "xhtml/method_for_setting_fullwidth_latin_letters_and_european_numerals.xhtml"
+        ],
+        "handling_of_tatechuyoko": [
+            "handling_of_tatechuyoko",
+            "xhtml/handling_of_tatechuyoko.xhtml"
+        ],
+        "handling_of_western_text_in_japanese_text_using_proportional_western_fonts": [
+            "handling_of_western_text_in_japanese_text_using_proportional_western_fonts",
+            "xhtml/handling_of_western_text_in_japanese_text_using_proportional_western_fonts.xhtml"
+        ],
+        "ruby_and_emphasis_dots": [
+            "ruby_and_emphasis_dots",
+            "xhtml/ruby_and_emphasis_dots.xhtml"
+        ],
+        "choice_of_base_characters_to_be_annotated_by_ruby": [
+            "choice_of_base_characters_to_be_annotated_by_ruby",
+            "xhtml/choice_of_base_characters_to_be_annotated_by_ruby.xhtml"
+        ],
+        "choice_of_size_for_ruby_characters": [
+            "choice_of_size_for_ruby_characters",
+            "xhtml/choice_of_size_for_ruby_characters.xhtml"
+        ],
+        "choice_of_sides_for_ruby_with_respect_to_base_characters": [
+            "choice_of_sides_for_ruby_with_respect_to_base_characters",
+            "xhtml/choice_of_sides_for_ruby_with_respect_to_base_characters.xhtml"
+        ],
+        "positioning_of_monoruby_with_respect_to_base_characters": [
+            "positioning_of_monoruby_with_respect_to_base_characters",
+            "xhtml/positioning_of_monoruby_with_respect_to_base_characters.xhtml"
+        ],
+        "positioning_of_groupruby_with_respect_to_base_characters": [
+            "positioning_of_groupruby_with_respect_to_base_characters",
+            "xhtml/positioning_of_groupruby_with_respect_to_base_characters.xhtml"
+        ],
+        "positioning_of_jukugoruby_with_respect_to_base_characters": [
+            "positioning_of_jukugoruby_with_respect_to_base_characters",
+            "xhtml/positioning_of_jukugoruby_with_respect_to_base_characters.xhtml"
+        ],
+        "adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters": [
+            "adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters",
+            "xhtml/adjustments_of_ruby_with_length_longer_than_that_of_the_base_characters.xhtml"
+        ],
+        "composition_of_emphasis_dots": [
+            "composition_of_emphasis_dots",
+            "xhtml/composition_of_emphasis_dots.xhtml"
+        ],
+        "inline_cutting_note": [
+            "inline_cutting_note",
+            "xhtml/inline_cutting_note.xhtml"
+        ],
+        "character_size_for_inline_cutting_notes_and_line_gaps": [
+            "character_size_for_inline_cutting_notes_and_line_gaps",
+            "xhtml/character_size_for_inline_cutting_notes_and_line_gaps.xhtml"
+        ],
+        "handling_an_inline_cutting_note_when_it_straddles_two_kihonhanmen_lines": [
+            "handling_an_inline_cutting_note_when_it_straddles_two_kihonhanmen_lines",
+            "xhtml/handling_an_inline_cutting_note_when_it_straddles_two_kihonhanmen_lines.xhtml"
+        ],
+        "paragraph_adjustment_rules": [
+            "paragraph_adjustment_rules",
+            "xhtml/paragraph_adjustment_rules.xhtml"
+        ],
+        "line_head_indent_and_line_end_indent": [
+            "line_head_indent_and_line_end_indent",
+            "xhtml/line_head_indent_and_line_end_indent.xhtml"
+        ],
+        "single_line_alignment_processing": [
+            "single_line_alignment_processing",
+            "xhtml/single_line_alignment_processing.xhtml"
+        ],
+        "widow_adjustment_of_paragraphs": [
+            "widow_adjustment_of_paragraphs",
+            "xhtml/widow_adjustment_of_paragraphs.xhtml"
+        ],
+        "tab_setting": [
+            "tab_setting",
+            "xhtml/tab_setting.xhtml"
+        ],
+        "types_of_tab_settings": [
+            "types_of_tab_settings",
+            "xhtml/types_of_tab_settings.xhtml"
+        ],
+        "the_method_of_setting_the_target_text": [
+            "the_method_of_setting_the_target_text",
+            "xhtml/the_method_of_setting_the_target_text.xhtml"
+        ],
+        "other_rules_of_japanese_typesetting": [
+            "other_rules_of_japanese_typesetting",
+            "xhtml/other_rules_of_japanese_typesetting.xhtml"
+        ],
+        "furiwake_processing": [
+            "furiwake_processing",
+            "xhtml/furiwake_processing.xhtml"
+        ],
+        "jidori_processing": [
+            "jidori_processing",
+            "xhtml/jidori_processing.xhtml"
+        ],
+        "processing_of_math_symbols_and_math_operators": [
+            "processing_of_math_symbols_and_math_operators",
+            "xhtml/processing_of_math_symbols_and_math_operators.xhtml"
+        ],
+        "line_adjustment": [
+            "line_adjustment",
+            "xhtml/line_adjustment.xhtml"
+        ],
+        "reduction_and_addition_of_intercharacter_space": [
+            "reduction_and_addition_of_intercharacter_space",
+            "xhtml/reduction_and_addition_of_intercharacter_space.xhtml"
+        ],
+        "procedures_for_intercharacter_space_reduction": [
+            "procedures_for_intercharacter_space_reduction",
+            "xhtml/procedures_for_intercharacter_space_reduction.xhtml"
+        ],
+        "procedures_for_intercharacter_space_expansion": [
+            "procedures_for_intercharacter_space_expansion",
+            "xhtml/procedures_for_intercharacter_space_expansion.xhtml"
+        ],
+        "about_character_classes": [
+            "about_character_classes",
+            "xhtml/about_character_classes.xhtml"
+        ],
+        "grouping_of_characters_and_symbols_depending_on_their_positioning": [
+            "grouping_of_characters_and_symbols_depending_on_their_positioning",
+            "xhtml/grouping_of_characters_and_symbols_depending_on_their_positioning.xhtml"
+        ],
+        "positioning_methods_for_each_character_class": [
+            "positioning_methods_for_each_character_class",
+            "xhtml/positioning_methods_for_each_character_class.xhtml"
+        ],
+        "hanmen-design": [
+            "hanmen-design",
+            "xhtml/hanmen-design.xhtml"
+        ],
+        "elements_of_block_heading": [
+            "elements_of_block_heading",
+            "xhtml/elements_of_block_heading.xhtml"
+        ],
+        "font_selection_and_font_size_of_heading": [
+            "font_selection_and_font_size_of_heading",
+            "xhtml/font_selection_and_font_size_of_heading.xhtml"
+        ],
+        "how_to_handle_headings_with_new_recto_page_break_and_bew_column": [
+            "how_to_handle_headings_with_new_recto_page_break_and_bew_column",
+            "xhtml/how_to_handle_headings_with_new_recto_page_break_and_bew_column.xhtml"
+        ],
+        "handling_of_spaces_just_before_the_new_recto_page_breaks_and_new_edges": [
+            "handling_of_spaces_just_before_the_new_recto_page_breaks_and_new_edges",
+            "xhtml/handling_of_spaces_just_before_the_new_recto_page_breaks_and_new_edges.xhtml"
+        ],
+        "processing_of_gyoudori": [
+            "processing_of_gyoudori",
+            "xhtml/processing_of_gyoudori.xhtml"
+        ],
+        "processing_of_gyoudori_heading_set_in_the_bottom_of_the_page": [
+            "processing_of_gyoudori_heading_set_in_the_bottom_of_the_page",
+            "xhtml/processing_of_gyoudori_heading_set_in_the_bottom_of_the_page.xhtml"
+        ],
+        "processing_when_one_line_space_before_low_level_heading_is_set": [
+            "processing_when_one_line_space_before_low_level_heading_is_set",
+            "xhtml/processing_when_one_line_space_before_low_level_heading_is_set.xhtml"
+        ],
+        "processing_of_runin_heading": [
+            "processing_of_runin_heading",
+            "xhtml/processing_of_runin_heading.xhtml"
+        ],
+        "processing_of_cutin_heading": [
+            "processing_of_cutin_heading",
+            "xhtml/processing_of_cutin_heading.xhtml"
+        ],
+        "processing_of_column_spanning_heading": [
+            "processing_of_column_spanning_heading",
+            "xhtml/processing_of_column_spanning_heading.xhtml"
+        ],
+        "processing_of_notes": [
+            "processing_of_notes",
+            "xhtml/processing_of_notes.xhtml"
+        ],
+        "note_numbers": [
+            "note_numbers",
+            "xhtml/note_numbers.xhtml"
+        ],
+        "the_processing_of_the_reference_mark": [
+            "the_processing_of_the_reference_mark",
+            "xhtml/the_processing_of_the_reference_mark.xhtml"
+        ],
+        "processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode": [
+            "processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode",
+            "xhtml/processing_of_endnotes_in_vertical_writing_mode_or_horizontal_writing_mode.xhtml"
+        ],
+        "processing_of_footnotes_in_horizontal_writing_mode": [
+            "processing_of_footnotes_in_horizontal_writing_mode",
+            "xhtml/processing_of_footnotes_in_horizontal_writing_mode.xhtml"
+        ],
+        "processing_of_sidenote_in_vertical_writing_mode": [
+            "processing_of_sidenote_in_vertical_writing_mode",
+            "xhtml/processing_of_sidenote_in_vertical_writing_mode.xhtml"
+        ],
+        "processing_of_headnote_footnote_and_sidenote": [
+            "processing_of_headnote_footnote_and_sidenote",
+            "xhtml/processing_of_headnote_footnote_and_sidenote.xhtml"
+        ],
+        "positioning_of_illustrations": [
+            "positioning_of_illustrations",
+            "xhtml/positioning_of_illustrations.xhtml"
+        ],
+        "basic_concepts_about_illustration_positioning": [
+            "basic_concepts_about_illustration_positioning",
+            "xhtml/basic_concepts_about_illustration_positioning.xhtml"
+        ],
+        "requirements_for_illustration_positioning_in_vertical_mayout": [
+            "requirements_for_illustration_positioning_in_vertical_mayout",
+            "xhtml/requirements_for_illustration_positioning_in_vertical_mayout.xhtml"
+        ],
+        "requirements_for_illustration_positioning_in_horizontal_layout": [
+            "requirements_for_illustration_positioning_in_horizontal_layout",
+            "xhtml/requirements_for_illustration_positioning_in_horizontal_layout.xhtml"
+        ],
+        "basic_ideas_about_illustration_positioning_in_JISX4051": [
+            "basic_ideas_about_illustration_positioning_in_JISX4051",
+            "xhtml/basic_ideas_about_illustration_positioning_in_JISX4051.xhtml"
+        ],
+        "processing_of_tables": [
+            "processing_of_tables",
+            "xhtml/processing_of_tables.xhtml"
+        ],
+        "direction_of_tables_themselves": [
+            "direction_of_tables_themselves",
+            "xhtml/direction_of_tables_themselves.xhtml"
+        ],
+        "an_example_of_layout_with_a_table": [
+            "an_example_of_layout_with_a_table",
+            "xhtml/an_example_of_layout_with_a_table.xhtml"
+        ],
+        "kinds_of_tables_from_alocation_to_page_position": [
+            "kinds_of_tables_from_alocation_to_page_position",
+            "xhtml/kinds_of_tables_from_alocation_to_page_position.xhtml"
+        ],
+        "processing_of_tables_allocated_in_a_spread": [
+            "processing_of_tables_allocated_in_a_spread",
+            "xhtml/processing_of_tables_allocated_in_a_spread.xhtml"
+        ],
+        "processing_of_dividable_tables": [
+            "processing_of_dividable_tables",
+            "xhtml/processing_of_dividable_tables.xhtml"
+        ],
+        "block_direction_setting_process_of_lines_paragraphs": [
+            "block_direction_setting_process_of_lines_paragraphs",
+            "xhtml/block_direction_setting_process_of_lines_paragraphs.xhtml"
+        ],
+        "processing_of_spaces_between_paragraphs": [
+            "processing_of_spaces_between_paragraphs",
+            "xhtml/processing_of_spaces_between_paragraphs.xhtml"
+        ],
+        "adjustment_of_processing_of_realm_in_block_direction": [
+            "adjustment_of_processing_of_realm_in_block_direction",
+            "xhtml/adjustment_of_processing_of_realm_in_block_direction.xhtml"
+        ],
+        "character_classes": [
+            "character_classes",
+            "xhtml/character_classes.xhtml"
+        ],
+        "cl-01": [
+            "cl-01",
+            "xhtml/cl-01.xhtml"
+        ],
+        "cl-02": [
+            "cl-02",
+            "xhtml/cl-02.xhtml"
+        ],
+        "cl-03": [
+            "cl-03",
+            "xhtml/cl-03.xhtml"
+        ],
+        "cl-04": [
+            "cl-04",
+            "xhtml/cl-04.xhtml"
+        ],
+        "cl-05": [
+            "cl-05",
+            "xhtml/cl-05.xhtml"
+        ],
+        "cl-06": [
+            "cl-06",
+            "xhtml/cl-06.xhtml"
+        ],
+        "cl-07": [
+            "cl-07",
+            "xhtml/cl-07.xhtml"
+        ],
+        "cl-08": [
+            "cl-08",
+            "xhtml/cl-08.xhtml"
+        ],
+        "cl-09": [
+            "cl-09",
+            "xhtml/cl-09.xhtml"
+        ],
+        "cl-10": [
+            "cl-10",
+            "xhtml/cl-10.xhtml"
+        ],
+        "cl-11": [
+            "cl-11",
+            "xhtml/cl-11.xhtml"
+        ],
+        "cl-12": [
+            "cl-12",
+            "xhtml/cl-12.xhtml"
+        ],
+        "cl-13": [
+            "cl-13",
+            "xhtml/cl-13.xhtml"
+        ],
+        "cl-14": [
+            "cl-14",
+            "xhtml/cl-14.xhtml"
+        ],
+        "cl-15": [
+            "cl-15",
+            "xhtml/cl-15.xhtml"
+        ],
+        "cl-16": [
+            "cl-16",
+            "xhtml/cl-16.xhtml"
+        ],
+        "cl-17": [
+            "cl-17",
+            "xhtml/cl-17.xhtml"
+        ],
+        "cl-18": [
+            "cl-18",
+            "xhtml/cl-18.xhtml"
+        ],
+        "cl-19": [
+            "cl-19",
+            "xhtml/cl-19.xhtml"
+        ],
+        "cl-20": [
+            "cl-20",
+            "xhtml/cl-20.xhtml"
+        ],
+        "cl-21": [
+            "cl-21",
+            "xhtml/cl-21.xhtml"
+        ],
+        "cl-22": [
+            "cl-22",
+            "xhtml/cl-22.xhtml"
+        ],
+        "cl-23": [
+            "cl-23",
+            "xhtml/cl-23.xhtml"
+        ],
+        "cl-24": [
+            "cl-24",
+            "xhtml/cl-24.xhtml"
+        ],
+        "cl-25": [
+            "cl-25",
+            "xhtml/cl-25.xhtml"
+        ],
+        "cl-26": [
+            "cl-26",
+            "xhtml/cl-26.xhtml"
+        ],
+        "cl-27": [
+            "cl-27",
+            "xhtml/cl-27.xhtml"
+        ],
+        "cl-28": [
+            "cl-28",
+            "xhtml/cl-28.xhtml"
+        ],
+        "cl-29": [
+            "cl-29",
+            "xhtml/cl-29.xhtml"
+        ],
+        "cl-30": [
+            "cl-30",
+            "xhtml/cl-30.xhtml"
+        ],
+        "spacing_between_characters": [
+            "spacing_between_characters",
+            "xhtml/spacing_between_characters.xhtml"
+        ],
+        "legend_of_table_2": [
+            "legend_of_table_2",
+            "xhtml/legend_of_table_2.xhtml"
+        ],
+        "notes_a2": [
+            "notes_a2",
+            "xhtml/notes_a2.xhtml"
+        ],
+        "possibilities_for_linebreaking_between_characters": [
+            "possibilities_for_linebreaking_between_characters",
+            "xhtml/possibilities_for_linebreaking_between_characters.xhtml"
+        ],
+        "legend_of_table_3": [
+            "legend_of_table_3",
+            "xhtml/legend_of_table_3.xhtml"
+        ],
+        "notes_a3": [
+            "notes_a3",
+            "xhtml/notes_a3.xhtml"
+        ],
+        "addendum_a3": [
+            "addendum_a3",
+            "xhtml/addendum_a3.xhtml"
+        ],
+        "opportunities_for_intercharacter_space_reduction_during_line_adjustment": [
+            "opportunities_for_intercharacter_space_reduction_during_line_adjustment",
+            "xhtml/opportunities_for_intercharacter_space_reduction_during_line_adjustment.xhtml"
+        ],
+        "legend_of_tables_4_5_6": [
+            "legend_of_tables_4_5_6",
+            "xhtml/legend_of_tables_4_5_6.xhtml"
+        ],
+        "notes_a4": [
+            "notes_a4",
+            "xhtml/notes_a4.xhtml"
+        ],
+        "opportunities_for_intercharacter_space_expansion_during_line_adjustment": [
+            "opportunities_for_intercharacter_space_expansion_during_line_adjustment",
+            "xhtml/opportunities_for_intercharacter_space_expansion_during_line_adjustment.xhtml"
+        ],
+        "legend_of_table_7": [
+            "legend_of_table_7",
+            "xhtml/legend_of_table_7.xhtml"
+        ],
+        "notes_a5": [
+            "notes_a5",
+            "xhtml/notes_a5.xhtml"
+        ],
+        "positioning_of_jukugoruby": [
+            "positioning_of_jukugoruby",
+            "xhtml/positioning_of_jukugoruby.xhtml"
+        ],
+        "principles_of_jukugoruby_distribution_1": [
+            "principles_of_jukugoruby_distribution_1",
+            "xhtml/principles_of_jukugoruby_distribution_1.xhtml"
+        ],
+        "principles_of_jukugoruby_distribution_2": [
+            "principles_of_jukugoruby_distribution_2",
+            "xhtml/principles_of_jukugoruby_distribution_2.xhtml"
+        ],
+        "principles_of_jukugoruby_distribution_with_intercharacter_space_expansion": [
+            "principles_of_jukugoruby_distribution_with_intercharacter_space_expansion",
+            "xhtml/principles_of_jukugoruby_distribution_with_intercharacter_space_expansion.xhtml"
+        ],
+        "examples_of_jukugoruby_distribution_with_intercharacter_space_expansion": [
+            "examples_of_jukugoruby_distribution_with_intercharacter_space_expansion",
+            "xhtml/examples_of_jukugoruby_distribution_with_intercharacter_space_expansion.xhtml"
+        ],
+        "terminology": [
+            "terminology",
+            "xhtml/terminology.xhtml"
+        ],
+        "references": [
+            "references",
+            "xhtml/references.xhtml"
+        ],
+        "revision_log": [
+            "revision_log",
+            "xhtml/revision_log.xhtml"
+        ],
+        "acknowledgments": [
+            "acknowledgments",
+            "xhtml/acknowledgments.xhtml"
+        ],
+        "Q13878877": [
+            "Q13878877",
+            "css/W3C-WG-NOTE.css"
+        ],
+        "Q25442933": [
+            "Q25442933",
+            "css/base.css"
+        ],
+        "Q32386092": [
+            "Q32386092",
+            "image/Images-ja/w3c_home.png"
+        ],
+        "Q31966667": [
+            "Q31966667",
+            "image/Images-ja/img1_4.png"
+        ],
+        "Q23763868": [
+            "Q23763868",
+            "image/Images-ja/img1_5.png"
+        ],
+        "Q926353": [
+            "Q926353",
+            "image/Images-ja/img1_6.png"
+        ],
+        "Q33526517": [
+            "Q33526517",
+            "image/Images-ja/img1_7.png"
+        ],
+        "Q610399": [
+            "Q610399",
+            "image/Images-ja/img1_8.png"
+        ],
+        "Q24880015": [
+            "Q24880015",
+            "image/Images-ja/img1_9.png"
+        ],
+        "Q3083604": [
+            "Q3083604",
+            "image/Images-ja/img1_10.png"
+        ],
+        "Q18096534": [
+            "Q18096534",
+            "image/Images-ja/img_ad1_4.png"
+        ],
+        "Q11085148": [
+            "Q11085148",
+            "image/Images-ja/img1_11.png"
+        ],
+        "Q13878947": [
+            "Q13878947",
+            "image/Images-ja/img1_12.png"
+        ],
+        "Q26613121": [
+            "Q26613121",
+            "image/Images-ja/img1_1.png"
+        ],
+        "Q6151022": [
+            "Q6151022",
+            "image/Images-ja/img1_2.png"
+        ],
+        "Q32580443": [
+            "Q32580443",
+            "image/Images-ja/img1_3.png"
+        ],
+        "Q4744654": [
+            "Q4744654",
+            "image/Images-ja/img_ad1_1.png"
+        ],
+        "Q18071221": [
+            "Q18071221",
+            "image/Images-ja/img_ad1_2.png"
+        ],
+        "Q21854021": [
+            "Q21854021",
+            "image/Images-ja/img_ad1_19.png"
+        ],
+        "Q13729475": [
+            "Q13729475",
+            "image/Images-ja/img_ad1_3.png"
+        ],
+        "Q31022504": [
+            "Q31022504",
+            "image/Images-ja/img1_13.png"
+        ],
+        "Q26474210": [
+            "Q26474210",
+            "image/Images-ja/img1_14.png"
+        ],
+        "Q20287235": [
+            "Q20287235",
+            "image/Images-ja/img1_15.png"
+        ],
+        "Q20983130": [
+            "Q20983130",
+            "image/Images-ja/img1_16.png"
+        ],
+        "Q6386542": [
+            "Q6386542",
+            "image/Images-ja/img1_17.png"
+        ],
+        "Q31538695": [
+            "Q31538695",
+            "image/Images-ja/img1_18.png"
+        ],
+        "Q11498200": [
+            "Q11498200",
+            "image/Images-ja/img1_19.png"
+        ],
+        "Q10288833": [
+            "Q10288833",
+            "image/Images-ja/img1_20.png"
+        ],
+        "Q18433730": [
+            "Q18433730",
+            "image/Images-ja/img1_21.png"
+        ],
+        "Q7634850": [
+            "Q7634850",
+            "image/Images-ja/img1_22.png"
+        ],
+        "Q6783657": [
+            "Q6783657",
+            "image/Images-ja/img1_23.png"
+        ],
+        "Q28524838": [
+            "Q28524838",
+            "image/Images-ja/img1_24.png"
+        ],
+        "Q24791433": [
+            "Q24791433",
+            "image/Images-ja/img1_25.png"
+        ],
+        "Q24248500": [
+            "Q24248500",
+            "image/Images-ja/img1_26_1.png"
+        ],
+        "Q25966201": [
+            "Q25966201",
+            "image/Images-ja/img1_26_2.png"
+        ],
+        "Q4999131": [
+            "Q4999131",
+            "image/Images-ja/img1_27.png"
+        ],
+        "Q101492": [
+            "Q101492",
+            "image/Images-ja/img_ad1_5.png"
+        ],
+        "Q28062585": [
+            "Q28062585",
+            "image/Images-ja/img_ad1_18.png"
+        ],
+        "Q6781414": [
+            "Q6781414",
+            "image/Images-ja/img_ad1_20.png"
+        ],
+        "Q24387997": [
+            "Q24387997",
+            "image/Images-ja/img_ad1_6.png"
+        ],
+        "Q21684929": [
+            "Q21684929",
+            "image/Images-ja/img_ad1_7.png"
+        ],
+        "Q23930626": [
+            "Q23930626",
+            "image/Images-ja/img_ad1_8.png"
+        ],
+        "Q18623335": [
+            "Q18623335",
+            "image/Images-ja/img_ad1_9.png"
+        ],
+        "Q6659511": [
+            "Q6659511",
+            "image/Images-ja/img_ad1_10.png"
+        ],
+        "Q22375698": [
+            "Q22375698",
+            "image/Images-ja/img_ad1_11.png"
+        ],
+        "Q23848591": [
+            "Q23848591",
+            "image/Images-ja/img_ad1_12.png"
+        ],
+        "Q15594377": [
+            "Q15594377",
+            "image/Images-ja/img_ad1_13.png"
+        ],
+        "Q1035988": [
+            "Q1035988",
+            "image/Images-ja/img_ad1_14.png"
+        ],
+        "Q30657962": [
+            "Q30657962",
+            "image/Images-ja/img_ad1_15.png"
+        ],
+        "Q6510044": [
+            "Q6510044",
+            "image/Images-ja/img_ad1_16.png"
+        ],
+        "Q26870430": [
+            "Q26870430",
+            "image/Images-ja/img1_28.png"
+        ],
+        "Q2221396": [
+            "Q2221396",
+            "image/Images-ja/img1_29.png"
+        ],
+        "Q22485234": [
+            "Q22485234",
+            "image/Images-ja/img1_30.png"
+        ],
+        "Q19331111": [
+            "Q19331111",
+            "image/Images-ja/img_ad1_17.png"
+        ],
+        "Q23984709": [
+            "Q23984709",
+            "image/Images-ja/img1_31.png"
+        ],
+        "Q21621663": [
+            "Q21621663",
+            "image/Images-ja/img1_32.png"
+        ],
+        "Q798740": [
+            "Q798740",
+            "image/Images-ja/img1_33.png"
+        ],
+        "Q2661678": [
+            "Q2661678",
+            "image/Images-ja/img1_34.png"
+        ],
+        "Q6771926": [
+            "Q6771926",
+            "image/Images-ja/img1_35.png"
+        ],
+        "Q32689826": [
+            "Q32689826",
+            "image/Images-ja/img2_1.png"
+        ],
+        "Q31198842": [
+            "Q31198842",
+            "image/Images-ja/img2_2.png"
+        ],
+        "Q3840954": [
+            "Q3840954",
+            "image/Images-ja/img2_3.png"
+        ],
+        "Q29744585": [
+            "Q29744585",
+            "image/Images-ja/img2_4.png"
+        ],
+        "Q23328673": [
+            "Q23328673",
+            "image/Images-ja/img2_5.png"
+        ],
+        "Q1478827": [
+            "Q1478827",
+            "image/Images-ja/img2_6.png"
+        ],
+        "Q24374386": [
+            "Q24374386",
+            "image/Images-ja/img2_7.png"
+        ],
+        "Q27811128": [
+            "Q27811128",
+            "image/Images-ja/img2_8_1.png"
+        ],
+        "Q8406772": [
+            "Q8406772",
+            "image/Images-ja/img2_8_2.png"
+        ],
+        "Q28472268": [
+            "Q28472268",
+            "image/Images-ja/img2_9.png"
+        ],
+        "Q13655059": [
+            "Q13655059",
+            "image/Images-ja/img2_11.png"
+        ],
+        "Q21830977": [
+            "Q21830977",
+            "image/Images-ja/img2_10.png"
+        ],
+        "Q29087666": [
+            "Q29087666",
+            "image/Images-ja/img2_12.png"
+        ],
+        "Q21886820": [
+            "Q21886820",
+            "image/Images-ja/img2_13.png"
+        ],
+        "Q28113457": [
+            "Q28113457",
+            "image/Images-ja/img2_14.png"
+        ],
+        "Q22927632": [
+            "Q22927632",
+            "image/Images-ja/img2_15.png"
+        ],
+        "Q5618579": [
+            "Q5618579",
+            "image/Images-ja/img2_16.png"
+        ],
+        "Q9299042": [
+            "Q9299042",
+            "image/Images-ja/img2_17.png"
+        ],
+        "Q26009930": [
+            "Q26009930",
+            "image/Images-ja/img2_18.png"
+        ],
+        "Q1763596": [
+            "Q1763596",
+            "image/Images-ja/img2_20.png"
+        ],
+        "Q12206609": [
+            "Q12206609",
+            "image/Images-ja/img2_21.png"
+        ],
+        "Q4694228": [
+            "Q4694228",
+            "image/Images-ja/img2_1_2.png"
+        ],
+        "Q9434319": [
+            "Q9434319",
+            "image/Images-ja/img2_22.png"
+        ],
+        "Q17908832": [
+            "Q17908832",
+            "image/Images-ja/img2_23.png"
+        ],
+        "Q10485311": [
+            "Q10485311",
+            "image/Images-ja/img2_24.png"
+        ],
+        "Q32316171": [
+            "Q32316171",
+            "image/Images-ja/img2_25.png"
+        ],
+        "Q25857250": [
+            "Q25857250",
+            "image/Images-ja/img2_26.png"
+        ],
+        "Q19368402": [
+            "Q19368402",
+            "image/Images-ja/img2_27.png"
+        ],
+        "Q13190097": [
+            "Q13190097",
+            "image/Images-ja/img2_28.png"
+        ],
+        "Q25383640": [
+            "Q25383640",
+            "image/Images-ja/img2_29.png"
+        ],
+        "Q11800260": [
+            "Q11800260",
+            "image/Images-ja/img2_30.png"
+        ],
+        "Q20280994": [
+            "Q20280994",
+            "image/Images-ja/img2_31.png"
+        ],
+        "Q16747636": [
+            "Q16747636",
+            "image/Images-ja/img2_32.png"
+        ],
+        "Q22949069": [
+            "Q22949069",
+            "image/Images-ja/img2_33.png"
+        ],
+        "Q30373009": [
+            "Q30373009",
+            "image/Images-ja/img2_2_1.png"
+        ],
+        "Q15595312": [
+            "Q15595312",
+            "image/Images-ja/img2_2_2.png"
+        ],
+        "Q16749745": [
+            "Q16749745",
+            "image/Images-ja/img2_2_3.png"
+        ],
+        "Q24840600": [
+            "Q24840600",
+            "image/Images-ja/img2_2_4.png"
+        ],
+        "Q11733267": [
+            "Q11733267",
+            "image/Images-ja/img2_2_50.png"
+        ],
+        "Q1635615": [
+            "Q1635615",
+            "image/Images-ja/img2_2_6.png"
+        ],
+        "Q8703610": [
+            "Q8703610",
+            "image/Images-ja/img2_2_7.png"
+        ],
+        "Q17815542": [
+            "Q17815542",
+            "image/Images-ja/img2_2_5.png"
+        ],
+        "Q19623049": [
+            "Q19623049",
+            "image/Images-ja/img2_2_52.png"
+        ],
+        "Q31637242": [
+            "Q31637242",
+            "image/Images-ja/img2_2_8.png"
+        ],
+        "Q23602584": [
+            "Q23602584",
+            "image/Images-ja/img2_2_53.png"
+        ],
+        "Q8140933": [
+            "Q8140933",
+            "image/Images-ja/img2_2_9.png"
+        ],
+        "Q23257749": [
+            "Q23257749",
+            "image/Images-ja/img2_2_10.png"
+        ],
+        "Q17423963": [
+            "Q17423963",
+            "image/Images-ja/img2_2_12.png"
+        ],
+        "Q15020576": [
+            "Q15020576",
+            "image/Images-ja/img2_2_11.png"
+        ],
+        "Q20843194": [
+            "Q20843194",
+            "image/Images-ja/img2_3_1.png"
+        ],
+        "Q3299256": [
+            "Q3299256",
+            "image/Images-ja/img2_3_2.png"
+        ],
+        "Q18687346": [
+            "Q18687346",
+            "image/Images-ja/img2_3_3.png"
+        ],
+        "Q8755816": [
+            "Q8755816",
+            "image/Images-ja/img2_3_4.png"
+        ],
+        "Q22831804": [
+            "Q22831804",
+            "image/Images-ja/img2_3_5.png"
+        ],
+        "Q5660886": [
+            "Q5660886",
+            "image/Images-ja/img2_3_6.png"
+        ],
+        "Q15696851": [
+            "Q15696851",
+            "image/Images-ja/img2_3_6_2.png"
+        ],
+        "Q12039161": [
+            "Q12039161",
+            "image/Images-ja/img2_3_7.png"
+        ],
+        "Q8970080": [
+            "Q8970080",
+            "image/Images-ja/img2_3_8.png"
+        ],
+        "Q78219": [
+            "Q78219",
+            "image/Images-ja/img2_3_9.png"
+        ],
+        "Q6011238": [
+            "Q6011238",
+            "image/Images-ja/img2_3_10.png"
+        ],
+        "Q32048085": [
+            "Q32048085",
+            "image/Images-ja/img2_3_11.png"
+        ],
+        "Q16426320": [
+            "Q16426320",
+            "image/Images-ja/img2_3_12.png"
+        ],
+        "Q24864323": [
+            "Q24864323",
+            "image/Images-ja/img2_3_13.png"
+        ],
+        "Q7792807": [
+            "Q7792807",
+            "image/Images-ja/img2_3_14.png"
+        ],
+        "Q10769718": [
+            "Q10769718",
+            "image/Images-ja/img2_3_15.png"
+        ],
+        "Q14050342": [
+            "Q14050342",
+            "image/Images-ja/img2_3_16.png"
+        ],
+        "Q21565109": [
+            "Q21565109",
+            "image/Images-ja/img2_3_17.png"
+        ],
+        "Q23376028": [
+            "Q23376028",
+            "image/Images-ja/img2_3_18.png"
+        ],
+        "Q25621063": [
+            "Q25621063",
+            "image/Images-ja/img2_3_19.png"
+        ],
+        "Q9194103": [
+            "Q9194103",
+            "image/Images-ja/img2_3_20.png"
+        ],
+        "Q7143488": [
+            "Q7143488",
+            "image/Images-ja/img2_3_21.png"
+        ],
+        "Q2855942": [
+            "Q2855942",
+            "image/Images-ja/img2_3_22.png"
+        ],
+        "Q16994425": [
+            "Q16994425",
+            "image/Images-ja/img2_3_23.png"
+        ],
+        "Q9977237": [
+            "Q9977237",
+            "image/Images-ja/img2_3_24.png"
+        ],
+        "Q15926420": [
+            "Q15926420",
+            "image/Images-ja/img2_3_25.png"
+        ],
+        "Q11652231": [
+            "Q11652231",
+            "image/Images-ja/img2_3_26.png"
+        ],
+        "Q15397900": [
+            "Q15397900",
+            "image/Images-ja/img2_3_27.png"
+        ],
+        "Q20735553": [
+            "Q20735553",
+            "image/Images-ja/img2_3_28.png"
+        ],
+        "Q6109469": [
+            "Q6109469",
+            "image/Images-ja/img2_3_29.png"
+        ],
+        "Q5285449": [
+            "Q5285449",
+            "image/Images-ja/img2_3_30.png"
+        ],
+        "Q13961193": [
+            "Q13961193",
+            "image/Images-ja/img2_3_31.png"
+        ],
+        "Q33189144": [
+            "Q33189144",
+            "image/Images-ja/img2_3_29_2.png"
+        ],
+        "Q1067475": [
+            "Q1067475",
+            "image/Images-ja/img2_3_29_3.png"
+        ],
+        "Q22992473": [
+            "Q22992473",
+            "image/Images-ja/img2_3_32.png"
+        ],
+        "Q21658130": [
+            "Q21658130",
+            "image/Images-ja/img2_3_33.png"
+        ],
+        "Q9716945": [
+            "Q9716945",
+            "image/Images-ja/img2_3_34.png"
+        ],
+        "Q3278348": [
+            "Q3278348",
+            "image/Images-ja/img2_3_35.png"
+        ],
+        "Q2830910": [
+            "Q2830910",
+            "image/Images-ja/img2_3_36.png"
+        ],
+        "Q32486590": [
+            "Q32486590",
+            "image/Images-ja/img2_3_37.png"
+        ],
+        "Q4414010": [
+            "Q4414010",
+            "image/Images-ja/img2_4_1.png"
+        ],
+        "Q30983464": [
+            "Q30983464",
+            "image/Images-ja/img2_4_2.png"
+        ],
+        "Q7858936": [
+            "Q7858936",
+            "image/Images-ja/img2_4_3.png"
+        ],
+        "Q14900151": [
+            "Q14900151",
+            "image/Images-ja/img2_4_4.png"
+        ],
+        "Q10127976": [
+            "Q10127976",
+            "image/Images-ja/img2_4_5.png"
+        ],
+        "Q32826737": [
+            "Q32826737",
+            "image/Images-ja/img2_5_1.png"
+        ],
+        "Q17010151": [
+            "Q17010151",
+            "image/Images-ja/img2_5_2.png"
+        ],
+        "Q5863106": [
+            "Q5863106",
+            "image/Images-ja/img2_5_3.png"
+        ],
+        "Q25421790": [
+            "Q25421790",
+            "image/Images-ja/img2_5_4.png"
+        ],
+        "Q15453627": [
+            "Q15453627",
+            "image/Images-ja/img2_5_5.png"
+        ],
+        "Q17818297": [
+            "Q17818297",
+            "image/Images-ja/img2_5_6.png"
+        ],
+        "Q32380043": [
+            "Q32380043",
+            "image/Images-ja/img2_5_7.png"
+        ],
+        "Q25613444": [
+            "Q25613444",
+            "image/Images-ja/img2_5_8.png"
+        ],
+        "Q15354046": [
+            "Q15354046",
+            "image/Images-ja/img2_5_9.png"
+        ],
+        "Q21878616": [
+            "Q21878616",
+            "image/Images-ja/img2_5_10.png"
+        ],
+        "Q24435002": [
+            "Q24435002",
+            "image/Images-ja/img2_6_1.png"
+        ],
+        "Q6400263": [
+            "Q6400263",
+            "image/Images-ja/img2_6_2.png"
+        ],
+        "Q27271771": [
+            "Q27271771",
+            "image/Images-ja/img2_6_3.png"
+        ],
+        "Q3115866": [
+            "Q3115866",
+            "image/Images-ja/img2_6_4.png"
+        ],
+        "Q23447542": [
+            "Q23447542",
+            "image/Images-ja/img2_6_5.png"
+        ],
+        "Q19589694": [
+            "Q19589694",
+            "image/Images-ja/img2_6_6.png"
+        ],
+        "Q7912507": [
+            "Q7912507",
+            "image/Images-ja/img2_6_7.png"
+        ],
+        "Q9296972": [
+            "Q9296972",
+            "image/Images-ja/img2_6_8.png"
+        ],
+        "Q24778599": [
+            "Q24778599",
+            "image/Images-ja/img2_6_9.png"
+        ],
+        "Q9867226": [
+            "Q9867226",
+            "image/Images-ja/img2_6_10.png"
+        ],
+        "Q12468716": [
+            "Q12468716",
+            "image/Images-ja/img2_7_1.png"
+        ],
+        "Q14298351": [
+            "Q14298351",
+            "image/Images-ja/img2_7_2.png"
+        ],
+        "Q29103856": [
+            "Q29103856",
+            "image/Images-ja/img2_7_3.png"
+        ],
+        "Q25567987": [
+            "Q25567987",
+            "image/Images-ja/img2_7_4.png"
+        ],
+        "Q23103355": [
+            "Q23103355",
+            "image/Images-ja/img2_7_5.png"
+        ],
+        "Q6206601": [
+            "Q6206601",
+            "image/Images-ja/img2_7_52.png"
+        ],
+        "Q27182317": [
+            "Q27182317",
+            "image/Images-ja/img2_7_6.png"
+        ],
+        "Q9624795": [
+            "Q9624795",
+            "image/Images-ja/img2_7_62.png"
+        ],
+        "Q31571602": [
+            "Q31571602",
+            "image/Images-ja/img2_7_7.png"
+        ],
+        "Q27682895": [
+            "Q27682895",
+            "image/Images-ja/img2_7_8.png"
+        ],
+        "Q671035": [
+            "Q671035",
+            "image/Images-ja/img2_51.png"
+        ],
+        "Q3808966": [
+            "Q3808966",
+            "image/Images-ja/img2_52.png"
+        ],
+        "Q28991606": [
+            "Q28991606",
+            "image/Images-ja/img2_53.png"
+        ],
+        "Q18016247": [
+            "Q18016247",
+            "image/Images-ja/img2_54.png"
+        ],
+        "Q3874616": [
+            "Q3874616",
+            "image/Images-ja/img2_9_1.png"
+        ],
+        "Q25086455": [
+            "Q25086455",
+            "image/Images-ja/img3_1_1.png"
+        ],
+        "Q16617866": [
+            "Q16617866",
+            "image/Images-ja/img3_1_2.png"
+        ],
+        "Q22945909": [
+            "Q22945909",
+            "image/Images-ja/img3_1_3.png"
+        ],
+        "Q10822310": [
+            "Q10822310",
+            "image/Images-ja/img3_1_4.png"
+        ],
+        "Q25559096": [
+            "Q25559096",
+            "image/Images-ja/img3_1_5.png"
+        ],
+        "Q7896086": [
+            "Q7896086",
+            "image/Images-ja/img3_1_6.png"
+        ],
+        "Q1744155": [
+            "Q1744155",
+            "image/Images-ja/img3_1_7.png"
+        ],
+        "Q21010507": [
+            "Q21010507",
+            "image/Images-ja/img3_1_8.png"
+        ],
+        "Q30303902": [
+            "Q30303902",
+            "image/Images-ja/img3_1_9.png"
+        ],
+        "Q28523022": [
+            "Q28523022",
+            "image/Images-ja/img3_1_10.png"
+        ],
+        "Q27817788": [
+            "Q27817788",
+            "image/Images-ja/img3_1_11.png"
+        ],
+        "Q19673895": [
+            "Q19673895",
+            "image/Images-ja/img3_1_12.png"
+        ],
+        "Q13782591": [
+            "Q13782591",
+            "image/Images-ja/img3_1_12_2.png"
+        ],
+        "Q17777129": [
+            "Q17777129",
+            "image/Images-ja/img3_1_13.png"
+        ],
+        "Q11557581": [
+            "Q11557581",
+            "image/Images-ja/img3_1_14.png"
+        ],
+        "Q1673653": [
+            "Q1673653",
+            "image/Images-ja/img3_1_15.png"
+        ],
+        "Q10486149": [
+            "Q10486149",
+            "image/Images-ja/img3_1_18.png"
+        ],
+        "Q12829461": [
+            "Q12829461",
+            "image/Images-ja/img3_1_19.png"
+        ],
+        "Q3972145": [
+            "Q3972145",
+            "image/Images-ja/img3_1_16.png"
+        ],
+        "Q20089978": [
+            "Q20089978",
+            "image/Images-ja/img3_1_17.png"
+        ],
+        "Q27582163": [
+            "Q27582163",
+            "image/Images-ja/img3_1_20.png"
+        ],
+        "Q18945918": [
+            "Q18945918",
+            "image/Images-ja/img3_1_21.png"
+        ],
+        "Q26049230": [
+            "Q26049230",
+            "image/Images-ja/img3_1_22.png"
+        ],
+        "Q24745276": [
+            "Q24745276",
+            "image/Images-ja/img3_1_23.png"
+        ],
+        "Q20237898": [
+            "Q20237898",
+            "image/Images-ja/img3_1_24.png"
+        ],
+        "Q30638546": [
+            "Q30638546",
+            "image/Images-ja/img3_1_25.png"
+        ],
+        "Q15734641": [
+            "Q15734641",
+            "image/Images-ja/img3_1_26.png"
+        ],
+        "Q9649099": [
+            "Q9649099",
+            "image/Images-ja/img3_1_27.png"
+        ],
+        "Q3852606": [
+            "Q3852606",
+            "image/Images-ja/img3_1_28.png"
+        ],
+        "Q24257622": [
+            "Q24257622",
+            "image/Images-ja/img3_1_28_2.png"
+        ],
+        "Q11511434": [
+            "Q11511434",
+            "image/Images-ja/img3_1_28_3.png"
+        ],
+        "Q31375837": [
+            "Q31375837",
+            "image/Images-ja/img3_1_29.png"
+        ],
+        "Q25804854": [
+            "Q25804854",
+            "image/Images-ja/img3_1_30.png"
+        ],
+        "Q11150143": [
+            "Q11150143",
+            "image/Images-ja/img3_1_31.png"
+        ],
+        "Q32512553": [
+            "Q32512553",
+            "image/Images-ja/img3_1_32.png"
+        ],
+        "Q4558657": [
+            "Q4558657",
+            "image/Images-ja/img3_1_33.png"
+        ],
+        "Q12590745": [
+            "Q12590745",
+            "image/Images-ja/img3_1_34.png"
+        ],
+        "Q18414151": [
+            "Q18414151",
+            "image/Images-ja/img3_1_35.png"
+        ],
+        "Q14111765": [
+            "Q14111765",
+            "image/Images-ja/img3_1_36.png"
+        ],
+        "Q13725633": [
+            "Q13725633",
+            "image/Images-ja/img3_1_37.png"
+        ],
+        "Q7856": [
+            "Q7856",
+            "image/Images-ja/img3_1_37_2.png"
+        ],
+        "Q31384576": [
+            "Q31384576",
+            "image/Images-ja/img3_1_37_3.png"
+        ],
+        "Q4899350": [
+            "Q4899350",
+            "image/Images-ja/img3_1_38.png"
+        ],
+        "Q810652": [
+            "Q810652",
+            "image/Images-ja/img3_1_39.png"
+        ],
+        "Q1537969": [
+            "Q1537969",
+            "image/Images-ja/img3_1_40.png"
+        ],
+        "Q11743647": [
+            "Q11743647",
+            "image/Images-ja/img3_1_41.png"
+        ],
+        "Q8310136": [
+            "Q8310136",
+            "image/Images-ja/img3_1_42.png"
+        ],
+        "Q14910620": [
+            "Q14910620",
+            "image/Images-ja/img3_1_43.png"
+        ],
+        "Q18306724": [
+            "Q18306724",
+            "image/Images-ja/img3_2_1.png"
+        ],
+        "Q20526817": [
+            "Q20526817",
+            "image/Images-ja/img3_2_1_2.png"
+        ],
+        "Q21101238": [
+            "Q21101238",
+            "image/Images-ja/img3_2_2.png"
+        ],
+        "Q11731442": [
+            "Q11731442",
+            "image/Images-ja/img3_2_3.png"
+        ],
+        "Q4508606": [
+            "Q4508606",
+            "image/Images-ja/img3_2_4.png"
+        ],
+        "Q10233621": [
+            "Q10233621",
+            "image/Images-ja/img3_2_5.png"
+        ],
+        "Q30008954": [
+            "Q30008954",
+            "image/Images-ja/img3_2_6.png"
+        ],
+        "Q3823508": [
+            "Q3823508",
+            "image/Images-ja/img3_2_7.png"
+        ],
+        "Q4973260": [
+            "Q4973260",
+            "image/Images-ja/img3_2_8.png"
+        ],
+        "Q1503089": [
+            "Q1503089",
+            "image/Images-ja/img3_2_9.png"
+        ],
+        "Q29493424": [
+            "Q29493424",
+            "image/Images-ja/img3_2_10.png"
+        ],
+        "Q29919449": [
+            "Q29919449",
+            "image/Images-ja/img3_2_11.png"
+        ],
+        "Q9472129": [
+            "Q9472129",
+            "image/Images-ja/img3_2_12.png"
+        ],
+        "Q15855697": [
+            "Q15855697",
+            "image/Images-ja/img3_2_13.png"
+        ],
+        "Q30969271": [
+            "Q30969271",
+            "image/Images-ja/img3_2_14.png"
+        ],
+        "Q4205299": [
+            "Q4205299",
+            "image/Images-ja/img3_2_15.png"
+        ],
+        "Q12839401": [
+            "Q12839401",
+            "image/Images-ja/img3_2_16.png"
+        ],
+        "Q3273383": [
+            "Q3273383",
+            "image/Images-ja/img3_2_17.png"
+        ],
+        "Q20039836": [
+            "Q20039836",
+            "image/Images-ja/img3_2_18.png"
+        ],
+        "Q23690087": [
+            "Q23690087",
+            "image/Images-ja/img3_2_19.png"
+        ],
+        "Q2409635": [
+            "Q2409635",
+            "image/Images-ja/img3_2_20.png"
+        ],
+        "Q32098350": [
+            "Q32098350",
+            "image/Images-ja/img3_2_21.png"
+        ],
+        "Q22367538": [
+            "Q22367538",
+            "image/Images-ja/img3_2_22.png"
+        ],
+        "Q20910958": [
+            "Q20910958",
+            "image/Images-ja/img3_2_23.png"
+        ],
+        "Q1352077": [
+            "Q1352077",
+            "image/Images-ja/img3_2_24.png"
+        ],
+        "Q8012937": [
+            "Q8012937",
+            "image/Images-ja/img3_2_25_2.png"
+        ],
+        "Q19509473": [
+            "Q19509473",
+            "image/Images-ja/img3_2_25_3.png"
+        ],
+        "Q1812813": [
+            "Q1812813",
+            "image/Images-ja/img3_2_25.png"
+        ],
+        "Q534353": [
+            "Q534353",
+            "image/Images-ja/img3_2_26.png"
+        ],
+        "Q21846985": [
+            "Q21846985",
+            "image/Images-ja/img3_2_27.png"
+        ],
+        "Q29683960": [
+            "Q29683960",
+            "image/Images-ja/img3_1.png"
+        ],
+        "Q11024915": [
+            "Q11024915",
+            "image/Images-ja/img3_2.png"
+        ],
+        "Q8180602": [
+            "Q8180602",
+            "image/Images-ja/img3_3.png"
+        ],
+        "Q18885993": [
+            "Q18885993",
+            "image/Images-ja/img3_4.png"
+        ],
+        "Q25515362": [
+            "Q25515362",
+            "image/Images-ja/img3_4a.png"
+        ],
+        "Q11050211": [
+            "Q11050211",
+            "image/Images-ja/img3_5.png"
+        ],
+        "Q30685694": [
+            "Q30685694",
+            "image/Images-ja/img3_6.png"
+        ],
+        "Q2850225": [
+            "Q2850225",
+            "image/Images-ja/img3_7.png"
+        ],
+        "Q21559496": [
+            "Q21559496",
+            "image/Images-ja/img3_8.png"
+        ],
+        "Q29705835": [
+            "Q29705835",
+            "image/Images-ja/img3_9.png"
+        ],
+        "Q9578500": [
+            "Q9578500",
+            "image/Images-ja/img3_10.png"
+        ],
+        "Q25252664": [
+            "Q25252664",
+            "image/Images-ja/img3_11.png"
+        ],
+        "Q25068634": [
+            "Q25068634",
+            "image/Images-ja/img3_12.png"
+        ],
+        "Q19097823": [
+            "Q19097823",
+            "image/Images-ja/img3_13.png"
+        ],
+        "Q28970806": [
+            "Q28970806",
+            "image/Images-ja/img3_14.png"
+        ],
+        "Q3975755": [
+            "Q3975755",
+            "image/Images-ja/img3_15.png"
+        ],
+        "Q13640204": [
+            "Q13640204",
+            "image/Images-ja/img3_16.png"
+        ],
+        "Q7031149": [
+            "Q7031149",
+            "image/Images-ja/img3_17.png"
+        ],
+        "Q27366488": [
+            "Q27366488",
+            "image/Images-ja/img3_18.png"
+        ],
+        "Q17975110": [
+            "Q17975110",
+            "image/Images-ja/img3_19.png"
+        ],
+        "Q17131806": [
+            "Q17131806",
+            "image/Images-ja/img3_20.png"
+        ],
+        "Q3682584": [
+            "Q3682584",
+            "image/Images-ja/img3_4_1.png"
+        ],
+        "Q18818021": [
+            "Q18818021",
+            "image/Images-ja/img3_4_2.png"
+        ],
+        "Q23971937": [
+            "Q23971937",
+            "image/Images-ja/img3_4_3.png"
+        ],
+        "Q8293453": [
+            "Q8293453",
+            "image/Images-ja/img3_4_4.png"
+        ],
+        "Q2955420": [
+            "Q2955420",
+            "image/Images-ja/img3_4_5.png"
+        ],
+        "Q11200622": [
+            "Q11200622",
+            "image/Images-ja/img3_4_6.png"
+        ],
+        "Q8495511": [
+            "Q8495511",
+            "image/Images-ja/img3_4_7.png"
+        ],
+        "Q9949222": [
+            "Q9949222",
+            "image/Images-ja/img3_4_8.png"
+        ],
+        "Q14850080": [
+            "Q14850080",
+            "image/Images-ja/img3_4_9.png"
+        ],
+        "Q7433399": [
+            "Q7433399",
+            "image/Images-ja/img3_4_10.png"
+        ],
+        "Q9992755": [
+            "Q9992755",
+            "image/Images-ja/img3_4_11.png"
+        ],
+        "Q8304354": [
+            "Q8304354",
+            "image/Images-ja/img3_4_12.png"
+        ],
+        "Q18403721": [
+            "Q18403721",
+            "image/Images-ja/img3_4_12_2.png"
+        ],
+        "Q6586390": [
+            "Q6586390",
+            "image/Images-ja/img3_4_12_3.png"
+        ],
+        "Q1397168": [
+            "Q1397168",
+            "image/Images-ja/img3_4_13.png"
+        ],
+        "Q27660658": [
+            "Q27660658",
+            "image/Images-ja/img3_4_14.png"
+        ],
+        "Q29594051": [
+            "Q29594051",
+            "image/Images-ja/img3_4_15.png"
+        ],
+        "Q9870377": [
+            "Q9870377",
+            "image/Images-ja/img3_5_1.png"
+        ],
+        "Q31882858": [
+            "Q31882858",
+            "image/Images-ja/img3_5_2.png"
+        ],
+        "Q24478976": [
+            "Q24478976",
+            "image/Images-ja/img3_5_3.png"
+        ],
+        "Q7263010": [
+            "Q7263010",
+            "image/Images-ja/img3_5_4.png"
+        ],
+        "Q31952022": [
+            "Q31952022",
+            "image/Images-ja/img3_5_5.png"
+        ],
+        "Q12518719": [
+            "Q12518719",
+            "image/Images-ja/img3_5_5_2.png"
+        ],
+        "Q15831407": [
+            "Q15831407",
+            "image/Images-ja/img3_5_6.png"
+        ],
+        "Q25374911": [
+            "Q25374911",
+            "image/Images-ja/img3_5_7.png"
+        ],
+        "Q32853087": [
+            "Q32853087",
+            "image/Images-ja/img3_5_8.png"
+        ],
+        "Q23664622": [
+            "Q23664622",
+            "image/Images-ja/img3_5_9.png"
+        ],
+        "Q10630672": [
+            "Q10630672",
+            "image/Images-ja/img3_5_10.png"
+        ],
+        "Q25921812": [
+            "Q25921812",
+            "image/Images-ja/img3_6_1.png"
+        ],
+        "Q30708295": [
+            "Q30708295",
+            "image/Images-ja/img3_6_2.png"
+        ],
+        "Q13599389": [
+            "Q13599389",
+            "image/Images-ja/img3_6_3.png"
+        ],
+        "Q25709120": [
+            "Q25709120",
+            "image/Images-ja/img3_6_3_2.png"
+        ],
+        "Q12774933": [
+            "Q12774933",
+            "image/Images-ja/img_a1_1.png"
+        ],
+        "Q27055962": [
+            "Q27055962",
+            "image/Images-ja/img_a5_1.png"
+        ],
+        "Q33459432": [
+            "Q33459432",
+            "image/Images-ja/img_a7_1.png"
+        ],
+        "Q13948523": [
+            "Q13948523",
+            "image/Images-ja/img_a6_1.png"
+        ],
+        "Q21565531": [
+            "Q21565531",
+            "image/Images-ja/img_a6_2.png"
+        ],
+        "Q30463067": [
+            "Q30463067",
+            "image/Images-ja/img_a6_3.png"
+        ],
+        "Q19255406": [
+            "Q19255406",
+            "image/Images-ja/img_a6_4.png"
+        ],
+        "Q26670261": [
+            "Q26670261",
+            "image/Images-ja/img_a6_5.png"
+        ],
+        "Q26977856": [
+            "Q26977856",
+            "image/Images-ja/img_a6_6.png"
+        ],
+        "Q29345020": [
+            "Q29345020",
+            "image/Images-ja/img_a6_7.png"
+        ],
+        "Q18724539": [
+            "Q18724539",
+            "image/Images-ja/img_a6_8.png"
+        ],
+        "Q29876954": [
+            "Q29876954",
+            "image/Images-ja/img_a6_9.png"
+        ],
+        "Q33445663": [
+            "Q33445663",
+            "image/Images-ja/img_a6_10.png"
+        ],
+        "Q17427094": [
+            "Q17427094",
+            "image/Images-ja/img_a6_11.png"
+        ],
+        "Q539419": [
+            "Q539419",
+            "image/Images-ja/img_a6_12.png"
+        ],
+        "Q6326112": [
+            "Q6326112",
+            "image/Images-ja/img_a6_13.png"
+        ],
+        "Q22538826": [
+            "Q22538826",
+            "image/Images-ja/img_a6_14.png"
+        ],
+        "Q14069849": [
+            "Q14069849",
+            "image/Images-ja/img_a6_15.png"
+        ],
+        "ncx": [
+            "ncx",
+            "toc.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "W3C\u00ae (MIT, ERCIM, Keio)"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2012-04-03T00:00:00",
+            "modification": null
+        },
+        "description": "\u3053\u306e\u6587\u66f8\u306f\uff0cCSS\uff0cSVG\u304a\u3088\u3073XSL-FO\u306a\u3069\u306e\u6280\u8853\u3067\u5b9f\u73fe\u304c\u6c42\u3081\u3089\u308c\u308b\u4e00\u822c\u7684\u306a\u65e5\u672c\u8a9e\u7d44\u7248\u306e\u8981\u4ef6\u3092\u8a18\u8ff0\u3057\u305f\u3082\u306e\u3067\u3059\uff0e\u3053\u306e\u6587\u66f8\u306f\uff0c\u4e3b\u3068\u3057\u3066JIS X 4051\uff08\u65e5\u672c\u8a9e\u7d44\u7248\u898f\u5247\uff09\u306b\u57fa\u3065\u3044\u3066\u3044\u307e\u3059\u304c\uff0c\u4e00\u90e8\uff0cJIS X 4051\u306b\u8a18\u8f09\u3055\u308c\u3066\u3044\u306a\u3044\u4e8b\u9805\u306b\u3082\u8a00\u53ca\u3057\u3066\u3044\u307e\u3059\uff0e\u3053\u306e\u7b2c2\u7248\u306f\uff0c\u898b\u51fa\u3057\u306e\u6271\u3044\uff0c\u56f3\u7248\u3084\u8868\u306e\u914d\u7f6e\uff0c\u6ce8\u3084\u5408\u5370\u7b49\u306e\u7248\u9762\u30c7\u30b6\u30a4\u30f3\u306b\u95a2\u3059\u308b\u591a\u304f\u306e\u60c5\u5831\u304c\u5897\u88dc\u3055\u308c\u3066\u3044\u307e\u3059. ",
+        "identifiers": [
+            "http://www.w3.org/TR/2012/NOTE-jlreq-20120403/ja/"
+        ],
+        "publisher": "W3C\u00ae (MIT, ERCIM, Keio)",
+        "languages": [
+            "ja"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "\u65e5\u672c\u8a9e\u7d44\u7248\u51e6\u7406\u306e\u8981\u4ef6\uff08\u65e5\u672c\u8a9e\u7248\uff09"
+        ]
+    }
+}

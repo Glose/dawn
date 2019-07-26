@@ -1,0 +1,61 @@
+{
+    "uid": "code.google.com.epub-samples.wasteland-basic",
+    "version": "3.0",
+    "spine": [
+        "t1"
+    ],
+    "manifest": {
+        "t1": [
+            "t1",
+            "wasteland-content.xhtml"
+        ],
+        "nav": [
+            "nav",
+            "wasteland-nav.xhtml"
+        ],
+        "cover": [
+            "cover",
+            "wasteland-cover.jpg"
+        ],
+        "css": [
+            "css",
+            "wasteland.css"
+        ],
+        "css-night": [
+            "css-night",
+            "wasteland-night.css"
+        ],
+        "ncx": [
+            "ncx",
+            "wasteland.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "T.S. Eliot"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2011-09-01T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.wasteland-basic"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "The Waste Land"
+        ]
+    }
+}

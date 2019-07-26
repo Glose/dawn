@@ -1,0 +1,119 @@
+{
+    "uid": "urn:uuid:8B3EBB46-DA57-11E2-AB84-32F5FD9156E7",
+    "version": "3.0",
+    "spine": [
+        "XHTML0000",
+        "XHTML0001",
+        "XHTML0002",
+        "XHTML0003",
+        "XHTML0004",
+        "XHTML0005",
+        "XHTML0006"
+    ],
+    "manifest": {
+        "TOC": [
+            "TOC",
+            "toc.xhtml"
+        ],
+        "XHTML0000": [
+            "XHTML0000",
+            "text/book_0000.xhtml"
+        ],
+        "XHTML0001": [
+            "XHTML0001",
+            "text/book_0001.xhtml"
+        ],
+        "XHTML0002": [
+            "XHTML0002",
+            "text/book_0002.xhtml"
+        ],
+        "XHTML0003": [
+            "XHTML0003",
+            "text/book_0003.xhtml"
+        ],
+        "XHTML0004": [
+            "XHTML0004",
+            "text/book_0004.xhtml"
+        ],
+        "XHTML0005": [
+            "XHTML0005",
+            "text/book_0005.xhtml"
+        ],
+        "XHTML0006": [
+            "XHTML0006",
+            "text/book_0006.xhtml"
+        ],
+        "my-cover-image": [
+            "my-cover-image",
+            "images/cover.jpg"
+        ],
+        "IMG0001": [
+            "IMG0001",
+            "images/gari01.jpg"
+        ],
+        "IMG0002": [
+            "IMG0002",
+            "images/yashima.jpg"
+        ],
+        "IMG0003": [
+            "IMG0003",
+            "images/akahata.jpg"
+        ],
+        "IMG0004": [
+            "IMG0004",
+            "images/gari02.jpg"
+        ],
+        "IMG0005": [
+            "IMG0005",
+            "images/gari03.jpg"
+        ],
+        "IMG0006": [
+            "IMG0006",
+            "images/tsuno.png"
+        ],
+        "CSS1": [
+            "CSS1",
+            "styles/ebook_common.css"
+        ],
+        "CSS2": [
+            "CSS2",
+            "styles/ebook_style.css"
+        ],
+        "CSS3": [
+            "CSS3",
+            "styles/ebook_style_v.css"
+        ],
+        "CSS4": [
+            "CSS4",
+            "styles/ebook_style_h.css"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "\u6d25\u91ce\u6d77\u592a\u90ce"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2013-06-21T09:47:11",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:8B3EBB46-DA57-11E2-AB84-32F5FD9156E7"
+        ],
+        "publisher": "\u682a\u5f0f\u4f1a\u793e\u30dc\u30a4\u30b8\u30e3\u30fc",
+        "languages": [
+            "ja"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "\u30ac\u30ea\u7248\u306e\u8a71"
+        ]
+    }
+}

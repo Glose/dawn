@@ -1,0 +1,154 @@
+{
+    "uid": "http://www.aozora.gr.jp/cards/000148/card776.html",
+    "version": "3.0",
+    "spine": [
+        "\u8868\u7d19",
+        "\u76ee\u6b21",
+        "\u4e00",
+        "\u4e8c",
+        "\u4e09",
+        "\u56db",
+        "\u4e94",
+        "\u516d",
+        "\u4e03",
+        "\u516b",
+        "\u4e5d",
+        "\u5341",
+        "\u5341\u4e00",
+        "\u5341\u4e8c",
+        "\u5341\u4e09",
+        "\u5f8c\u4ed8"
+    ],
+    "manifest": {
+        "hstyle": [
+            "hstyle",
+            "css/horizontal.css"
+        ],
+        "vstyle": [
+            "vstyle",
+            "css/vertical.css"
+        ],
+        "\u8868\u7d19": [
+            "\u8868\u7d19",
+            "xhtml/\u8868\u7d19.xhtml"
+        ],
+        "\u76ee\u6b21": [
+            "\u76ee\u6b21",
+            "xhtml/\u76ee\u6b21.xhtml"
+        ],
+        "\u4e00": [
+            "\u4e00",
+            "xhtml/\u4e00.xhtml"
+        ],
+        "\u4e8c": [
+            "\u4e8c",
+            "xhtml/\u4e8c.xhtml"
+        ],
+        "\u4e09": [
+            "\u4e09",
+            "xhtml/\u4e09.xhtml"
+        ],
+        "\u56db": [
+            "\u56db",
+            "xhtml/\u56db.xhtml"
+        ],
+        "\u4e94": [
+            "\u4e94",
+            "xhtml/\u4e94.xhtml"
+        ],
+        "\u516d": [
+            "\u516d",
+            "xhtml/\u516d.xhtml"
+        ],
+        "\u4e03": [
+            "\u4e03",
+            "xhtml/\u4e03.xhtml"
+        ],
+        "\u516b": [
+            "\u516b",
+            "xhtml/\u516b.xhtml"
+        ],
+        "\u4e5d": [
+            "\u4e5d",
+            "xhtml/\u4e5d.xhtml"
+        ],
+        "\u5341": [
+            "\u5341",
+            "xhtml/\u5341.xhtml"
+        ],
+        "\u5341\u4e00": [
+            "\u5341\u4e00",
+            "xhtml/\u5341\u4e00.xhtml"
+        ],
+        "\u5341\u4e8c": [
+            "\u5341\u4e8c",
+            "xhtml/\u5341\u4e8c.xhtml"
+        ],
+        "\u5341\u4e09": [
+            "\u5341\u4e09",
+            "xhtml/\u5341\u4e09.xhtml"
+        ],
+        "\u5f8c\u4ed8": [
+            "\u5f8c\u4ed8",
+            "xhtml/\u5f8c\u4ed8.xhtml"
+        ],
+        "\u590f\u76ee\u6f31\u77f3": [
+            "\u590f\u76ee\u6f31\u77f3",
+            "images/\u590f\u76ee\u6f31\u77f3.jpg"
+        ],
+        "\u66f8\u30c7\u30b8": [
+            "\u66f8\u30c7\u30b8",
+            "images/\u66f8\u30c7\u30b8.png"
+        ],
+        "\u4e00_overlay": [
+            "\u4e00_overlay",
+            "xhtml/\u4e00.smil"
+        ],
+        "\u4e8c_overlay": [
+            "\u4e8c_overlay",
+            "xhtml/\u4e8c.smil"
+        ],
+        "\u4e00_audio": [
+            "\u4e00_audio",
+            "audio/fmse004b.mp3"
+        ],
+        "\u4e8c_audio": [
+            "\u4e8c_audio",
+            "audio/ulnr0036.mp3"
+        ],
+        "foobar": [
+            "foobar",
+            "fonts/foobar.ttf"
+        ],
+        "ncxtoc": [
+            "ncxtoc",
+            "xhtml/toc.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "http://www.aozora.gr.jp/cards/000148/card776.html"
+        ],
+        "publisher": null,
+        "languages": [
+            "ja-jp"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "\u8349\u6795"
+        ]
+    }
+}

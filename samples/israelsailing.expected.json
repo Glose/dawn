@@ -1,0 +1,158 @@
+{
+    "uid": "hee31112104",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "copyright",
+        "chapter1",
+        "chapter2",
+        "chapter3",
+        "chapter4",
+        "chapter5",
+        "chapter6",
+        "chapter7",
+        "chapter8",
+        "chapter9",
+        "chapter10"
+    ],
+    "manifest": {
+        "ncx": [
+            "ncx",
+            "toc.ncx"
+        ],
+        "toc": [
+            "toc",
+            "toc.xhtml"
+        ],
+        "css": [
+            "css",
+            "default.css"
+        ],
+        "DejaVuSans": [
+            "DejaVuSans",
+            "Fonts/DejaVuSans.ttf"
+        ],
+        "DejaVuSans-Oblique": [
+            "DejaVuSans-Oblique",
+            "Fonts/DejaVuSans-Oblique.ttf"
+        ],
+        "DejaVuSans-Bold": [
+            "DejaVuSans-Bold",
+            "Fonts/DejaVuSans-Bold.ttf"
+        ],
+        "DejaVuSans-BoldOblique": [
+            "DejaVuSans-BoldOblique",
+            "Fonts/DejaVuSans-BoldOblique.ttf"
+        ],
+        "pdheb": [
+            "pdheb",
+            "Fonts/pdheb.ttf"
+        ],
+        "cover-image": [
+            "cover-image",
+            "israelsailing.jpg"
+        ],
+        "licenselogo": [
+            "licenselogo",
+            "logo_ccbysa.png"
+        ],
+        "cover": [
+            "cover",
+            "cover.xhtml"
+        ],
+        "copyright": [
+            "copyright",
+            "copyright.xhtml"
+        ],
+        "chapter1": [
+            "chapter1",
+            "chapter1.xhtml"
+        ],
+        "pic65": [
+            "pic65",
+            "pic65.jpg"
+        ],
+        "chapter2": [
+            "chapter2",
+            "chapter2.xhtml"
+        ],
+        "c2": [
+            "c2",
+            "c2.jpg"
+        ],
+        "chapter3": [
+            "chapter3",
+            "chapter3.xhtml"
+        ],
+        "chapter4": [
+            "chapter4",
+            "chapter4.xhtml"
+        ],
+        "chapter5": [
+            "chapter5",
+            "chapter5.xhtml"
+        ],
+        "p2": [
+            "p2",
+            "p2.jpg"
+        ],
+        "chapter6": [
+            "chapter6",
+            "chapter6.xhtml"
+        ],
+        "DSC_0645": [
+            "DSC_0645",
+            "DSC_0645.jpg"
+        ],
+        "chapter7": [
+            "chapter7",
+            "chapter7.xhtml"
+        ],
+        "chapter8": [
+            "chapter8",
+            "chapter8.xhtml"
+        ],
+        "chapter9": [
+            "chapter9",
+            "chapter9.xhtml"
+        ],
+        "chapter10": [
+            "chapter10",
+            "chapter10.xhtml"
+        ],
+        "p7": [
+            "p7",
+            "p7.jpg"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "\u05d0\u05d5\u05e8\u05d9 \u05e2\u05d9\u05d3\u05df"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2013-01-25T00:00:00",
+            "modification": null
+        },
+        "description": "\u05db\u05e9\u05e0\u05ea\u05d9\u05d9\u05dd \u05dc\u05d0\u05d7\u05e8 \u05ea\u05d5\u05dd \u05d4\u05e1\u05d9\u05e4\u05d5\u05e8 \"\u05e8\u05d7\u05e9\u05d9 \u05d4\u05dc\u05d1 \u05d4\u05d0\u05d7\u05e8\u05d5\u05e0\u05d9\u05dd\" \u05d0\u05d1\u05d9\u05e9\u05d9 \u05d2\u05e8 \u05d1\u05d9\u05d0\u05db\u05d8\u05d4 \u05e9\u05dc\u05d5 \u05d1\u05de\u05e8\u05d9\u05e0\u05d4 \u05d4\u05e8\u05e6\u05dc\u05d9\u05d4. \u05dc\u05e4\u05ea\u05e2 \u05d4\u05d5\u05d0 \u05de\u05e7\u05d1\u05dc \u05d1\u05d9\u05e7\u05d5\u05e8 \u05d1\u05dc\u05ea\u05d9 \u05e6\u05e4\u05d5\u05d9. \u05d1\u05d9\u05e7\u05d5\u05e8 \u05d6\u05d4 \u05de\u05d5\u05d1\u05d9\u05dc \u05dc\u05d4\u05e8\u05e4\u05ea\u05e7\u05d0\u05d5\u05ea \u05de\u05e2\u05e0\u05d9\u05d9\u05e0\u05d5\u05ea \u05dc\u05d0\u05d5\u05e8\u05da \u05d7\u05d5\u05e4\u05d9 \u05d4\u05d0\u05e8\u05e5.\n\u05db\u05de\u05d5 \u05d1\u05e9\u05d0\u05e8 \u05d4\u05e1\u05e4\u05e8\u05d9\u05dd \u05e2\u05dc \u05d0\u05d1\u05d9\u05e9\u05d9, \u05d0\u05d9\u05df \u05e6\u05d5\u05e8\u05da \u05dc\u05e7\u05e8\u05d5\u05d0 \u05d0\u05ea \u05d4\u05e1\u05e4\u05e8\u05d9\u05dd \u05d4\u05d0\u05d7\u05e8\u05d9\u05dd \u05e2\u05dc \u05de\u05e0\u05ea \u05dc\u05d4\u05d1\u05d9\u05df \u05e1\u05d9\u05e4\u05d5\u05e8 \u05d6\u05d4.\n\u05ea\u05d5\u05d3\u05d4 \u05dc\u05d3\"\u05e8 \u05d0\u05dc\u05d3\u05d3 \u05e8\u05d7\u05d1\u05d9\u05d4 \u05e2\u05dc \u05d4\u05d9\u05e2\u05d5\u05e5 \u05d4\u05e8\u05e4\u05d5\u05d0\u05d9 \u05d5\u05dc\u05d9\u05d4\u05d5\u05d3\u05d9\u05ea \u05d2\u05d5\u05e8\u05d2'\u05d9 \u05e2\u05dc \u05d4\u05d4\u05d2\u05d4\u05d4.",
+        "identifiers": [
+            "hee31112104"
+        ],
+        "publisher": "\u05d4\u05dc\u05d9\u05e7\u05d5\u05df \u05e1\u05e4\u05e8\u05d9\u05dd",
+        "languages": [
+            "he"
+        ],
+        "source": null,
+        "subjects": [
+            "\u05e4\u05e8\u05d5\u05d6\u05d4"
+        ],
+        "titles": [
+            "\u05de\u05e4\u05dc\u05d9\u05d2\u05d9\u05dd \u05d1\u05d9\u05e9\u05e8\u05d0\u05dc"
+        ]
+    }
+}

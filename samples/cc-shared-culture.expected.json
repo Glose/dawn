@@ -1,0 +1,130 @@
+{
+    "uid": "code.google.com.epub-samples.cc-shared-culture",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "toc",
+        "p10",
+        "p20",
+        "p30",
+        "p40",
+        "p50",
+        "p60"
+    ],
+    "manifest": {
+        "font1": [
+            "font1",
+            "fonts/Quicksand_Light.otf"
+        ],
+        "font2": [
+            "font2",
+            "fonts/Quicksand_Bold_Oblique.otf"
+        ],
+        "img1": [
+            "img1",
+            "images/326261902_3fa36f548d.jpg"
+        ],
+        "img2": [
+            "img2",
+            "images/2565514353_2ae2073e14.jpg"
+        ],
+        "video1": [
+            "video1",
+            "video/shared-culture.mp4"
+        ],
+        "video2": [
+            "video2",
+            "video/shared-culture.webm"
+        ],
+        "bgs1": [
+            "bgs1",
+            "audio/asharedculture_soundtrack.mp3"
+        ],
+        "style": [
+            "style",
+            "css/shared-culture.css"
+        ],
+        "cap1": [
+            "cap1",
+            "captions/cc-en.vtt"
+        ],
+        "cap2": [
+            "cap2",
+            "captions/cc-fr.vtt"
+        ],
+        "cap3": [
+            "cap3",
+            "captions/cc-en.xml"
+        ],
+        "cap4": [
+            "cap4",
+            "captions/cc-fr.xml"
+        ],
+        "js": [
+            "js",
+            "script/shared.js"
+        ],
+        "cover": [
+            "cover",
+            "xhtml/cover.xhtml"
+        ],
+        "toc": [
+            "toc",
+            "xhtml/toc.xhtml"
+        ],
+        "p10": [
+            "p10",
+            "xhtml/p10.xhtml"
+        ],
+        "p20": [
+            "p20",
+            "xhtml/p20.xhtml"
+        ],
+        "p30": [
+            "p30",
+            "xhtml/p30.xhtml"
+        ],
+        "p40": [
+            "p40",
+            "xhtml/p40.xhtml"
+        ],
+        "p50": [
+            "p50",
+            "xhtml/p50.xhtml"
+        ],
+        "p60": [
+            "p60",
+            "xhtml/p60.xhtml"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "mgylling"
+        ],
+        "creators": [
+            "Jesse Dylan"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "Multiple video tests (see Navigation Document (toc) for details)",
+        "identifiers": [
+            "code.google.com.epub-samples.cc-shared-culture"
+        ],
+        "publisher": "Creative Commons",
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Creative Commons - A Shared Culture"
+        ]
+    }
+}

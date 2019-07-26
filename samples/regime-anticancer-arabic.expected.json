@@ -1,0 +1,75 @@
+{
+    "uid": "code.google.com.epub-samples.regime-anticancer-arabic",
+    "version": "3.0",
+    "spine": [
+        "coverpage",
+        "titlepage",
+        "content"
+    ],
+    "manifest": {
+        "ncx": [
+            "ncx",
+            "Navigation/toc.ncx"
+        ],
+        "nav": [
+            "nav",
+            "Navigation/nav.xhtml"
+        ],
+        "stylesheet": [
+            "stylesheet",
+            "Style/style.css"
+        ],
+        "coverpage": [
+            "coverpage",
+            "Content/A_cover.xhtml"
+        ],
+        "cover": [
+            "cover",
+            "Image/cover.jpg"
+        ],
+        "titlepage": [
+            "titlepage",
+            "Content/B_titlepage.xhtml"
+        ],
+        "titleimage": [
+            "titleimage",
+            "Image/titlepage.jpg"
+        ],
+        "content": [
+            "content",
+            "Content/C_content.xhtml"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "Vincent Gros"
+        ],
+        "creators": [
+            "Pr David Khayat",
+            "Nathalie Hutter-Lardeau",
+            "Marina Khalil Fayad"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2012-01-01T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.regime-anticancer-arabic"
+        ],
+        "publisher": "Hachette Antoine",
+        "languages": [
+            "ar"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Le Vrai R\u00e9gime anti-cancer"
+        ]
+    }
+}

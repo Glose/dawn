@@ -1,0 +1,205 @@
+{
+    "uid": "urn:isbn:9781449328030",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "spi_ad",
+        "id-id2442754",
+        "htmltoc",
+        "id-id2632344",
+        "id-id2604743",
+        "id-id2629773",
+        "id-id2620395",
+        "id-id2638681",
+        "id-id2611884",
+        "id-id2627310",
+        "id-id2635343",
+        "id-id2622654",
+        "id-id2624850",
+        "id-id2640702",
+        "id-id2641220",
+        "id-id2642385",
+        "id-id2644001",
+        "id-id2644238",
+        "id-id2645594",
+        "id-id2645682",
+        "id-id2645862"
+    ],
+    "manifest": {
+        "htmltoc": [
+            "htmltoc",
+            "bk01-toc.xhtml"
+        ],
+        "epub-css": [
+            "epub-css",
+            "css/epub.css"
+        ],
+        "epub-tss-css": [
+            "epub-tss-css",
+            "css/synth.css"
+        ],
+        "cover": [
+            "cover",
+            "cover.xhtml"
+        ],
+        "cover-image": [
+            "cover-image",
+            "covers/9781449328030_lrg.jpg"
+        ],
+        "id-id2442754": [
+            "id-id2442754",
+            "index.xhtml"
+        ],
+        "id-id2632344": [
+            "id-id2632344",
+            "pr01.xhtml"
+        ],
+        "id-id2604743": [
+            "id-id2604743",
+            "pr01s02.xhtml"
+        ],
+        "id-id2629773": [
+            "id-id2629773",
+            "pr01s03.xhtml"
+        ],
+        "id-id2620395": [
+            "id-id2620395",
+            "pr01s04.xhtml"
+        ],
+        "id-id2638681": [
+            "id-id2638681",
+            "pr01s05.xhtml"
+        ],
+        "id-id2611884": [
+            "id-id2611884",
+            "ch01.xhtml"
+        ],
+        "id-id2627310": [
+            "id-id2627310",
+            "ch01s02.xhtml"
+        ],
+        "id-id2635343": [
+            "id-id2635343",
+            "ch02.xhtml"
+        ],
+        "id-id2622654": [
+            "id-id2622654",
+            "ch02s02.xhtml"
+        ],
+        "id-id2624850": [
+            "id-id2624850",
+            "ch02s03.xhtml"
+        ],
+        "id-id2640702": [
+            "id-id2640702",
+            "ch03.xhtml"
+        ],
+        "id-id2641220": [
+            "id-id2641220",
+            "ch03s02.xhtml"
+        ],
+        "id-id2642385": [
+            "id-id2642385",
+            "ch03s03.xhtml"
+        ],
+        "id-id2644001": [
+            "id-id2644001",
+            "ch03s04.xhtml"
+        ],
+        "id-id2644238": [
+            "id-id2644238",
+            "ch03s05.xhtml"
+        ],
+        "id-id2645594": [
+            "id-id2645594",
+            "ch03s06.xhtml"
+        ],
+        "id-id2645682": [
+            "id-id2645682",
+            "ch04.xhtml"
+        ],
+        "id-id2645862": [
+            "id-id2645862",
+            "co01.xhtml"
+        ],
+        "id2670620": [
+            "id2670620",
+            "images/web/epub3_0401.png"
+        ],
+        "spi_ad": [
+            "spi_ad",
+            "spi-ad.xhtml"
+        ],
+        "spi_global_ad": [
+            "spi_global_ad",
+            "images/spi_global_ad.png"
+        ],
+        "epub.embedded.font.1": [
+            "epub.embedded.font.1",
+            "fonts/UbuntuMono-B.ttf"
+        ],
+        "epub.embedded.font.2": [
+            "epub.embedded.font.2",
+            "fonts/UbuntuMono-BI.ttf"
+        ],
+        "epub.embedded.font.3": [
+            "epub.embedded.font.3",
+            "fonts/UbuntuMono-R.ttf"
+        ],
+        "epub.embedded.font.4": [
+            "epub.embedded.font.4",
+            "fonts/UbuntuMono-RI.ttf"
+        ],
+        "epub.embedded.font.5": [
+            "epub.embedded.font.5",
+            "fonts/FreeSerif.otf"
+        ],
+        "epub.embedded.font.6": [
+            "epub.embedded.font.6",
+            "fonts/FreeSansBold.otf"
+        ],
+        "pls-en": [
+            "pls-en",
+            "lexicon/en.pls"
+        ],
+        "pls-fr": [
+            "pls-fr",
+            "lexicon/fr.pls"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "O\u2019Reilly Production Services",
+            "David Futato",
+            "Robert Romano",
+            "Brian Sawyer",
+            "Dan Fauxsmith",
+            "Karen Montgomery"
+        ],
+        "creators": [
+            "Matt Garrish"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2012-02-20T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:isbn:9781449328030"
+        ],
+        "publisher": "O\u2019Reilly Media, Inc.",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Accessible EPUB 3"
+        ]
+    }
+}

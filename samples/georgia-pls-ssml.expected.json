@@ -1,0 +1,73 @@
+{
+    "uid": "code.google.com.epub-samples.georgia-pls-ssml",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "doc1"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.xhtml"
+        ],
+        "nav": [
+            "nav",
+            "nav.xhtml"
+        ],
+        "doc1": [
+            "doc1",
+            "georgia.xhtml"
+        ],
+        "css": [
+            "css",
+            "css/epub.css"
+        ],
+        "cover-image": [
+            "cover-image",
+            "images/cover.png"
+        ],
+        "img752a": [
+            "img752a",
+            "images/img752a.jpg"
+        ],
+        "pls": [
+            "pls",
+            "lexicon/en.pls"
+        ],
+        "ncx": [
+            "ncx",
+            "toc.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Various"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.georgia-pls-ssml"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Georgia",
+            "Encyclopaedia Britannica, 11th Edition, Volume 11, Slice 7 / Georgia",
+            "Encyclopaedia Britannica",
+            "11th Edition"
+        ]
+    }
+}

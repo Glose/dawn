@@ -1,0 +1,100 @@
+{
+    "uid": "code.google.com.epub-samples.svg-in-spine",
+    "version": "3.0",
+    "spine": [
+        "page001",
+        "page002",
+        "page003",
+        "page004",
+        "page005",
+        "page006"
+    ],
+    "manifest": {
+        "page001": [
+            "page001",
+            "Images/cover.svg"
+        ],
+        "page002": [
+            "page002",
+            "Images/p002.svg"
+        ],
+        "page003": [
+            "page003",
+            "Images/Tsuru_wiki-1b.svg"
+        ],
+        "page004": [
+            "page004",
+            "Images/Tsuru_wiki-2b.svg"
+        ],
+        "page005": [
+            "page005",
+            "Images/p005.svg"
+        ],
+        "page006": [
+            "page006",
+            "Images/p006.svg"
+        ],
+        "img005": [
+            "img005",
+            "Images/crane1.jpg"
+        ],
+        "img006": [
+            "img006",
+            "Images/crane2.jpg"
+        ],
+        "img002": [
+            "img002",
+            "Images/flyer.jpg"
+        ],
+        "nav.xhtml": [
+            "nav.xhtml",
+            "nav.xhtml"
+        ],
+        "nav001": [
+            "nav001",
+            "tocimages/bg.png"
+        ],
+        "nav002": [
+            "nav002",
+            "tocimages/divider.png"
+        ],
+        "nav003": [
+            "nav003",
+            "tocimages/dividerBig.png"
+        ],
+        "style": [
+            "style",
+            "tocstyle.css"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "Takeshi Kanai"
+        ],
+        "creators": [
+            "ePub Sample project"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "SVG files are directly called from spine. A page needs to be skipped to display when it is in landscape.",
+        "identifiers": [
+            "code.google.com.epub-samples.svg-in-spine"
+        ],
+        "publisher": "ePub Sample",
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "SVG in Spine"
+        ]
+    }
+}

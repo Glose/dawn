@@ -1,0 +1,113 @@
+{
+    "uid": "code.google.com.epub-samples.cole-voyage-of-life-tol",
+    "version": "3.0",
+    "spine": [
+        "i",
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+    ],
+    "manifest": {
+        "i": [
+            "i",
+            "xhtml/0-intro.xhtml"
+        ],
+        "p1": [
+            "p1",
+            "xhtml/1-childhood.xhtml"
+        ],
+        "p2": [
+            "p2",
+            "xhtml/2-youth.xhtml"
+        ],
+        "p3": [
+            "p3",
+            "xhtml/3-manhood.xhtml"
+        ],
+        "p4": [
+            "p4",
+            "xhtml/4-oldage.xhtml"
+        ],
+        "j1_320": [
+            "j1_320",
+            "images/1-childhood-320.jpg"
+        ],
+        "j1_1024": [
+            "j1_1024",
+            "images/1-childhood-1024.jpg"
+        ],
+        "j2_320": [
+            "j2_320",
+            "images/2-youth-320.jpg"
+        ],
+        "j2_1024": [
+            "j2_1024",
+            "images/2-youth-1024.jpg"
+        ],
+        "j3_320": [
+            "j3_320",
+            "images/3-manhood-320.jpg"
+        ],
+        "j3_1024": [
+            "j3_1024",
+            "images/3-manhood-1024.jpg"
+        ],
+        "j4_320": [
+            "j4_320",
+            "images/4-oldage-320.jpg"
+        ],
+        "j4_1024": [
+            "j4_1024",
+            "images/4-oldage-1024.jpg"
+        ],
+        "prt": [
+            "prt",
+            "images/portrait.jpg"
+        ],
+        "nav": [
+            "nav",
+            "xhtml/nav.xhtml"
+        ],
+        "css": [
+            "css",
+            "css/cole.css"
+        ],
+        "scrpt": [
+            "scrpt",
+            "script/togglage.js"
+        ],
+        "jq": [
+            "jq",
+            "script/jquery-1.7.1.min.js"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Jesse Dylan"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "Mixed reflowable/fixed with an expermental textual overlay (click or tap on paintings to activate)",
+        "identifiers": [
+            "code.google.com.epub-samples.cole-voyage-of-life-tol"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Thomas Cole - The Voyage of Life"
+        ]
+    }
+}

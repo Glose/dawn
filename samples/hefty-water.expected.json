@@ -1,0 +1,43 @@
+{
+    "uid": "code.google.com.epub-samples.hefty.water",
+    "version": "3.0",
+    "spine": [
+        "doc"
+    ],
+    "manifest": {
+        "doc": [
+            "doc",
+            "heftywater.xhtml"
+        ],
+        "nav": [
+            "nav",
+            "nav.xhtml"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [],
+        "dates": {
+            "creation": null,
+            "publication": "2012-03-29T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.hefty.water"
+        ],
+        "publisher": null,
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Hefty Water"
+        ]
+    }
+}

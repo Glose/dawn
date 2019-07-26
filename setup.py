@@ -3,6 +3,10 @@
 from setuptools import setup
 
 
+requirements = [
+	'lxml >= 4.3.4, < 5',
+]
+
 setup(
 	name='dawn',
 	version='0.1.2',
@@ -12,8 +16,10 @@ setup(
 	url='http://github.com/Glose/dawn',
 	license='MIT',
 	packages=['dawn'],
-	install_requires=[
-		'lxml>=3.4.0',
+	install_requires=requirements,
+	tests_require=requirements + [
+		'pytest',
+		'pytest-cov',
 	],
 	test_suite='test',
 	classifiers=[
@@ -22,9 +28,9 @@ setup(
 		'License :: OSI Approved :: MIT License',
 		'Operating System :: OS Independent',
 		'Programming Language :: Python',
-		'Programming Language :: Python :: 3.3',
-		'Programming Language :: Python :: 3.4',
 		'Programming Language :: Python :: 3.5',
+		'Programming Language :: Python :: 3.6',
+		'Programming Language :: Python :: 3.7',
 		'Topic :: Software Development :: Libraries :: Python Modules',
 	],
 )

@@ -1,0 +1,72 @@
+{
+    "uid": "http://www.gutenberg.org/ebooks/25545",
+    "version": "3.0",
+    "spine": [
+        "cover",
+        "nav",
+        "s04"
+    ],
+    "manifest": {
+        "cover-img": [
+            "cover-img",
+            "images/cover.png"
+        ],
+        "css01": [
+            "css01",
+            "css/epub.css"
+        ],
+        "css02": [
+            "css02",
+            "css/nav.css"
+        ],
+        "cover": [
+            "cover",
+            "cover.xhtml"
+        ],
+        "s04": [
+            "s04",
+            "s04.xhtml"
+        ],
+        "nav": [
+            "nav",
+            "nav.xhtml"
+        ],
+        "ncx": [
+            "ncx",
+            "toc.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Charles Madison Curry",
+            "Erle Elsworth Clippinger"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2008-05-20T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "http://www.gutenberg.org/ebooks/25545"
+        ],
+        "publisher": null,
+        "languages": [
+            "en"
+        ],
+        "source": "http://www.gutenberg.org/files/25545/25545-h/25545-h.htm",
+        "subjects": [
+            "Children -- Books and reading",
+            "Children's literature -- Study and teaching"
+        ],
+        "titles": [
+            "Children's Literature",
+            "A Textbook of Sources for Teachers and Teacher-Training Classes"
+        ]
+    }
+}

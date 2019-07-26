@@ -1,0 +1,145 @@
+{
+    "uid": "code.google.com.epub-samples.figure-gallery",
+    "version": "3.0",
+    "spine": [
+        "t1"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "images/cover.jpg"
+        ],
+        "nav": [
+            "nav",
+            "content/nav.xhtml"
+        ],
+        "epub-css": [
+            "epub-css",
+            "css/epub.css"
+        ],
+        "t1": [
+            "t1",
+            "content/text.xhtml"
+        ],
+        "ncx": [
+            "ncx",
+            "nav.ncx"
+        ],
+        "moon-phases-xml": [
+            "moon-phases-xml",
+            "content/moon-phases.xml"
+        ],
+        "fig1": [
+            "fig1",
+            "images/moon-images/1.new-moon.jpg"
+        ],
+        "fig2": [
+            "fig2",
+            "images/moon-images/2.waxing-crescent.jpg"
+        ],
+        "fig3": [
+            "fig3",
+            "images/moon-images/3.first-quarter.jpg"
+        ],
+        "fig4": [
+            "fig4",
+            "images/moon-images/4.waxing-gibbous.jpg"
+        ],
+        "fig5": [
+            "fig5",
+            "images/moon-images/5.full-moon.jpg"
+        ],
+        "fig6": [
+            "fig6",
+            "images/moon-images/6.waning-gibbous.jpg"
+        ],
+        "fig7": [
+            "fig7",
+            "images/moon-images/7.third-quarter.jpg"
+        ],
+        "fig8": [
+            "fig8",
+            "images/moon-images/8.waning-crescent.jpg"
+        ],
+        "fig1thumb": [
+            "fig1thumb",
+            "images/moon-images/1.new-moon-thumb.jpg"
+        ],
+        "fig2thumb": [
+            "fig2thumb",
+            "images/moon-images/2.waxing-crescent-thumb.jpg"
+        ],
+        "fig3thumb": [
+            "fig3thumb",
+            "images/moon-images/3.first-quarter-thumb.jpg"
+        ],
+        "fig4thumb": [
+            "fig4thumb",
+            "images/moon-images/4.waxing-gibbous-thumb.jpg"
+        ],
+        "fig5thumb": [
+            "fig5thumb",
+            "images/moon-images/5.full-moon-thumb.jpg"
+        ],
+        "fig6thumb": [
+            "fig6thumb",
+            "images/moon-images/6.waning-gibbous-thumb.jpg"
+        ],
+        "fig7thumb": [
+            "fig7thumb",
+            "images/moon-images/7.third-quarter-thumb.jpg"
+        ],
+        "fig8thumb": [
+            "fig8thumb",
+            "images/moon-images/8.waning-crescent-thumb.jpg"
+        ],
+        "figure-gallery-impl": [
+            "figure-gallery-impl",
+            "content/figure-gallery/figure-gallery-impl.xhtml"
+        ],
+        "figure-gallery-js": [
+            "figure-gallery-js",
+            "content/figure-gallery/figure-gallery.js"
+        ],
+        "figure-gallery-css": [
+            "figure-gallery-css",
+            "content/figure-gallery/figure-gallery.css"
+        ],
+        "figure-gallery-jquery": [
+            "figure-gallery-jquery",
+            "content/figure-gallery/jquery-1.7.1.min.js"
+        ],
+        "figure-gallery-reset-css": [
+            "figure-gallery-reset-css",
+            "content/figure-gallery/reset.css"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "E.L. Starr"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2012-01-17T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.figure-gallery"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "EPUB Figure Gallery"
+        ]
+    }
+}

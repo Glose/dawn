@@ -1,0 +1,77 @@
+{
+    "uid": "code.google.com.epub-samples.wasteland-otf-obfuscated",
+    "version": "3.0",
+    "spine": [
+        "t1"
+    ],
+    "manifest": {
+        "t1": [
+            "t1",
+            "wasteland-content.xhtml"
+        ],
+        "nav": [
+            "nav",
+            "wasteland-nav.xhtml"
+        ],
+        "cover": [
+            "cover",
+            "wasteland-cover.jpg"
+        ],
+        "css": [
+            "css",
+            "wasteland.css"
+        ],
+        "css-fonts": [
+            "css-fonts",
+            "fonts.css"
+        ],
+        "css-night": [
+            "css-night",
+            "wasteland-night.css"
+        ],
+        "font.OldStandard.regular": [
+            "font.OldStandard.regular",
+            "OldStandard-Regular.obf.otf"
+        ],
+        "font.OldStandard.italic": [
+            "font.OldStandard.italic",
+            "OldStandard-Italic.obf.otf"
+        ],
+        "font.OldStandard.bold": [
+            "font.OldStandard.bold",
+            "OldStandard-Bold.obf.otf"
+        ],
+        "ncx": [
+            "ncx",
+            "wasteland.ncx"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "T.S. Eliot"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2011-09-01T00:00:00",
+            "modification": null
+        },
+        "description": "OTF font obfuscated using algorithm defined in OCF 3.0, fallback to sans-serif system font",
+        "identifiers": [
+            "code.google.com.epub-samples.wasteland-otf-obfuscated"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "The Waste Land"
+        ]
+    }
+}

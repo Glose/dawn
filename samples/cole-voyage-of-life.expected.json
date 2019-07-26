@@ -1,0 +1,130 @@
+{
+    "uid": "code.google.com.epub-samples.cole-voyage-of-life",
+    "version": "3.0",
+    "spine": [
+        "i",
+        "s1a",
+        "s1b",
+        "s2a",
+        "s2b",
+        "s3a",
+        "s3b",
+        "s4a",
+        "s4b",
+        "s5"
+    ],
+    "manifest": {
+        "i": [
+            "i",
+            "xhtml/0-intro.xhtml"
+        ],
+        "s1a": [
+            "s1a",
+            "xhtml/1a-childhood-text.xhtml"
+        ],
+        "s1b": [
+            "s1b",
+            "xhtml/1b-childhood-painting.xhtml"
+        ],
+        "s2a": [
+            "s2a",
+            "xhtml/2a-youth-text.xhtml"
+        ],
+        "s2b": [
+            "s2b",
+            "xhtml/2b-youth-painting.xhtml"
+        ],
+        "s3a": [
+            "s3a",
+            "xhtml/3a-manhood-text.xhtml"
+        ],
+        "s3b": [
+            "s3b",
+            "xhtml/3b-manhood-painting.xhtml"
+        ],
+        "s4a": [
+            "s4a",
+            "xhtml/4a-oldage-text.xhtml"
+        ],
+        "s4b": [
+            "s4b",
+            "xhtml/4b-oldage-painting.xhtml"
+        ],
+        "s5": [
+            "s5",
+            "xhtml/5-significance.xhtml"
+        ],
+        "j1_320": [
+            "j1_320",
+            "images/1-childhood-320.jpg"
+        ],
+        "j1_1024": [
+            "j1_1024",
+            "images/1-childhood-1024.jpg"
+        ],
+        "j2_320": [
+            "j2_320",
+            "images/2-youth-320.jpg"
+        ],
+        "j2_1024": [
+            "j2_1024",
+            "images/2-youth-1024.jpg"
+        ],
+        "j3_320": [
+            "j3_320",
+            "images/3-manhood-320.jpg"
+        ],
+        "j3_1024": [
+            "j3_1024",
+            "images/3-manhood-1024.jpg"
+        ],
+        "j4_320": [
+            "j4_320",
+            "images/4-oldage-320.jpg"
+        ],
+        "j4_1024": [
+            "j4_1024",
+            "images/4-oldage-1024.jpg"
+        ],
+        "prt": [
+            "prt",
+            "images/portrait.jpg"
+        ],
+        "nav": [
+            "nav",
+            "xhtml/nav.xhtml"
+        ],
+        "css": [
+            "css",
+            "css/cole.css"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Jesse Dylan"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.cole-voyage-of-life"
+        ],
+        "publisher": null,
+        "languages": [
+            "en-US"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Thomas Cole - The Voyage of Life"
+        ]
+    }
+}

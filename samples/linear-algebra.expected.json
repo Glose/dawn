@@ -1,0 +1,514 @@
+{
+    "uid": "code.google.com.epub-samples.linear-algebra",
+    "version": "3.0",
+    "spine": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8",
+        "c9",
+        "c10",
+        "c11",
+        "c12",
+        "c13",
+        "c14",
+        "c15",
+        "c16",
+        "c17",
+        "c18",
+        "c19",
+        "c20",
+        "c21",
+        "c22",
+        "c23",
+        "c24",
+        "c25",
+        "c26",
+        "c27",
+        "c28",
+        "c29",
+        "c30",
+        "c31",
+        "c32",
+        "c33",
+        "c34",
+        "c35",
+        "c36",
+        "c37",
+        "c38",
+        "c39",
+        "c40",
+        "c41",
+        "c42",
+        "c43",
+        "c44",
+        "c45",
+        "c46",
+        "c47",
+        "c48",
+        "c49",
+        "c50",
+        "c51",
+        "c52",
+        "c53",
+        "c54",
+        "c55",
+        "c56",
+        "c57",
+        "c58",
+        "c59",
+        "c60",
+        "c61",
+        "c62",
+        "c63",
+        "c64",
+        "c65",
+        "c66",
+        "c67",
+        "c68",
+        "c69",
+        "c70",
+        "c71",
+        "c72",
+        "c73",
+        "c74",
+        "c75",
+        "c76",
+        "c77",
+        "c78",
+        "c79",
+        "c80",
+        "c81",
+        "c82",
+        "c83",
+        "c84",
+        "c85",
+        "c86",
+        "c87",
+        "c88",
+        "c89",
+        "c90",
+        "c91",
+        "c92",
+        "c93",
+        "c94"
+    ],
+    "manifest": {
+        "css0": [
+            "css0",
+            "css/epub.css"
+        ],
+        "css7": [
+            "css7",
+            "css/commonltr.css"
+        ],
+        "c1": [
+            "c1",
+            "xhtml/titlepage.xhtml"
+        ],
+        "c2": [
+            "c2",
+            "xhtml/copyright.xhtml"
+        ],
+        "c3": [
+            "c3",
+            "xhtml/fcla-xml-2.30li2.xhtml"
+        ],
+        "c4": [
+            "c4",
+            "xhtml/fcla-xml-2.30li3.xhtml"
+        ],
+        "c5": [
+            "c5",
+            "xhtml/fcla-xml-2.30li4.xhtml"
+        ],
+        "c6": [
+            "c6",
+            "xhtml/nav.xhtml"
+        ],
+        "c7": [
+            "c7",
+            "xhtml/fcla-xml-2.30li5.xhtml"
+        ],
+        "c8": [
+            "c8",
+            "xhtml/fcla-xml-2.30li8.xhtml"
+        ],
+        "c9": [
+            "c9",
+            "xhtml/fcla-xml-2.30li9.xhtml"
+        ],
+        "c10": [
+            "c10",
+            "xhtml/fcla-xml-2.30li10.xhtml"
+        ],
+        "c11": [
+            "c11",
+            "xhtml/fcla-xml-2.30li11.xhtml"
+        ],
+        "c12": [
+            "c12",
+            "xhtml/fcla-xml-2.30li12.xhtml"
+        ],
+        "c13": [
+            "c13",
+            "xhtml/fcla-xml-2.30li13.xhtml"
+        ],
+        "c14": [
+            "c14",
+            "xhtml/fcla-xml-2.30li14.xhtml"
+        ],
+        "c15": [
+            "c15",
+            "xhtml/fcla-xml-2.30li15.xhtml"
+        ],
+        "c16": [
+            "c16",
+            "xhtml/fcla-xml-2.30li16.xhtml"
+        ],
+        "c17": [
+            "c17",
+            "xhtml/fcla-xml-2.30li17.xhtml"
+        ],
+        "c18": [
+            "c18",
+            "xhtml/fcla-xml-2.30li18.xhtml"
+        ],
+        "c19": [
+            "c19",
+            "xhtml/fcla-xml-2.30li20.xhtml"
+        ],
+        "c20": [
+            "c20",
+            "xhtml/fcla-xml-2.30li21.xhtml"
+        ],
+        "c21": [
+            "c21",
+            "xhtml/fcla-xml-2.30li22.xhtml"
+        ],
+        "c22": [
+            "c22",
+            "xhtml/fcla-xml-2.30li25.xhtml"
+        ],
+        "c23": [
+            "c23",
+            "xhtml/fcla-xml-2.30li28.xhtml"
+        ],
+        "c24": [
+            "c24",
+            "xhtml/fcla-xml-2.30li29.xhtml"
+        ],
+        "c25": [
+            "c25",
+            "xhtml/fcla-xml-2.30li31.xhtml"
+        ],
+        "c26": [
+            "c26",
+            "xhtml/fcla-xml-2.30li32.xhtml"
+        ],
+        "c27": [
+            "c27",
+            "xhtml/fcla-xml-2.30li33.xhtml"
+        ],
+        "c28": [
+            "c28",
+            "xhtml/fcla-xml-2.30li34.xhtml"
+        ],
+        "c29": [
+            "c29",
+            "xhtml/fcla-xml-2.30li36.xhtml"
+        ],
+        "c30": [
+            "c30",
+            "xhtml/fcla-xml-2.30li43.xhtml"
+        ],
+        "c31": [
+            "c31",
+            "xhtml/fcla-xml-2.30li45.xhtml"
+        ],
+        "c32": [
+            "c32",
+            "xhtml/fcla-xml-2.30li46.xhtml"
+        ],
+        "c33": [
+            "c33",
+            "xhtml/fcla-xml-2.30li48.xhtml"
+        ],
+        "c34": [
+            "c34",
+            "xhtml/fcla-xml-2.30li50.xhtml"
+        ],
+        "c35": [
+            "c35",
+            "xhtml/fcla-xml-2.30li52.xhtml"
+        ],
+        "c36": [
+            "c36",
+            "xhtml/fcla-xml-2.30li53.xhtml"
+        ],
+        "c37": [
+            "c37",
+            "xhtml/fcla-xml-2.30li54.xhtml"
+        ],
+        "c38": [
+            "c38",
+            "xhtml/fcla-xml-2.30li55.xhtml"
+        ],
+        "c39": [
+            "c39",
+            "xhtml/fcla-xml-2.30li58.xhtml"
+        ],
+        "c40": [
+            "c40",
+            "xhtml/fcla-xml-2.30li59.xhtml"
+        ],
+        "c41": [
+            "c41",
+            "xhtml/fcla-xml-2.30li60.xhtml"
+        ],
+        "c42": [
+            "c42",
+            "xhtml/fcla-xml-2.30li61.xhtml"
+        ],
+        "c43": [
+            "c43",
+            "xhtml/fcla-xml-2.30li62.xhtml"
+        ],
+        "c44": [
+            "c44",
+            "xhtml/fcla-xml-2.30li63.xhtml"
+        ],
+        "c45": [
+            "c45",
+            "xhtml/fcla-xml-2.30li64.xhtml"
+        ],
+        "c46": [
+            "c46",
+            "xhtml/fcla-xml-2.30li65.xhtml"
+        ],
+        "c47": [
+            "c47",
+            "xhtml/fcla-xml-2.30li66.xhtml"
+        ],
+        "c48": [
+            "c48",
+            "xhtml/fcla-xml-2.30li67.xhtml"
+        ],
+        "c49": [
+            "c49",
+            "xhtml/fcla-xml-2.30li68.xhtml"
+        ],
+        "c50": [
+            "c50",
+            "xhtml/fcla-xml-2.30li69.xhtml"
+        ],
+        "c51": [
+            "c51",
+            "xhtml/fcla-xml-2.30li70.xhtml"
+        ],
+        "c52": [
+            "c52",
+            "xhtml/fcla-xml-2.30li71.xhtml"
+        ],
+        "c53": [
+            "c53",
+            "xhtml/fcla-xml-2.30li72.xhtml"
+        ],
+        "c54": [
+            "c54",
+            "xhtml/fcla-xml-2.30li73.xhtml"
+        ],
+        "c55": [
+            "c55",
+            "xhtml/fcla-xml-2.30li74.xhtml"
+        ],
+        "c56": [
+            "c56",
+            "xhtml/fcla-xml-2.30li75.xhtml"
+        ],
+        "c57": [
+            "c57",
+            "xhtml/fcla-xml-2.30li76.xhtml"
+        ],
+        "c58": [
+            "c58",
+            "xhtml/fcla-xml-2.30li77.xhtml"
+        ],
+        "c59": [
+            "c59",
+            "xhtml/fcla-xml-2.30li78.xhtml"
+        ],
+        "c60": [
+            "c60",
+            "xhtml/fcla-xml-2.30li79.xhtml"
+        ],
+        "c61": [
+            "c61",
+            "xhtml/fcla-xml-2.30li80.xhtml"
+        ],
+        "c62": [
+            "c62",
+            "xhtml/fcla-xml-2.30li81.xhtml"
+        ],
+        "c63": [
+            "c63",
+            "xhtml/fcla-xml-2.30li82.xhtml"
+        ],
+        "c64": [
+            "c64",
+            "xhtml/fcla-xml-2.30li83.xhtml"
+        ],
+        "c65": [
+            "c65",
+            "xhtml/fcla-xml-2.30li84.xhtml"
+        ],
+        "c66": [
+            "c66",
+            "xhtml/fcla-xml-2.30li85.xhtml"
+        ],
+        "c67": [
+            "c67",
+            "xhtml/fcla-xml-2.30li86.xhtml"
+        ],
+        "c68": [
+            "c68",
+            "xhtml/fcla-xml-2.30li87.xhtml"
+        ],
+        "c69": [
+            "c69",
+            "xhtml/fcla-xml-2.30li88.xhtml"
+        ],
+        "c70": [
+            "c70",
+            "xhtml/fcla-xml-2.30li89.xhtml"
+        ],
+        "c71": [
+            "c71",
+            "xhtml/fcla-xml-2.30li90.xhtml"
+        ],
+        "c72": [
+            "c72",
+            "xhtml/fcla-xml-2.30li91.xhtml"
+        ],
+        "c73": [
+            "c73",
+            "xhtml/fcla-xml-2.30li92.xhtml"
+        ],
+        "c74": [
+            "c74",
+            "xhtml/fcla-xml-2.30li93.xhtml"
+        ],
+        "c75": [
+            "c75",
+            "xhtml/fcla-xml-2.30li94.xhtml"
+        ],
+        "c76": [
+            "c76",
+            "xhtml/fcla-xml-2.30li95.xhtml"
+        ],
+        "c77": [
+            "c77",
+            "xhtml/fcla-xml-2.30li96.xhtml"
+        ],
+        "c78": [
+            "c78",
+            "xhtml/fcla-xml-2.30li97.xhtml"
+        ],
+        "c79": [
+            "c79",
+            "xhtml/fcla-xml-2.30li98.xhtml"
+        ],
+        "c80": [
+            "c80",
+            "xhtml/fcla-xml-2.30li100.xhtml"
+        ],
+        "c81": [
+            "c81",
+            "xhtml/fcla-xml-2.30li101.xhtml"
+        ],
+        "c82": [
+            "c82",
+            "xhtml/fcla-xml-2.30li102.xhtml"
+        ],
+        "c83": [
+            "c83",
+            "xhtml/fcla-xml-2.30li103.xhtml"
+        ],
+        "c84": [
+            "c84",
+            "xhtml/fcla-xml-2.30li104.xhtml"
+        ],
+        "c85": [
+            "c85",
+            "xhtml/fcla-xml-2.30li105.xhtml"
+        ],
+        "c86": [
+            "c86",
+            "xhtml/fcla-xml-2.30li106.xhtml"
+        ],
+        "c87": [
+            "c87",
+            "xhtml/fcla-xml-2.30li107.xhtml"
+        ],
+        "c88": [
+            "c88",
+            "xhtml/fcla-xml-2.30li108.xhtml"
+        ],
+        "c89": [
+            "c89",
+            "xhtml/fcla-xml-2.30li109.xhtml"
+        ],
+        "c90": [
+            "c90",
+            "xhtml/fcla-xml-2.30li110.xhtml"
+        ],
+        "c91": [
+            "c91",
+            "xhtml/fcla-xml-2.30li111.xhtml"
+        ],
+        "c92": [
+            "c92",
+            "xhtml/fcla-xml-2.30li112.xhtml"
+        ],
+        "c93": [
+            "c93",
+            "xhtml/fcla-xml-2.30li6.xhtml"
+        ],
+        "c94": [
+            "c94",
+            "xhtml/fcla-xml-2.30li7.xhtml"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Robert A. Beezer"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.linear-algebra"
+        ],
+        "publisher": null,
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "A First Course in Linear Algebra"
+        ]
+    }
+}

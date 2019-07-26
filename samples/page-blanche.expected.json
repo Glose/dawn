@@ -1,0 +1,137 @@
+{
+    "uid": "code.google.com.epub-samples.page-blanche",
+    "version": "3.0",
+    "spine": [
+        "id-cover-xhtml",
+        "white-xhtml",
+        "id-PageBlanche_Page_001-xhtml",
+        "id-PageBlanche_Page_002-xhtml",
+        "id-PageBlanche_Page_003-xhtml",
+        "id-PageBlanche_Page_004-xhtml",
+        "id-PageBlanche_Page_005-xhtml",
+        "id-PageBlanche_Page_006-xhtml",
+        "id-PageBlanche_Page_007-xhtml",
+        "id-PageBlanche_Page_008-xhtml"
+    ],
+    "manifest": {
+        "css": [
+            "css",
+            "Style/style.css"
+        ],
+        "nav": [
+            "nav",
+            "Navigation/nav.xhtml"
+        ],
+        "ncx": [
+            "ncx",
+            "Navigation/toc.ncx"
+        ],
+        "id-cover-xhtml": [
+            "id-cover-xhtml",
+            "Content/cover.xhtml"
+        ],
+        "white-xhtml": [
+            "white-xhtml",
+            "Content/PageBlanche_Page_000.xhtml"
+        ],
+        "id-PageBlanche_Page_001-xhtml": [
+            "id-PageBlanche_Page_001-xhtml",
+            "Content/PageBlanche_Page_001.xhtml"
+        ],
+        "id-PageBlanche_Page_002-xhtml": [
+            "id-PageBlanche_Page_002-xhtml",
+            "Content/PageBlanche_Page_002.xhtml"
+        ],
+        "id-PageBlanche_Page_003-xhtml": [
+            "id-PageBlanche_Page_003-xhtml",
+            "Content/PageBlanche_Page_003.xhtml"
+        ],
+        "id-PageBlanche_Page_004-xhtml": [
+            "id-PageBlanche_Page_004-xhtml",
+            "Content/PageBlanche_Page_004.xhtml"
+        ],
+        "id-PageBlanche_Page_005-xhtml": [
+            "id-PageBlanche_Page_005-xhtml",
+            "Content/PageBlanche_Page_005.xhtml"
+        ],
+        "id-PageBlanche_Page_006-xhtml": [
+            "id-PageBlanche_Page_006-xhtml",
+            "Content/PageBlanche_Page_006.xhtml"
+        ],
+        "id-PageBlanche_Page_007-xhtml": [
+            "id-PageBlanche_Page_007-xhtml",
+            "Content/PageBlanche_Page_007.xhtml"
+        ],
+        "id-PageBlanche_Page_008-xhtml": [
+            "id-PageBlanche_Page_008-xhtml",
+            "Content/PageBlanche_Page_008.xhtml"
+        ],
+        "id-cover-jpg": [
+            "id-cover-jpg",
+            "Image/cover.jpg"
+        ],
+        "id-PageBlanche_Page_001-jpg": [
+            "id-PageBlanche_Page_001-jpg",
+            "Image/PageBlanche_Page_001.jpg"
+        ],
+        "id-PageBlanche_Page_002-jpg": [
+            "id-PageBlanche_Page_002-jpg",
+            "Image/PageBlanche_Page_002.jpg"
+        ],
+        "id-PageBlanche_Page_003-jpg": [
+            "id-PageBlanche_Page_003-jpg",
+            "Image/PageBlanche_Page_003.jpg"
+        ],
+        "id-PageBlanche_Page_004-jpg": [
+            "id-PageBlanche_Page_004-jpg",
+            "Image/PageBlanche_Page_004.jpg"
+        ],
+        "id-PageBlanche_Page_005-jpg": [
+            "id-PageBlanche_Page_005-jpg",
+            "Image/PageBlanche_Page_005.jpg"
+        ],
+        "id-PageBlanche_Page_006-jpg": [
+            "id-PageBlanche_Page_006-jpg",
+            "Image/PageBlanche_Page_006.jpg"
+        ],
+        "id-PageBlanche_Page_007-jpg": [
+            "id-PageBlanche_Page_007-jpg",
+            "Image/PageBlanche_Page_007.jpg"
+        ],
+        "id-PageBlanche_Page_008-jpg": [
+            "id-PageBlanche_Page_008-jpg",
+            "Image/PageBlanche_Page_008.jpg"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "Vincent Gros"
+        ],
+        "creators": [
+            "Boulet",
+            "Bagieu P\u00e9n\u00e9lope"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "2012-01-18T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "code.google.com.epub-samples.page-blanche"
+        ],
+        "publisher": "\u00e9ditions Delcourt",
+        "languages": [
+            "fr"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Page Blanche"
+        ]
+    }
+}

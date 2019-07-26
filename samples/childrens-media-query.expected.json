@@ -1,0 +1,71 @@
+{
+    "uid": "urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870",
+    "version": "3.0",
+    "spine": [
+        "page1"
+    ],
+    "manifest": {
+        "css1": [
+            "css1",
+            "childrens-book-style.css"
+        ],
+        "css2": [
+            "css2",
+            "small-screen.css"
+        ],
+        "image1": [
+            "image1",
+            "childrens-book-flowers.jpg"
+        ],
+        "image2": [
+            "image2",
+            "childrens-book-swans.jpg"
+        ],
+        "page1": [
+            "page1",
+            "childrens-book-page.xhtml"
+        ],
+        "ncx": [
+            "ncx",
+            "toc.ncx"
+        ],
+        "toc": [
+            "toc",
+            "toc.xhtml"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [
+            "Liza Daly",
+            "University of California Libraries"
+        ],
+        "creators": [
+            "Thomas Crane",
+            "Ellen Elizabeth Houghton"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": "1882-01-01T00:00:00",
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870"
+        ],
+        "publisher": "London ; Belfast ; New York : Marcus Ward & Co.",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [
+            "France -- Description and travel Juvenile literature"
+        ],
+        "titles": [
+            "Abroad"
+        ]
+    }
+}
