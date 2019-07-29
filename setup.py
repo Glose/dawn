@@ -13,7 +13,7 @@ setup(
 	description='Open and modify ePubs',
 	author='Arthur Darcet',
 	author_email='hello+dawn@glose.com',
-	url='http://github.com/Glose/dawn',
+	url='http://git.glose.com/opensource/dawn',
 	license='MIT',
 	packages=['dawn'],
 	install_requires=requirements,

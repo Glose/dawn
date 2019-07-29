@@ -38,19 +38,6 @@ def dummy():
 	with dawn.open(_dummy) as e:
 		yield e
 
-def _ser_toc_item(it):
-	res = {'href': it.href, 'title': it.title}
-	assert it.children.title is None
-	if it.children:
-		res['children'] = [_ser_toc_item(c) for c in it.children]
-	return res
-
-def _json_default(o):
-	if isinstance(o, datetime.datetime):
-		return o.isoformat()
-	if isinstance(o, dawn.AttributedString):
-		return repr(o)
-
 @pytest.mark.parametrize('expected', samples)
 def test_read(expected):
 	epub = expected.replace('.expected.json', '.epub')
@@ -58,6 +45,13 @@ def test_read(expected):
 
 	if not os.path.exists(epub):
 		pytest.skip('Missing fixture')
+
+	def _ser_toc_item(it):
+		res = {'href': it.href, 'title': it.title}
+		assert it.children.title is None
+		if it.children:
+			res['children'] = [_ser_toc_item(c) for c in it.children]
+		return res
 
 	with dawn.open(epub) as epub:
 		res = {

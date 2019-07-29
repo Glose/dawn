@@ -1,16 +1,14 @@
 import abc
 import collections
 import datetime
+import lxml.etree
+import lxml.builder
 import mimetypes
 import posixpath
 import re
 import sys
 import uuid
 import zipfile
-
-from lxml import etree
-from lxml import builder
-
 
 
 def open(infile, mode='r', version=None):
@@ -34,10 +32,10 @@ class _open_read:
 		self._zf.__enter__()
 
 		with self._zf.open('META-INF/container.xml') as f:
-			tree = etree.parse(f)
+			tree = lxml.etree.parse(f)
 		opfpath = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
 		with self._zf.open(opfpath) as f:
-			opftree = etree.parse(f).getroot()
+			opftree = lxml.etree.parse(f).getroot()
 
 		if self.version is None:
 			self.version = opftree.get('version')
@@ -106,7 +104,7 @@ class _Epub(abc.ABC):
 		)
 		self._writestr(
 			'META-INF/container.xml',
-			etree.tostring(container, pretty_print=True),
+			lxml.etree.tostring(container, pretty_print=True),
 			compress_type=zipfile.ZIP_STORED,
 		)
 
@@ -121,7 +119,7 @@ class _Epub(abc.ABC):
 			self._xml_manifest(),
 			self._xml_spine(),
 		)
-		self._writestr(self._opfpath, etree.tostring(pkg, pretty_print=True))
+		self._writestr(self._opfpath, lxml.etree.tostring(pkg, pretty_print=True))
 
 	@abc.abstractmethod
 	def _read_toc(self): # pragma: no cover
@@ -290,7 +288,7 @@ class Epub20(_Epub):
 
 		self._toc_item = self.manifest.pop(toc_id)
 		with self.open(self._toc_item) as f:
-			ncx = etree.parse(f).getroot()
+			ncx = lxml.etree.parse(f).getroot()
 
 		for a in parse(ncx):
 			self.toc.append(*a)
@@ -387,7 +385,7 @@ class Epub20(_Epub):
 			E['ncx'].navMap(*navmap(self.toc)),
 		)
 
-		self.writestr(self._toc_item, etree.tostring(toc, pretty_print=True))
+		self.writestr(self._toc_item, lxml.etree.tostring(toc, pretty_print=True))
 
 
 class Epub30(_Epub):
@@ -405,7 +403,7 @@ class Epub30(_Epub):
 
 		self._toc_item = self.manifest.pop(toc_id)
 		with self.open(self.toc.item) as f:
-			toc = etree.parse(f).getroot()
+			toc = lxml.etree.parse(f).getroot()
 
 		for a in parse(toc.find('.//html:nav[@ops:type="toc"]', NS)):
 			self.toc.append(*a)
@@ -520,7 +518,7 @@ class Epub30(_Epub):
 			E['html'].ol(*ol(self.toc)),
 		)
 
-		self._writestr('toc.html', etree.tostring(toc, pretty_print=True, method='html'))
+		self._writestr('toc.html', lxml.etree.tostring(toc, pretty_print=True, method='html'))
 
 
 NS = {
@@ -534,7 +532,7 @@ NS = {
 
 RNS = {v: k for k, v in NS.items()}
 
-E = {k: builder.ElementMaker(namespace=v, nsmap=NS) for k, v in NS.items()}
+E = {k: lxml.builder.ElementMaker(namespace=v, nsmap=NS) for k, v in NS.items()}
 
 def getxmlattr(tag, attr):
 	if ':' in attr:
@@ -544,7 +542,7 @@ def getxmlattr(tag, attr):
 		try:
 			return tag.attrib[attr]
 		except KeyError:
-			qname = etree.QName(tag.tag)
+			qname = lxml.etree.QName(tag.tag)
 			return tag.get('{' + RNS[qname.namespace] + '}' + attr)
 
 def ns(name):

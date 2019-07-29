@@ -1,6 +1,7 @@
 __pycache__/
-/dist/
 *.py[cod]
+/dist/
+.eggs/
 *.egg-info/
 *.egg
 /htmlcov/
