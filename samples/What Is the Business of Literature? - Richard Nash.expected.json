@@ -1,0 +1,51 @@
+{
+    "uid": "urn:uuid:d1fa5c8f-1cdc-4126-960c-0642407ab2da",
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "0.html"
+        ]
+    },
+    "toc": [
+        "What Is the Business of Literature?",
+        [
+            {
+                "href": "0.html",
+                "title": "What Is the Business of Literature?"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Richard Nash"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "As technology disrupts the business model of traditional publishers, the industry must imagine new ways of capturing the value of a book.",
+        "identifiers": [
+            "9782371180017",
+            "urn:uuid:d1fa5c8f-1cdc-4126-960c-0642407ab2da"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "What Is the Business of Literature?"
+        ]
+    }
+}

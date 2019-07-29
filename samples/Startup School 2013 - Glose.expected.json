@@ -1,0 +1,60 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0",
+        "id1"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "Jack Dorsey.html"
+        ],
+        "id1": [
+            "id1",
+            "Mark Zuckerberg.html"
+        ]
+    },
+    "toc": [
+        "Startup School 2013",
+        [
+            {
+                "href": "Jack Dorsey.html",
+                "title": "Jack Dorsey"
+            },
+            {
+                "href": "Mark Zuckerberg.html",
+                "title": "Mark Zuckerberg"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657738",
+            "urn:uuid:a23de2ac-0bf9-43ed-bb4e-bdfdf27b56b1"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Startup School 2013"
+        ]
+    }
+}

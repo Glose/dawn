@@ -1,0 +1,45 @@
+{
+    "uid": "urn:uuid:6a9c3db7-e2ce-4a6e-a27d-80893cd72eb0",
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "id0": [
+            "id0",
+            "data.html"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Daniel Dennett"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:6a9c3db7-e2ce-4a6e-a27d-80893cd72eb0"
+        ],
+        "publisher": null,
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Brainstorm, chapter 15, \u201cOn Giving Libertarians What They Say They Want\u201d"
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "uid": "urn:uuid:73007ee9-5bdf-4b7b-a5a5-c28495c37ec5",
+    "version": "2.0",
+    "spine": [
+        "id0",
+        "id1"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "0.html"
+        ],
+        "id1": [
+            "id1",
+            "1.html"
+        ]
+    },
+    "toc": [
+        "Best of Le Web",
+        [
+            {
+                "href": "0.html",
+                "title": "Fireside Chat with Jack Dorsey"
+            },
+            {
+                "href": "1.html",
+                "title": "Interview with Sean Parker and Shervin Pishevar by Alexia Tsotsis"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782371180000",
+            "urn:uuid:73007ee9-5bdf-4b7b-a5a5-c28495c37ec5"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Best of Le Web"
+        ]
+    }
+}

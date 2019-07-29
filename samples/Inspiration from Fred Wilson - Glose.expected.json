@@ -1,0 +1,51 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "10 Ways to Be Your Own Boss, Speech at the 99% Conference, April 15, 2010.html"
+        ]
+    },
+    "toc": [
+        "Inspiration from Fred Wilson",
+        [
+            {
+                "href": "10 Ways to Be Your Own Boss, Speech at the 99% Conference, April 15, 2010.html",
+                "title": "10 Ways to Be Your Own Boss, Speech at the 99% Conference, April 15, 2010"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657752",
+            "urn:uuid:70faf315-1271-491d-884f-301b026796f3"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Inspiration from Fred Wilson"
+        ]
+    }
+}

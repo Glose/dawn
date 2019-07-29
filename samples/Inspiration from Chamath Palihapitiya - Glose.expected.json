@@ -1,0 +1,51 @@
+{
+    "uid": "urn:uuid:371ff588-ba4e-48f1-9e2f-a88a06ed942d",
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "0.html"
+        ]
+    },
+    "toc": [
+        "Inspiration from Chamath Palihapitiya",
+        [
+            {
+                "href": "0.html",
+                "title": "Fireside Chat with Chamath Palihapitiya and Jason Calacanis"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657783",
+            "urn:uuid:371ff588-ba4e-48f1-9e2f-a88a06ed942d"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Inspiration from Chamath Palihapitiya"
+        ]
+    }
+}

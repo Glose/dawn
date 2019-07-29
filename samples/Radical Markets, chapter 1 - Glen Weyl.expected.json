@@ -1,0 +1,49 @@
+{
+    "uid": "urn:uuid:20c13f67-9db2-4a33-a9d2-734aa4dc7e38",
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "fig1": [
+            "fig1",
+            "fig1.png"
+        ],
+        "id0": [
+            "id0",
+            "data.html"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glen Weyl"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:20c13f67-9db2-4a33-a9d2-734aa4dc7e38"
+        ],
+        "publisher": "Priceton University Press",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Radical Markets, chapter 1"
+        ]
+    }
+}

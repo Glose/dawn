@@ -1,0 +1,408 @@
+{
+    "uid": "urn:uuid:749d75e6-b50f-42a2-b06f-0c0ff3d3a33b",
+    "version": "2.0",
+    "spine": [
+        "html0",
+        "html1",
+        "html2",
+        "html3",
+        "html4",
+        "html5",
+        "html6",
+        "html7",
+        "html8",
+        "html9",
+        "html10",
+        "html11",
+        "html12",
+        "html13",
+        "html14",
+        "html15",
+        "html16",
+        "html17",
+        "html18",
+        "html19",
+        "html20",
+        "html21",
+        "html22",
+        "html23",
+        "html24",
+        "html25",
+        "html26",
+        "html27",
+        "html28",
+        "html29",
+        "html30",
+        "html31",
+        "html32",
+        "html33",
+        "html34",
+        "html35",
+        "html36",
+        "html37"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "html0": [
+            "html0",
+            "0.html"
+        ],
+        "html1": [
+            "html1",
+            "1.html"
+        ],
+        "html2": [
+            "html2",
+            "2.html"
+        ],
+        "html3": [
+            "html3",
+            "4.html"
+        ],
+        "html4": [
+            "html4",
+            "5.html"
+        ],
+        "html5": [
+            "html5",
+            "6.html"
+        ],
+        "html6": [
+            "html6",
+            "7.html"
+        ],
+        "html7": [
+            "html7",
+            "8.html"
+        ],
+        "html8": [
+            "html8",
+            "10.html"
+        ],
+        "html9": [
+            "html9",
+            "11.html"
+        ],
+        "html10": [
+            "html10",
+            "12.html"
+        ],
+        "html11": [
+            "html11",
+            "13.html"
+        ],
+        "html12": [
+            "html12",
+            "14.html"
+        ],
+        "html13": [
+            "html13",
+            "15.html"
+        ],
+        "html14": [
+            "html14",
+            "16.html"
+        ],
+        "html15": [
+            "html15",
+            "17.html"
+        ],
+        "html16": [
+            "html16",
+            "19.html"
+        ],
+        "html17": [
+            "html17",
+            "20.html"
+        ],
+        "html18": [
+            "html18",
+            "21.html"
+        ],
+        "html19": [
+            "html19",
+            "22.html"
+        ],
+        "html20": [
+            "html20",
+            "23.html"
+        ],
+        "html21": [
+            "html21",
+            "24.html"
+        ],
+        "html22": [
+            "html22",
+            "25.html"
+        ],
+        "html23": [
+            "html23",
+            "27.html"
+        ],
+        "html24": [
+            "html24",
+            "28.html"
+        ],
+        "html25": [
+            "html25",
+            "29.html"
+        ],
+        "html26": [
+            "html26",
+            "30.html"
+        ],
+        "html27": [
+            "html27",
+            "31.html"
+        ],
+        "html28": [
+            "html28",
+            "32.html"
+        ],
+        "html29": [
+            "html29",
+            "33.html"
+        ],
+        "html30": [
+            "html30",
+            "34.html"
+        ],
+        "html31": [
+            "html31",
+            "35.html"
+        ],
+        "html32": [
+            "html32",
+            "36.html"
+        ],
+        "html33": [
+            "html33",
+            "38.html"
+        ],
+        "html34": [
+            "html34",
+            "39.html"
+        ],
+        "html35": [
+            "html35",
+            "40.html"
+        ],
+        "html36": [
+            "html36",
+            "41.html"
+        ],
+        "html37": [
+            "html37",
+            "42.html"
+        ],
+        "asset0": [
+            "asset0",
+            "cover.jpg"
+        ]
+    },
+    "toc": [
+        "Iphig\u00e9nie",
+        [
+            {
+                "href": "0.html",
+                "title": "PR\u00c9FACE"
+            },
+            {
+                "href": "1.html",
+                "title": "PERSONNAGES"
+            },
+            {
+                "href": "2.html",
+                "title": "ACTE premier"
+            },
+            {
+                "href": "2.html",
+                "title": "Sc\u00e8ne I"
+            },
+            {
+                "href": "4.html",
+                "title": "Sc\u00e8ne II"
+            },
+            {
+                "href": "5.html",
+                "title": "Sc\u00e8ne III"
+            },
+            {
+                "href": "6.html",
+                "title": "Sc\u00e8ne IV"
+            },
+            {
+                "href": "7.html",
+                "title": "Sc\u00e8ne V"
+            },
+            {
+                "href": "8.html",
+                "title": "ACTE deuxi\u00e8me"
+            },
+            {
+                "href": "8.html",
+                "title": "Sc\u00e8ne I"
+            },
+            {
+                "href": "10.html",
+                "title": "Sc\u00e8ne II"
+            },
+            {
+                "href": "11.html",
+                "title": "Sc\u00e8ne III"
+            },
+            {
+                "href": "12.html",
+                "title": "Sc\u00e8ne IV"
+            },
+            {
+                "href": "13.html",
+                "title": "Sc\u00e8ne V"
+            },
+            {
+                "href": "14.html",
+                "title": "Sc\u00e8ne VI"
+            },
+            {
+                "href": "15.html",
+                "title": "Sc\u00e8ne VII"
+            },
+            {
+                "href": "16.html",
+                "title": "Sc\u00e8ne VIII"
+            },
+            {
+                "href": "17.html",
+                "title": "ACTE troisi\u00e8me"
+            },
+            {
+                "href": "17.html",
+                "title": "Sc\u00e8ne I"
+            },
+            {
+                "href": "19.html",
+                "title": "Sc\u00e8ne II"
+            },
+            {
+                "href": "20.html",
+                "title": "Sc\u00e8ne III"
+            },
+            {
+                "href": "21.html",
+                "title": "Sc\u00e8ne IV"
+            },
+            {
+                "href": "22.html",
+                "title": "Sc\u00e8ne V"
+            },
+            {
+                "href": "23.html",
+                "title": "Sc\u00e8ne VI"
+            },
+            {
+                "href": "24.html",
+                "title": "Sc\u00e8ne VII"
+            },
+            {
+                "href": "25.html",
+                "title": "ACTE quatri\u00e8me"
+            },
+            {
+                "href": "25.html",
+                "title": "Sc\u00e8ne I"
+            },
+            {
+                "href": "27.html",
+                "title": "Sc\u00e8ne II"
+            },
+            {
+                "href": "28.html",
+                "title": "Sc\u00e8ne III"
+            },
+            {
+                "href": "29.html",
+                "title": "Sc\u00e8ne V"
+            },
+            {
+                "href": "30.html",
+                "title": "Sc\u00e8ne VI"
+            },
+            {
+                "href": "31.html",
+                "title": "Sc\u00e8ne VII"
+            },
+            {
+                "href": "32.html",
+                "title": "Sc\u00e8ne VIII"
+            },
+            {
+                "href": "33.html",
+                "title": "Sc\u00e8ne IX"
+            },
+            {
+                "href": "34.html",
+                "title": "Sc\u00e8ne X"
+            },
+            {
+                "href": "35.html",
+                "title": "Sc\u00e8ne XI"
+            },
+            {
+                "href": "36.html",
+                "title": "ACTE cinqui\u00e8me"
+            },
+            {
+                "href": "36.html",
+                "title": "Sc\u00e8ne I"
+            },
+            {
+                "href": "38.html",
+                "title": "Sc\u00e8ne II"
+            },
+            {
+                "href": "39.html",
+                "title": "Sc\u00e8ne III"
+            },
+            {
+                "href": "40.html",
+                "title": "Sc\u00e8ne IV"
+            },
+            {
+                "href": "41.html",
+                "title": "Sc\u00e8ne V"
+            },
+            {
+                "href": "42.html",
+                "title": "Sc\u00e8ne derni\u00e8re"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Jean Racine"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "\n<em>Iphig\u00e9nie</em> est une trag\u00e9die de Jean Racine en cinq actes et en vers. Repr\u00e9sent\u00e9e pour la premi\u00e8re fois \u00e0 Versailles le 18 ao\u00fbt 1674, Iphig\u00e9nie marque le retour de Racine \u00e0 des th\u00e8mes mythologiques apr\u00e8s une s\u00e9rie de sujets historiques (<em>Britannicus, B\u00e9r\u00e9nice, Bajazet, Mithridate</em>). Sur les rivages d'Aulis, les Grecs se pr\u00e9parent \u00e0 aller attaquer Troie. Mais ils ne peuvent atteindre Troie, car les dieux retiennent les vents n\u00e9cessaires au d\u00e9part de l'exp\u00e9dition. Agamemnon, leur chef, est donc contraint de consulter l\u2019oracle Calchas, qui lui ordonne de sacrifier sa fille, Iphig\u00e9nie, afin d\u2019apaiser la d\u00e9esse Art\u00e9mis. Dans le chaos provoqu\u00e9 par les ind\u00e9cisions d'Agamemnon, Iphig\u00e9nie se soumet aux volont\u00e9s de son p\u00e8re. Ambition d'Agamemnon, d\u00e9sir de gloire d'Achille, orgueil de Clytemnestre, jalousie d'\u00c9riphile : la pi\u00e8ce donne \u00e0 voir des passions d\u00e9cha\u00een\u00e9es qui, toutes, font d'Iphig\u00e9nie leur victime.\n",
+        "identifiers": [
+            "9782371183506",
+            "urn:uuid:749d75e6-b50f-42a2-b06f-0c0ff3d3a33b"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "fr"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Iphig\u00e9nie"
+        ]
+    }
+}

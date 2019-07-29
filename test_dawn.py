@@ -8,8 +8,9 @@ import pytest
 import urllib.request
 
 
-samples = glob.glob('samples/*.epub')
-if not samples:
+samples = glob.glob('samples/*.expected.json')
+
+if not all(os.path.exists(s.replace('.expected.json', '.epub')) for s in samples):
 	with urllib.request.urlopen('http://idpf.github.io/epub3-samples/30/samples.html') as f:
 		index = f.read()
 	soup = lxml.html.fromstring(index)
@@ -21,7 +22,12 @@ if not samples:
 			open('samples/{}'.format(fn), 'wb') as d:
 			d.write(s.read())
 
-	samples = glob.glob('samples/*.epub')
+	for p in glob.glob('../Glose ePubs/*/*.epub'):
+		fn = os.path.basename(p).replace('.epub', '.expected.json')
+		if fn not in samples:
+			continue
+		with open(p, 'rb') as r, open('samples/{}'.format(fn), 'wb') as w:
+			w.write(r.read())
 
 def _ser_toc_item(it):
 	res = {'href': it.href, 'title': it.title}
@@ -34,10 +40,10 @@ def _json_default(o):
 	if isinstance(o, datetime.datetime):
 		return o.isoformat()
 
-@pytest.mark.parametrize('epub', samples)
-def test_read(epub):
-	exp = epub.replace('.epub', '.expected.json')
-	dbg = epub.replace('.epub', '.debug.json')
+@pytest.mark.parametrize('expected', samples)
+def test_read(expected):
+	epub = expected.replace('.expected.json', '.epub')
+	dbg = expected.replace('.expected.json', '.debug.json')
 
 	with dawn.open(epub) as epub:
 		res = {
@@ -56,7 +62,7 @@ def test_read(epub):
 	with open(dbg, 'w') as f:
 		json.dump(res, f, indent=4)
 
-	with open(exp, 'r') as f:
+	with open(expected, 'r') as f:
 		exp = json.load(f)
 	assert res == exp
 

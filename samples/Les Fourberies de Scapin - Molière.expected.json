@@ -1,0 +1,197 @@
+{
+    "uid": "urn:uuid:0adbf9b2-4916-472b-9699-fe752776d62a",
+    "version": "2.0",
+    "spine": [
+        "html0",
+        "html1",
+        "html2",
+        "html3",
+        "html4",
+        "html5",
+        "html6",
+        "html7",
+        "html8",
+        "html9",
+        "html10",
+        "html11",
+        "html12",
+        "html13",
+        "html14",
+        "html15",
+        "html16",
+        "html17",
+        "html18",
+        "html19",
+        "html20",
+        "html21",
+        "html22",
+        "html23",
+        "html24",
+        "html25",
+        "html26"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "html0": [
+            "html0",
+            "0.html"
+        ],
+        "html1": [
+            "html1",
+            "1.html"
+        ],
+        "html2": [
+            "html2",
+            "2.html"
+        ],
+        "html3": [
+            "html3",
+            "3.html"
+        ],
+        "html4": [
+            "html4",
+            "4.html"
+        ],
+        "html5": [
+            "html5",
+            "5.html"
+        ],
+        "html6": [
+            "html6",
+            "6.html"
+        ],
+        "html7": [
+            "html7",
+            "7.html"
+        ],
+        "html8": [
+            "html8",
+            "8.html"
+        ],
+        "html9": [
+            "html9",
+            "9.html"
+        ],
+        "html10": [
+            "html10",
+            "10.html"
+        ],
+        "html11": [
+            "html11",
+            "11.html"
+        ],
+        "html12": [
+            "html12",
+            "12.html"
+        ],
+        "html13": [
+            "html13",
+            "13.html"
+        ],
+        "html14": [
+            "html14",
+            "14.html"
+        ],
+        "html15": [
+            "html15",
+            "15.html"
+        ],
+        "html16": [
+            "html16",
+            "16.html"
+        ],
+        "html17": [
+            "html17",
+            "17.html"
+        ],
+        "html18": [
+            "html18",
+            "18.html"
+        ],
+        "html19": [
+            "html19",
+            "19.html"
+        ],
+        "html20": [
+            "html20",
+            "20.html"
+        ],
+        "html21": [
+            "html21",
+            "21.html"
+        ],
+        "html22": [
+            "html22",
+            "22.html"
+        ],
+        "html23": [
+            "html23",
+            "23.html"
+        ],
+        "html24": [
+            "html24",
+            "24.html"
+        ],
+        "html25": [
+            "html25",
+            "25.html"
+        ],
+        "html26": [
+            "html26",
+            "26.html"
+        ],
+        "asset0": [
+            "asset0",
+            "cover.jpg"
+        ]
+    },
+    "toc": [
+        "Les Fourberies de Scapin",
+        [
+            {
+                "href": "0.html",
+                "title": "Personnages"
+            },
+            {
+                "href": "1.html",
+                "title": "Acte I"
+            },
+            {
+                "href": "6.html",
+                "title": "Acte II"
+            },
+            {
+                "href": "14.html",
+                "title": "Acte III"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Moli\u00e8re"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "En l'absence de leurs p\u00e8res, deux fils de bonne famille, L\u00e9andre et Octave, tombent amoureux, l'un d'une belle Egyptienne, l'autre d'une jeune fille pauvre et \u00e9plor\u00e9e. Ils n'en font qu'\u00e0 leur t\u00eate ; le premier couvre sa bien-aim\u00e9e de pr\u00e9sents, le second, pouss\u00e9 par la passion, \u00e9pouse la sienne. Quel effroi quand les deux gar\u00e7ons apprennent le retour de leurs parents respectifs ! Un seul homme peut leur venir en aide : Scapin, le valet de L\u00e9andre. Son inventivit\u00e9 et sa malice sont ses atouts : p\u00e8res amadou\u00e9s, amants content\u00e9s. La plus c\u00e9l\u00e8bre farce de Moli\u00e8re suit un rythme soutenu, m\u00ealant des quiproquos savoureux, des r\u00e9pliques bien senties et quelques coups de b\u00e2ton sur le dos des ma\u00eetres !",
+        "identifiers": [
+            "9782371185517",
+            "urn:uuid:0adbf9b2-4916-472b-9699-fe752776d62a"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "fr"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Les Fourberies de Scapin"
+        ]
+    }
+}

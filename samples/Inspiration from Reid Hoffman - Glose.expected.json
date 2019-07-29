@@ -1,0 +1,60 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0",
+        "id1"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "Live Life in Permanent Beta..html"
+        ],
+        "id1": [
+            "id1",
+            "PandoMonthly Fireside Chat with Reid Hoffman..html"
+        ]
+    },
+    "toc": [
+        "Inspiration from Reid Hoffman",
+        [
+            {
+                "href": "Live Life in Permanent Beta..html",
+                "title": "Live Life in Permanent Beta."
+            },
+            {
+                "href": "PandoMonthly Fireside Chat with Reid Hoffman..html",
+                "title": "PandoMonthly Fireside Chat with Reid Hoffman."
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657769",
+            "urn:uuid:114d088b-5a64-47bb-ba39-86b90c90b0f5"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Inspiration from Reid Hoffman"
+        ]
+    }
+}

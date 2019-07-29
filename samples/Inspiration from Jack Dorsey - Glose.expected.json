@@ -1,0 +1,170 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0",
+        "id1",
+        "id2",
+        "id3"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "Jack Dorsey at Startup School 2013..html"
+        ],
+        "id1": [
+            "id1",
+            "Stanford Graduate School of Business View from the Top Series..html"
+        ],
+        "id2": [
+            "id2",
+            "TechCrunch Disrupt 2012: Keynote..html"
+        ],
+        "id3": [
+            "id3",
+            "The Power of Curiosity and Inspiration..html"
+        ],
+        "img00": [
+            "img00",
+            "images/image00.png"
+        ],
+        "img01": [
+            "img01",
+            "images/image01.png"
+        ],
+        "img02": [
+            "img02",
+            "images/image02.png"
+        ],
+        "img03": [
+            "img03",
+            "images/image03.png"
+        ],
+        "img04": [
+            "img04",
+            "images/image04.png"
+        ],
+        "img05": [
+            "img05",
+            "images/image05.png"
+        ],
+        "img06": [
+            "img06",
+            "images/image06.png"
+        ],
+        "img07": [
+            "img07",
+            "images/image07.png"
+        ],
+        "img08": [
+            "img08",
+            "images/image08.png"
+        ],
+        "img09": [
+            "img09",
+            "images/image09.png"
+        ],
+        "img10": [
+            "img10",
+            "images/image10.png"
+        ],
+        "img11": [
+            "img11",
+            "images/image11.png"
+        ],
+        "img12": [
+            "img12",
+            "images/image12.png"
+        ],
+        "img13": [
+            "img13",
+            "images/image13.png"
+        ],
+        "img14": [
+            "img14",
+            "images/image14.png"
+        ],
+        "img15": [
+            "img15",
+            "images/image15.png"
+        ],
+        "img16": [
+            "img16",
+            "images/image16.png"
+        ],
+        "img17": [
+            "img17",
+            "images/image17.png"
+        ],
+        "img18": [
+            "img18",
+            "images/image18.png"
+        ],
+        "img19": [
+            "img19",
+            "images/image19.png"
+        ],
+        "img20": [
+            "img20",
+            "images/image20.png"
+        ],
+        "img21": [
+            "img21",
+            "images/image21.png"
+        ],
+        "img22": [
+            "img22",
+            "images/image22.png"
+        ]
+    },
+    "toc": [
+        "Inspiration from Jack Dorsey",
+        [
+            {
+                "href": "Jack Dorsey at Startup School 2013..html",
+                "title": "Jack Dorsey at Startup School 2013."
+            },
+            {
+                "href": "Stanford Graduate School of Business View from the Top Series..html",
+                "title": "Stanford Graduate School of Business View from the Top Series."
+            },
+            {
+                "href": "TechCrunch Disrupt 2012: Keynote..html",
+                "title": "TechCrunch Disrupt 2012: Keynote."
+            },
+            {
+                "href": "The Power of Curiosity and Inspiration..html",
+                "title": "The Power of Curiosity and Inspiration."
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657721",
+            "urn:uuid:e5f7d954-46cc-40a9-8198-96d460b701d0"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Inspiration from Jack Dorsey"
+        ]
+    }
+}

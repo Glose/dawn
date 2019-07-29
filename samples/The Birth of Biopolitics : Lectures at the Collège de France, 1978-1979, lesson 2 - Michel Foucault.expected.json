@@ -1,0 +1,45 @@
+{
+    "uid": "urn:uuid:b6e25c1f-ff53-4f65-a5a0-03b29163feb4",
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "id0": [
+            "id0",
+            "data.html"
+        ]
+    },
+    "toc": [
+        null,
+        []
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Michel Foucault"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": null,
+        "identifiers": [
+            "urn:uuid:b6e25c1f-ff53-4f65-a5a0-03b29163feb4"
+        ],
+        "publisher": null,
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "The Birth of Biopolitics : Lectures at the Coll\u00e8ge de France, 1978-1979, lesson 2"
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "Mark Zuckerberg at Startup School 2013, October 19, 2013.html"
+        ]
+    },
+    "toc": [
+        "Inspiration from Mark Zuckerberg",
+        [
+            {
+                "href": "Mark Zuckerberg at Startup School 2013, October 19, 2013.html",
+                "title": "Mark Zuckerberg at Startup School 2013, October 19, 2013"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Glose"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "None",
+        "identifiers": [
+            "9782954657714",
+            "urn:uuid:32fddf32-3370-4d42-91df-b67cdb852f45"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Inspiration from Mark Zuckerberg"
+        ]
+    }
+}

@@ -1,0 +1,322 @@
+{
+    "uid": "urn:uuid:86d7447b-060a-4816-b9b2-9c8a555e8f70",
+    "version": "2.0",
+    "spine": [
+        "html0",
+        "html1",
+        "html2",
+        "html3",
+        "html4",
+        "html5",
+        "html6",
+        "html7",
+        "html8",
+        "html9",
+        "html10",
+        "html11",
+        "html12",
+        "html13",
+        "html14",
+        "html15",
+        "html16",
+        "html17",
+        "html18",
+        "html19",
+        "html20"
+    ],
+    "manifest": {
+        "cover": [
+            "cover",
+            "cover.jpg"
+        ],
+        "html0": [
+            "html0",
+            "00.html"
+        ],
+        "html1": [
+            "html1",
+            "01.html"
+        ],
+        "html2": [
+            "html2",
+            "02.html"
+        ],
+        "html3": [
+            "html3",
+            "03.html"
+        ],
+        "html4": [
+            "html4",
+            "04.html"
+        ],
+        "html5": [
+            "html5",
+            "05.html"
+        ],
+        "html6": [
+            "html6",
+            "06.html"
+        ],
+        "html7": [
+            "html7",
+            "07.html"
+        ],
+        "html8": [
+            "html8",
+            "08.html"
+        ],
+        "html9": [
+            "html9",
+            "09.html"
+        ],
+        "html10": [
+            "html10",
+            "10.html"
+        ],
+        "html11": [
+            "html11",
+            "11.html"
+        ],
+        "html12": [
+            "html12",
+            "12.html"
+        ],
+        "html13": [
+            "html13",
+            "13.html"
+        ],
+        "html14": [
+            "html14",
+            "14.html"
+        ],
+        "html15": [
+            "html15",
+            "15.html"
+        ],
+        "html16": [
+            "html16",
+            "16.html"
+        ],
+        "html17": [
+            "html17",
+            "17.html"
+        ],
+        "html18": [
+            "html18",
+            "18.html"
+        ],
+        "html19": [
+            "html19",
+            "19.html"
+        ],
+        "html20": [
+            "html20",
+            "20.html"
+        ],
+        "id0": [
+            "id0",
+            ".DS_Store"
+        ],
+        "id1": [
+            "id1",
+            "cover.jpg"
+        ],
+        "id2": [
+            "id2",
+            "images/05_1.jpg"
+        ],
+        "id3": [
+            "id3",
+            "images/05_2.jpg"
+        ],
+        "id4": [
+            "id4",
+            "images/05_3.jpg"
+        ],
+        "id5": [
+            "id5",
+            "images/hec.jpg"
+        ],
+        "id6": [
+            "id6",
+            "uploaded_images/.DS_Store"
+        ],
+        "id7": [
+            "id7",
+            "uploaded_images/129929-Images_2.jpg"
+        ],
+        "id8": [
+            "id8",
+            "uploaded_images/129938-images_1.jpg"
+        ],
+        "id9": [
+            "id9",
+            "uploaded_images/129939-images_2.jpg"
+        ],
+        "id10": [
+            "id10",
+            "uploaded_images/129940-Image1.jpg"
+        ],
+        "id11": [
+            "id11",
+            "uploaded_images/129941-How_its_Done_image1.jpg"
+        ],
+        "id12": [
+            "id12",
+            "uploaded_images/129942-Images_1.jpg"
+        ],
+        "id13": [
+            "id13",
+            "uploaded_images/129943-Images_2.jpg"
+        ],
+        "id14": [
+            "id14",
+            "uploaded_images/129944-image2.png"
+        ],
+        "id15": [
+            "id15",
+            "uploaded_images/129945-Images_1.jpg"
+        ],
+        "id16": [
+            "id16",
+            "uploaded_images/129946-Images_2.jpg"
+        ],
+        "id17": [
+            "id17",
+            "uploaded_images/129947-Images_3.jpg"
+        ],
+        "id18": [
+            "id18",
+            "uploaded_images/129949-Images_01.jpg"
+        ],
+        "id19": [
+            "id19",
+            "uploaded_images/129950-Images_1.jpg"
+        ],
+        "id20": [
+            "id20",
+            "uploaded_images/129951-Images_2.jpg"
+        ],
+        "id21": [
+            "id21",
+            "uploaded_images/129952-Images_3.jpg"
+        ],
+        "id22": [
+            "id22",
+            "uploaded_images/129953-Images_4.jpg"
+        ]
+    },
+    "toc": [
+        "Strategic Management of Innovation",
+        [
+            {
+                "href": "00.html",
+                "title": "Syllabus"
+            },
+            {
+                "href": "01.html",
+                "title": "1: Guide on how to write a case report"
+            },
+            {
+                "href": "02.html",
+                "title": "2: HEC policies and procedures"
+            },
+            {
+                "href": "03.html",
+                "title": "3: Given's Imaging Camera pill"
+            },
+            {
+                "href": "04.html",
+                "title": "4: Honda and Hybrid Electric Vehicles"
+            },
+            {
+                "href": "05.html",
+                "title": "5: Levy (2006)"
+            },
+            {
+                "href": "06.html",
+                "title": "6: Shakeouts, Innovation, and Industrial Strategy and Policy"
+            },
+            {
+                "href": "07.html",
+                "title": "7: Standards Battles and Design Dominance"
+            },
+            {
+                "href": "08.html",
+                "title": "8: Gates To Apple: The Mac Has Failed"
+            },
+            {
+                "href": "09.html",
+                "title": "9: Using patent data"
+            },
+            {
+                "href": "10.html",
+                "title": "10: Timing of Entry"
+            },
+            {
+                "href": "11.html",
+                "title": "11: Discussion Topics EMI And CT Scanner (A)"
+            },
+            {
+                "href": "12.html",
+                "title": "12: EMI And The CT Scanner (A)"
+            },
+            {
+                "href": "13.html",
+                "title": "13: Introduction Individual Assignment"
+            },
+            {
+                "href": "14.html",
+                "title": "14: Discussion Topics EMI And CT Scanner (B)"
+            },
+            {
+                "href": "15.html",
+                "title": "15: EMI And The CT Scanner (B)"
+            },
+            {
+                "href": "16.html",
+                "title": "16: First to Market, First to Fail?"
+            },
+            {
+                "href": "17.html",
+                "title": "17: Protecting Innovation"
+            },
+            {
+                "href": "18.html",
+                "title": "18: Sentences of Pirate Bay Founders Are Confirmed"
+            },
+            {
+                "href": "19.html",
+                "title": "19: Robert Kearns, Engineer and Crusader"
+            },
+            {
+                "href": "20.html",
+                "title": "20: The product market and the market for \"ideas\""
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Thomas \u00c5stebro"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "",
+        "identifiers": [
+            "urn:uuid:86d7447b-060a-4816-b9b2-9c8a555e8f70"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Strategic Management of Innovation"
+        ]
+    }
+}

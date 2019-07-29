@@ -1,0 +1,87 @@
+{
+    "uid": null,
+    "version": "2.0",
+    "spine": [
+        "id0",
+        "id1",
+        "id2",
+        "id3",
+        "id4"
+    ],
+    "manifest": {
+        "style": [
+            "style",
+            "style.css"
+        ],
+        "id0": [
+            "id0",
+            "Artists and Writers.html"
+        ],
+        "id1": [
+            "id1",
+            "Business Leaders.html"
+        ],
+        "id2": [
+            "id2",
+            "Historical Figures.html"
+        ],
+        "id3": [
+            "id3",
+            "Stars.html"
+        ],
+        "id4": [
+            "id4",
+            "Traditional and Classical Thinkers.html"
+        ]
+    },
+    "toc": [
+        "Words of Wisdom",
+        [
+            {
+                "href": "Artists and Writers.html",
+                "title": "Artists and Writers"
+            },
+            {
+                "href": "Business Leaders.html",
+                "title": "Business Leaders"
+            },
+            {
+                "href": "Historical Figures.html",
+                "title": "Historical Figures"
+            },
+            {
+                "href": "Stars.html",
+                "title": "Stars"
+            },
+            {
+                "href": "Traditional and Classical Thinkers.html",
+                "title": "Traditional and Classical Thinkers"
+            }
+        ]
+    ],
+    "meta": {
+        "contributors": [],
+        "creators": [
+            "Dorothy Lineer"
+        ],
+        "dates": {
+            "creation": null,
+            "publication": null,
+            "modification": null
+        },
+        "description": "Seek inspiration from the greatest movers and shakers of all time. Gather gems of advice from these people who have energized us through art, sports, politics, philosophy, business, and more.",
+        "identifiers": [
+            "9782371181007",
+            "urn:uuid:f1a2bf89-f850-4ed5-a24a-19cf197edfbd"
+        ],
+        "publisher": "Glose",
+        "languages": [
+            "en"
+        ],
+        "source": null,
+        "subjects": [],
+        "titles": [
+            "Words of Wisdom"
+        ]
+    }
+}
