@@ -1,0 +1,33 @@
+.test: &test
+  stage: test
+  image: us.gcr.io/glose-platform/python:3.7
+  before_script:
+  - apk update && apk add build-base libffi-dev openssl-dev
+  - PYTHON=$(which python3 || which pypy3)
+  - pip3 list
+  script: [ $PYTHON setup.py pytest --addopts="-v" ]
+  only: [ branches ]
+
+test cpython 3.7:
+  <<: *test
+
+test pypy3.5 6:
+  <<: *test
+  image: us.gcr.io/glose-platform/python:3-pypy-6.0
+
+test pypy3.5 7.0:
+  <<: *test
+  image: us.gcr.io/glose-platform/python:3.5-pypy-7.0
+
+test pypy3.6 7.1.1:
+  <<: *test
+  allow_failure: true
+  image: us.gcr.io/glose-platform/python:3.6-pypy-7.1.1
+
+coverage:
+  <<: *test
+  script: [ $PYTHON setup.py pytest --addopts="--cov=dawn --cov-report html" ]
+  coverage: '/Total coverage: \d+\.\d+%/'
+  artifacts:
+    expire_in: 1 month
+    paths: [ htmlcov/ ]

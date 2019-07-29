@@ -17,6 +17,9 @@ setup(
 	license='MIT',
 	packages=['dawn'],
 	install_requires=requirements,
+	setup_requires=[
+		'pytest-runner >= 5.1, < 6',
+	],
 	tests_require=requirements + [
 		'pytest',
 		'pytest-cov',
