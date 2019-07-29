@@ -8,29 +8,10 @@ import pytest
 import urllib.request
 
 
-samples = glob.glob('samples/*.expected.json')
+samples = glob.glob('samples/data/*.expected.json')
+print(samples)
 
-if not all(os.path.exists(s.replace('.expected.json', '.epub')) for s in samples):
-	with urllib.request.urlopen('http://idpf.github.io/epub3-samples/30/samples.html') as f:
-		index = f.read()
-	soup = lxml.html.fromstring(index)
-	for a in soup.xpath('//a[contains(@href, ".epub")]'):
-		href = a.get('href')
-		_, fn = href.rsplit('/', 1)
-		with \
-			urllib.request.urlopen(href) as s, \
-			open('samples/{}'.format(fn), 'wb') as d:
-			d.write(s.read())
-
-	for p in glob.glob('../Glose ePubs/*/*.epub'):
-		fn = os.path.basename(p).replace('.epub', '.expected.json')
-		if fn not in samples:
-			continue
-		with open(p, 'rb') as r, open('samples/{}'.format(fn), 'wb') as w:
-			w.write(r.read())
-
-
-_dummy = 'samples/9780312591199 - Dummy ePub - Glose.epub'
+_dummy = 'samples/data/9780312591199 - Dummy ePub - Glose.epub'
 @pytest.fixture
 def dummy():
 	if not os.path.exists(_dummy):

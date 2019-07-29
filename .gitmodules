@@ -1,0 +1,3 @@
+[submodule "samples"]
+	path = samples
+	url = git@git.glose.com:opensource/dawn-samples

@@ -1,3 +1,6 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 .test: &test
   stage: test
   image: us.gcr.io/glose-platform/python:3.7
