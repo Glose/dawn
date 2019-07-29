@@ -16,87 +16,108 @@
     "manifest": {
         "i": [
             "i",
-            "xhtml/0-intro.xhtml"
+            "xhtml/0-intro.xhtml",
+            "application/xhtml+xml"
         ],
         "s1a": [
             "s1a",
-            "xhtml/1a-childhood-text.xhtml"
+            "xhtml/1a-childhood-text.xhtml",
+            "application/xhtml+xml"
         ],
         "s1b": [
             "s1b",
-            "xhtml/1b-childhood-painting.xhtml"
+            "xhtml/1b-childhood-painting.xhtml",
+            "application/xhtml+xml"
         ],
         "s2a": [
             "s2a",
-            "xhtml/2a-youth-text.xhtml"
+            "xhtml/2a-youth-text.xhtml",
+            "application/xhtml+xml"
         ],
         "s2b": [
             "s2b",
-            "xhtml/2b-youth-painting.xhtml"
+            "xhtml/2b-youth-painting.xhtml",
+            "application/xhtml+xml"
         ],
         "s3a": [
             "s3a",
-            "xhtml/3a-manhood-text.xhtml"
+            "xhtml/3a-manhood-text.xhtml",
+            "application/xhtml+xml"
         ],
         "s3b": [
             "s3b",
-            "xhtml/3b-manhood-painting.xhtml"
+            "xhtml/3b-manhood-painting.xhtml",
+            "application/xhtml+xml"
         ],
         "s4a": [
             "s4a",
-            "xhtml/4a-oldage-text.xhtml"
+            "xhtml/4a-oldage-text.xhtml",
+            "application/xhtml+xml"
         ],
         "s4b": [
             "s4b",
-            "xhtml/4b-oldage-painting.xhtml"
+            "xhtml/4b-oldage-painting.xhtml",
+            "application/xhtml+xml"
         ],
         "s5": [
             "s5",
-            "xhtml/5-significance.xhtml"
+            "xhtml/5-significance.xhtml",
+            "application/xhtml+xml"
         ],
         "j1_320": [
             "j1_320",
-            "images/1-childhood-320.jpg"
+            "images/1-childhood-320.jpg",
+            "image/jpeg"
         ],
         "j1_1024": [
             "j1_1024",
-            "images/1-childhood-1024.jpg"
+            "images/1-childhood-1024.jpg",
+            "image/jpeg"
         ],
         "j2_320": [
             "j2_320",
-            "images/2-youth-320.jpg"
+            "images/2-youth-320.jpg",
+            "image/jpeg"
         ],
         "j2_1024": [
             "j2_1024",
-            "images/2-youth-1024.jpg"
+            "images/2-youth-1024.jpg",
+            "image/jpeg"
         ],
         "j3_320": [
             "j3_320",
-            "images/3-manhood-320.jpg"
+            "images/3-manhood-320.jpg",
+            "image/jpeg"
         ],
         "j3_1024": [
             "j3_1024",
-            "images/3-manhood-1024.jpg"
+            "images/3-manhood-1024.jpg",
+            "image/jpeg"
         ],
         "j4_320": [
             "j4_320",
-            "images/4-oldage-320.jpg"
+            "images/4-oldage-320.jpg",
+            "image/jpeg"
         ],
         "j4_1024": [
             "j4_1024",
-            "images/4-oldage-1024.jpg"
+            "images/4-oldage-1024.jpg",
+            "image/jpeg"
         ],
         "prt": [
             "prt",
-            "images/portrait.jpg"
+            "images/portrait.jpg",
+            "image/jpeg"
         ],
         "nav": [
             "nav",
-            "xhtml/nav.xhtml"
+            "xhtml/nav.xhtml",
+            "application/xhtml+xml"
         ],
         "css": [
             "css",
-            "css/cole.css"
+            "css/cole.css",
+            "text/css"
         ]
     },
     "toc": [
@@ -104,27 +125,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Jesse Dylan"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.google.com.epub-samples.cole-voyage-of-life"
-        ],
-        "publisher": null,
-        "languages": [
-            "en-US"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Thomas Cole - The Voyage of Life"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Jesse Dylan' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.cole-voyage-of-life' {'id': 'uid'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en-US' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Thomas Cole - The Voyage of Life' {'id': 'title'}>]"
     }
 }

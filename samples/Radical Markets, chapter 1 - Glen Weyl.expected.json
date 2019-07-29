@@ -7,15 +7,18 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "fig1": [
             "fig1",
-            "fig1.png"
+            "fig1.png",
+            "image/png"
         ],
         "id0": [
             "id0",
-            "data.html"
+            "data.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -23,27 +26,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glen Weyl"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:uuid:20c13f67-9db2-4a33-a9d2-734aa4dc7e38"
-        ],
-        "publisher": "Priceton University Press",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Radical Markets, chapter 1"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glen Weyl' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:uuid:20c13f67-9db2-4a33-a9d2-734aa4dc7e38' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Priceton University Press' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Radical Markets, chapter 1' {}>]"
     }
 }

@@ -7,11 +7,13 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "id0": [
             "id0",
-            "data.html"
+            "data.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -19,27 +21,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Daniel Dennett"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:uuid:6a9c3db7-e2ce-4a6e-a27d-80893cd72eb0"
-        ],
-        "publisher": null,
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Brainstorm, chapter 15, \u201cOn Giving Libertarians What They Say They Want\u201d"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Daniel Dennett' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:uuid:6a9c3db7-e2ce-4a6e-a27d-80893cd72eb0' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Brainstorm, chapter 15, \u201cOn Giving Libertarians What They Say They Want\u201d' {}>]"
     }
 }

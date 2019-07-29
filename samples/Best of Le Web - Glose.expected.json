@@ -8,15 +8,18 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "0.html"
+            "0.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "1.html"
+            "1.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -33,28 +36,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "None",
-        "identifiers": [
-            "9782371180000",
-            "urn:uuid:73007ee9-5bdf-4b7b-a5a5-c28495c37ec5"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Best of Le Web"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'None' {}>",
+        "identifiers": "[<AttributedString '9782371180000' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:73007ee9-5bdf-4b7b-a5a5-c28495c37ec5' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Best of Le Web' {}>]"
     }
 }

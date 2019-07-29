@@ -11,27 +11,33 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "Artists and Writers.html"
+            "Artists and Writers.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "Business Leaders.html"
+            "Business Leaders.html",
+            "application/xhtml+xml"
         ],
         "id2": [
             "id2",
-            "Historical Figures.html"
+            "Historical Figures.html",
+            "application/xhtml+xml"
         ],
         "id3": [
             "id3",
-            "Stars.html"
+            "Stars.html",
+            "application/xhtml+xml"
         ],
         "id4": [
             "id4",
-            "Traditional and Classical Thinkers.html"
+            "Traditional and Classical Thinkers.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -60,28 +66,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Dorothy Lineer"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "Seek inspiration from the greatest movers and shakers of all time. Gather gems of advice from these people who have energized us through art, sports, politics, philosophy, business, and more.",
-        "identifiers": [
-            "9782371181007",
-            "urn:uuid:f1a2bf89-f850-4ed5-a24a-19cf197edfbd"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Words of Wisdom"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Dorothy Lineer' {'role': 'aut'}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'Seek inspiration from the greatest movers and shakers of all time. Gather gems of advice from these people who have energized us through art, sports, politics, philosophy, business, and more.' {}>",
+        "identifiers": "[<AttributedString '9782371181007' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:f1a2bf89-f850-4ed5-a24a-19cf197edfbd' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Words of Wisdom' {}>]"
     }
 }

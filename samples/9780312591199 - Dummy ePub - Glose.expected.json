@@ -7,7 +7,8 @@
     "manifest": {
         "id0": [
             "id0",
-            "data.html"
+            "data.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -20,28 +21,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "Placeholder when we don't yet have the real content",
-        "identifiers": [
-            "9780312591199",
-            "urn:uuid:665739d0-8622-4ef2-928f-141fd2a09e3f"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "9780312591199 - Dummy ePub"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString \"Placeholder when we don't yet have the real content\" {}>",
+        "identifiers": "[<AttributedString '9780312591199' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:665739d0-8622-4ef2-928f-141fd2a09e3f' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString '9780312591199 - Dummy ePub' {}>]"
     }
 }

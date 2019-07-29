@@ -15,51 +15,63 @@
     "manifest": {
         "css": [
             "css",
-            "Style/style.css"
+            "Style/style.css",
+            "text/css"
         ],
         "nav": [
             "nav",
-            "Navigation/nav.xhtml"
+            "Navigation/nav.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "Navigation/toc.ncx"
+            "Navigation/toc.ncx",
+            "application/x-dtbncx+xml"
         ],
         "id-cover-jpg": [
             "id-cover-jpg",
-            "Image/cover.jpg"
+            "Image/cover.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_001-jpg": [
             "id-PageBlanche_Page_001-jpg",
-            "Image/PageBlanche_Page_001.jpg"
+            "Image/PageBlanche_Page_001.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_002-jpg": [
             "id-PageBlanche_Page_002-jpg",
-            "Image/PageBlanche_Page_002.jpg"
+            "Image/PageBlanche_Page_002.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_003-jpg": [
             "id-PageBlanche_Page_003-jpg",
-            "Image/PageBlanche_Page_003.jpg"
+            "Image/PageBlanche_Page_003.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_004-jpg": [
             "id-PageBlanche_Page_004-jpg",
-            "Image/PageBlanche_Page_004.jpg"
+            "Image/PageBlanche_Page_004.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_005-jpg": [
             "id-PageBlanche_Page_005-jpg",
-            "Image/PageBlanche_Page_005.jpg"
+            "Image/PageBlanche_Page_005.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_006-jpg": [
             "id-PageBlanche_Page_006-jpg",
-            "Image/PageBlanche_Page_006.jpg"
+            "Image/PageBlanche_Page_006.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_007-jpg": [
             "id-PageBlanche_Page_007-jpg",
-            "Image/PageBlanche_Page_007.jpg"
+            "Image/PageBlanche_Page_007.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_008-jpg": [
             "id-PageBlanche_Page_008-jpg",
-            "Image/PageBlanche_Page_008.jpg"
+            "Image/PageBlanche_Page_008.jpg",
+            "image/jpeg"
         ]
     },
     "toc": [
@@ -67,30 +79,15 @@
         []
     ],
     "meta": {
-        "contributors": [
-            "Vincent Gros"
-        ],
-        "creators": [
-            "Boulet",
-            "Bagieu P\u00e9n\u00e9lope"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2012-01-18T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.google.com.epub-samples.page-blanche_bitmaps-in-spine"
-        ],
-        "publisher": "\u00e9ditions Delcourt",
-        "languages": [
-            "fr"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Page Blanche (bitmaps directly in spine)"
-        ]
+        "contributors": "[<AttributedString 'Vincent Gros' {'id': 'contributor'}>]",
+        "creators": "[<AttributedString 'Boulet' {'id': 'creator1'}>, <AttributedString 'Bagieu P\u00e9n\u00e9lope' {'id': 'creator2'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 1, 18, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.page-blanche_bitmaps-in-spine' {'id': 'bookid'}>]",
+        "publisher": "<AttributedString '\u00e9ditions Delcourt' {}>",
+        "languages": "[<AttributedString 'fr' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Page Blanche (bitmaps directly in spine)' {'id': 'title'}>]"
     }
 }

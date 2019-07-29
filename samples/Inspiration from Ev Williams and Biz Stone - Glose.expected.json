@@ -9,71 +9,88 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "0.html"
+            "0.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "1.html"
+            "1.html",
+            "application/xhtml+xml"
         ],
         "id2": [
             "id2",
-            "2.html"
+            "2.html",
+            "application/xhtml+xml"
         ],
         "img00": [
             "img00",
-            "images/image00.png"
+            "images/image00.png",
+            "image/png"
         ],
         "img01": [
             "img01",
-            "images/image01.png"
+            "images/image01.png",
+            "image/png"
         ],
         "img02": [
             "img02",
-            "images/image02.png"
+            "images/image02.png",
+            "image/png"
         ],
         "img03": [
             "img03",
-            "images/image03.png"
+            "images/image03.png",
+            "image/png"
         ],
         "img04": [
             "img04",
-            "images/image04.png"
+            "images/image04.png",
+            "image/png"
         ],
         "img05": [
             "img05",
-            "images/image05.png"
+            "images/image05.png",
+            "image/png"
         ],
         "img06": [
             "img06",
-            "images/image06.png"
+            "images/image06.png",
+            "image/png"
         ],
         "img07": [
             "img07",
-            "images/image07.png"
+            "images/image07.png",
+            "image/png"
         ],
         "img08": [
             "img08",
-            "images/image08.png"
+            "images/image08.png",
+            "image/png"
         ],
         "img09": [
             "img09",
-            "images/image09.png"
+            "images/image09.png",
+            "image/png"
         ],
         "img10": [
             "img10",
-            "images/image10.png"
+            "images/image10.png",
+            "image/png"
         ],
         "img11": [
             "img11",
-            "images/image11.png"
+            "images/image11.png",
+            "image/png"
         ],
         "img12": [
             "img12",
-            "images/image12.png"
+            "images/image12.png",
+            "image/png"
         ]
     },
     "toc": [
@@ -94,28 +111,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "None",
-        "identifiers": [
-            "9782954657790",
-            "urn:uuid:c9bd142c-7dc0-4ddc-801a-c7d451f20218"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Inspiration from Ev Williams and Biz Stone"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'None' {}>",
+        "identifiers": "[<AttributedString '9782954657790' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:c9bd142c-7dc0-4ddc-801a-c7d451f20218' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Inspiration from Ev Williams and Biz Stone' {}>]"
     }
 }

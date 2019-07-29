@@ -7,11 +7,13 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "10 Ways to Be Your Own Boss, Speech at the 99% Conference, April 15, 2010.html"
+            "10 Ways to Be Your Own Boss, Speech at the 99% Conference, April 15, 2010.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -24,28 +26,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "None",
-        "identifiers": [
-            "9782954657752",
-            "urn:uuid:70faf315-1271-491d-884f-301b026796f3"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Inspiration from Fred Wilson"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'None' {}>",
+        "identifiers": "[<AttributedString '9782954657752' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:70faf315-1271-491d-884f-301b026796f3' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Inspiration from Fred Wilson' {}>]"
     }
 }

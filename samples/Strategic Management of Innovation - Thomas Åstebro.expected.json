@@ -27,183 +27,228 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "html0": [
             "html0",
-            "00.html"
+            "00.html",
+            "application/xhtml+xml"
         ],
         "html1": [
             "html1",
-            "01.html"
+            "01.html",
+            "application/xhtml+xml"
         ],
         "html2": [
             "html2",
-            "02.html"
+            "02.html",
+            "application/xhtml+xml"
         ],
         "html3": [
             "html3",
-            "03.html"
+            "03.html",
+            "application/xhtml+xml"
         ],
         "html4": [
             "html4",
-            "04.html"
+            "04.html",
+            "application/xhtml+xml"
         ],
         "html5": [
             "html5",
-            "05.html"
+            "05.html",
+            "application/xhtml+xml"
         ],
         "html6": [
             "html6",
-            "06.html"
+            "06.html",
+            "application/xhtml+xml"
         ],
         "html7": [
             "html7",
-            "07.html"
+            "07.html",
+            "application/xhtml+xml"
         ],
         "html8": [
             "html8",
-            "08.html"
+            "08.html",
+            "application/xhtml+xml"
         ],
         "html9": [
             "html9",
-            "09.html"
+            "09.html",
+            "application/xhtml+xml"
         ],
         "html10": [
             "html10",
-            "10.html"
+            "10.html",
+            "application/xhtml+xml"
         ],
         "html11": [
             "html11",
-            "11.html"
+            "11.html",
+            "application/xhtml+xml"
         ],
         "html12": [
             "html12",
-            "12.html"
+            "12.html",
+            "application/xhtml+xml"
         ],
         "html13": [
             "html13",
-            "13.html"
+            "13.html",
+            "application/xhtml+xml"
         ],
         "html14": [
             "html14",
-            "14.html"
+            "14.html",
+            "application/xhtml+xml"
         ],
         "html15": [
             "html15",
-            "15.html"
+            "15.html",
+            "application/xhtml+xml"
         ],
         "html16": [
             "html16",
-            "16.html"
+            "16.html",
+            "application/xhtml+xml"
         ],
         "html17": [
             "html17",
-            "17.html"
+            "17.html",
+            "application/xhtml+xml"
         ],
         "html18": [
             "html18",
-            "18.html"
+            "18.html",
+            "application/xhtml+xml"
         ],
         "html19": [
             "html19",
-            "19.html"
+            "19.html",
+            "application/xhtml+xml"
         ],
         "html20": [
             "html20",
-            "20.html"
+            "20.html",
+            "application/xhtml+xml"
         ],
         "id0": [
             "id0",
-            ".DS_Store"
+            ".DS_Store",
+            null
         ],
         "id1": [
             "id1",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "id2": [
             "id2",
-            "images/05_1.jpg"
+            "images/05_1.jpg",
+            "image/jpeg"
         ],
         "id3": [
             "id3",
-            "images/05_2.jpg"
+            "images/05_2.jpg",
+            "image/jpeg"
         ],
         "id4": [
             "id4",
-            "images/05_3.jpg"
+            "images/05_3.jpg",
+            "image/jpeg"
         ],
         "id5": [
             "id5",
-            "images/hec.jpg"
+            "images/hec.jpg",
+            "image/jpeg"
         ],
         "id6": [
             "id6",
-            "uploaded_images/.DS_Store"
+            "uploaded_images/.DS_Store",
+            null
         ],
         "id7": [
             "id7",
-            "uploaded_images/129929-Images_2.jpg"
+            "uploaded_images/129929-Images_2.jpg",
+            "image/jpeg"
         ],
         "id8": [
             "id8",
-            "uploaded_images/129938-images_1.jpg"
+            "uploaded_images/129938-images_1.jpg",
+            "image/jpeg"
         ],
         "id9": [
             "id9",
-            "uploaded_images/129939-images_2.jpg"
+            "uploaded_images/129939-images_2.jpg",
+            "image/jpeg"
         ],
         "id10": [
             "id10",
-            "uploaded_images/129940-Image1.jpg"
+            "uploaded_images/129940-Image1.jpg",
+            "image/jpeg"
         ],
         "id11": [
             "id11",
-            "uploaded_images/129941-How_its_Done_image1.jpg"
+            "uploaded_images/129941-How_its_Done_image1.jpg",
+            "image/jpeg"
         ],
         "id12": [
             "id12",
-            "uploaded_images/129942-Images_1.jpg"
+            "uploaded_images/129942-Images_1.jpg",
+            "image/jpeg"
         ],
         "id13": [
             "id13",
-            "uploaded_images/129943-Images_2.jpg"
+            "uploaded_images/129943-Images_2.jpg",
+            "image/jpeg"
         ],
         "id14": [
             "id14",
-            "uploaded_images/129944-image2.png"
+            "uploaded_images/129944-image2.png",
+            "image/png"
         ],
         "id15": [
             "id15",
-            "uploaded_images/129945-Images_1.jpg"
+            "uploaded_images/129945-Images_1.jpg",
+            "image/jpeg"
         ],
         "id16": [
             "id16",
-            "uploaded_images/129946-Images_2.jpg"
+            "uploaded_images/129946-Images_2.jpg",
+            "image/jpeg"
         ],
         "id17": [
             "id17",
-            "uploaded_images/129947-Images_3.jpg"
+            "uploaded_images/129947-Images_3.jpg",
+            "image/jpeg"
         ],
         "id18": [
             "id18",
-            "uploaded_images/129949-Images_01.jpg"
+            "uploaded_images/129949-Images_01.jpg",
+            "image/jpeg"
         ],
         "id19": [
             "id19",
-            "uploaded_images/129950-Images_1.jpg"
+            "uploaded_images/129950-Images_1.jpg",
+            "image/jpeg"
         ],
         "id20": [
             "id20",
-            "uploaded_images/129951-Images_2.jpg"
+            "uploaded_images/129951-Images_2.jpg",
+            "image/jpeg"
         ],
         "id21": [
             "id21",
-            "uploaded_images/129952-Images_3.jpg"
+            "uploaded_images/129952-Images_3.jpg",
+            "image/jpeg"
         ],
         "id22": [
             "id22",
-            "uploaded_images/129953-Images_4.jpg"
+            "uploaded_images/129953-Images_4.jpg",
+            "image/jpeg"
         ]
     },
     "toc": [
@@ -296,27 +341,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Thomas \u00c5stebro"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "",
-        "identifiers": [
-            "urn:uuid:86d7447b-060a-4816-b9b2-9c8a555e8f70"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Strategic Management of Innovation"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Thomas \u00c5stebro' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString '' {}>",
+        "identifiers": "[<AttributedString 'urn:uuid:86d7447b-060a-4816-b9b2-9c8a555e8f70' {'id': 'uid', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Strategic Management of Innovation' {}>]"
     }
 }

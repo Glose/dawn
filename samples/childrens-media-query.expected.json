@@ -7,31 +7,38 @@
     "manifest": {
         "css1": [
             "css1",
-            "childrens-book-style.css"
+            "childrens-book-style.css",
+            "text/css"
         ],
         "css2": [
             "css2",
-            "small-screen.css"
+            "small-screen.css",
+            "text/css"
         ],
         "image1": [
             "image1",
-            "childrens-book-flowers.jpg"
+            "childrens-book-flowers.jpg",
+            "image/jpeg"
         ],
         "image2": [
             "image2",
-            "childrens-book-swans.jpg"
+            "childrens-book-swans.jpg",
+            "image/jpeg"
         ],
         "page1": [
             "page1",
-            "childrens-book-page.xhtml"
+            "childrens-book-page.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "toc.ncx"
+            "toc.ncx",
+            "application/x-dtbncx+xml"
         ],
         "toc": [
             "toc",
-            "toc.xhtml"
+            "toc.xhtml",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -39,33 +46,15 @@
         []
     ],
     "meta": {
-        "contributors": [
-            "Liza Daly",
-            "University of California Libraries"
-        ],
-        "creators": [
-            "Thomas Crane",
-            "Ellen Elizabeth Houghton"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "1882-01-01T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870"
-        ],
-        "publisher": "London ; Belfast ; New York : Marcus Ward & Co.",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [
-            "France -- Description and travel Juvenile literature"
-        ],
-        "titles": [
-            "Abroad"
-        ]
+        "contributors": "[<AttributedString 'Liza Daly' {'id': 'contrib1'}>, <AttributedString 'University of California Libraries' {}>]",
+        "creators": "[<AttributedString 'Thomas Crane' {'id': 'creator'}>, <AttributedString 'Ellen Elizabeth Houghton' {'id': 'illustrator'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(1882, 1, 1, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870' {'id': 'pub-id'}>]",
+        "publisher": "<AttributedString 'London ; Belfast ; New York : Marcus Ward & Co.' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[<AttributedString 'France -- Description and travel Juvenile literature' {}>]",
+        "titles": "[<AttributedString 'Abroad' {'id': 'title'}>]"
     }
 }

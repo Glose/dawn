@@ -7,11 +7,13 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "id0": [
             "id0",
-            "data.html"
+            "data.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -19,27 +21,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Michel Foucault"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:uuid:b6e25c1f-ff53-4f65-a5a0-03b29163feb4"
-        ],
-        "publisher": null,
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "The Birth of Biopolitics : Lectures at the Coll\u00e8ge de France, 1978-1979, lesson 2"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Michel Foucault' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:uuid:b6e25c1f-ff53-4f65-a5a0-03b29163feb4' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'The Birth of Biopolitics : Lectures at the Coll\u00e8ge de France, 1978-1979, lesson 2' {}>]"
     }
 }

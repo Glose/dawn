@@ -44,163 +44,203 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ],
         "html0": [
             "html0",
-            "0.html"
+            "0.html",
+            "application/xhtml+xml"
         ],
         "html1": [
             "html1",
-            "1.html"
+            "1.html",
+            "application/xhtml+xml"
         ],
         "html2": [
             "html2",
-            "2.html"
+            "2.html",
+            "application/xhtml+xml"
         ],
         "html3": [
             "html3",
-            "4.html"
+            "4.html",
+            "application/xhtml+xml"
         ],
         "html4": [
             "html4",
-            "5.html"
+            "5.html",
+            "application/xhtml+xml"
         ],
         "html5": [
             "html5",
-            "6.html"
+            "6.html",
+            "application/xhtml+xml"
         ],
         "html6": [
             "html6",
-            "7.html"
+            "7.html",
+            "application/xhtml+xml"
         ],
         "html7": [
             "html7",
-            "8.html"
+            "8.html",
+            "application/xhtml+xml"
         ],
         "html8": [
             "html8",
-            "10.html"
+            "10.html",
+            "application/xhtml+xml"
         ],
         "html9": [
             "html9",
-            "11.html"
+            "11.html",
+            "application/xhtml+xml"
         ],
         "html10": [
             "html10",
-            "12.html"
+            "12.html",
+            "application/xhtml+xml"
         ],
         "html11": [
             "html11",
-            "13.html"
+            "13.html",
+            "application/xhtml+xml"
         ],
         "html12": [
             "html12",
-            "14.html"
+            "14.html",
+            "application/xhtml+xml"
         ],
         "html13": [
             "html13",
-            "15.html"
+            "15.html",
+            "application/xhtml+xml"
         ],
         "html14": [
             "html14",
-            "16.html"
+            "16.html",
+            "application/xhtml+xml"
         ],
         "html15": [
             "html15",
-            "17.html"
+            "17.html",
+            "application/xhtml+xml"
         ],
         "html16": [
             "html16",
-            "19.html"
+            "19.html",
+            "application/xhtml+xml"
         ],
         "html17": [
             "html17",
-            "20.html"
+            "20.html",
+            "application/xhtml+xml"
         ],
         "html18": [
             "html18",
-            "21.html"
+            "21.html",
+            "application/xhtml+xml"
         ],
         "html19": [
             "html19",
-            "22.html"
+            "22.html",
+            "application/xhtml+xml"
         ],
         "html20": [
             "html20",
-            "23.html"
+            "23.html",
+            "application/xhtml+xml"
         ],
         "html21": [
             "html21",
-            "24.html"
+            "24.html",
+            "application/xhtml+xml"
         ],
         "html22": [
             "html22",
-            "25.html"
+            "25.html",
+            "application/xhtml+xml"
         ],
         "html23": [
             "html23",
-            "27.html"
+            "27.html",
+            "application/xhtml+xml"
         ],
         "html24": [
             "html24",
-            "28.html"
+            "28.html",
+            "application/xhtml+xml"
         ],
         "html25": [
             "html25",
-            "29.html"
+            "29.html",
+            "application/xhtml+xml"
         ],
         "html26": [
             "html26",
-            "30.html"
+            "30.html",
+            "application/xhtml+xml"
         ],
         "html27": [
             "html27",
-            "31.html"
+            "31.html",
+            "application/xhtml+xml"
         ],
         "html28": [
             "html28",
-            "32.html"
+            "32.html",
+            "application/xhtml+xml"
         ],
         "html29": [
             "html29",
-            "33.html"
+            "33.html",
+            "application/xhtml+xml"
         ],
         "html30": [
             "html30",
-            "34.html"
+            "34.html",
+            "application/xhtml+xml"
         ],
         "html31": [
             "html31",
-            "35.html"
+            "35.html",
+            "application/xhtml+xml"
         ],
         "html32": [
             "html32",
-            "36.html"
+            "36.html",
+            "application/xhtml+xml"
         ],
         "html33": [
             "html33",
-            "38.html"
+            "38.html",
+            "application/xhtml+xml"
         ],
         "html34": [
             "html34",
-            "39.html"
+            "39.html",
+            "application/xhtml+xml"
         ],
         "html35": [
             "html35",
-            "40.html"
+            "40.html",
+            "application/xhtml+xml"
         ],
         "html36": [
             "html36",
-            "41.html"
+            "41.html",
+            "application/xhtml+xml"
         ],
         "html37": [
             "html37",
-            "42.html"
+            "42.html",
+            "application/xhtml+xml"
         ],
         "asset0": [
             "asset0",
-            "cover.jpg"
+            "cover.jpg",
+            "image/jpeg"
         ]
     },
     "toc": [
@@ -381,28 +421,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Jean Racine"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "\n<em>Iphig\u00e9nie</em> est une trag\u00e9die de Jean Racine en cinq actes et en vers. Repr\u00e9sent\u00e9e pour la premi\u00e8re fois \u00e0 Versailles le 18 ao\u00fbt 1674, Iphig\u00e9nie marque le retour de Racine \u00e0 des th\u00e8mes mythologiques apr\u00e8s une s\u00e9rie de sujets historiques (<em>Britannicus, B\u00e9r\u00e9nice, Bajazet, Mithridate</em>). Sur les rivages d'Aulis, les Grecs se pr\u00e9parent \u00e0 aller attaquer Troie. Mais ils ne peuvent atteindre Troie, car les dieux retiennent les vents n\u00e9cessaires au d\u00e9part de l'exp\u00e9dition. Agamemnon, leur chef, est donc contraint de consulter l\u2019oracle Calchas, qui lui ordonne de sacrifier sa fille, Iphig\u00e9nie, afin d\u2019apaiser la d\u00e9esse Art\u00e9mis. Dans le chaos provoqu\u00e9 par les ind\u00e9cisions d'Agamemnon, Iphig\u00e9nie se soumet aux volont\u00e9s de son p\u00e8re. Ambition d'Agamemnon, d\u00e9sir de gloire d'Achille, orgueil de Clytemnestre, jalousie d'\u00c9riphile : la pi\u00e8ce donne \u00e0 voir des passions d\u00e9cha\u00een\u00e9es qui, toutes, font d'Iphig\u00e9nie leur victime.\n",
-        "identifiers": [
-            "9782371183506",
-            "urn:uuid:749d75e6-b50f-42a2-b06f-0c0ff3d3a33b"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "fr"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Iphig\u00e9nie"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Jean Racine' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString \"\\n<em>Iphig\u00e9nie</em> est une trag\u00e9die de Jean Racine en cinq actes et en vers. Repr\u00e9sent\u00e9e pour la premi\u00e8re fois \u00e0 Versailles le 18 ao\u00fbt 1674, Iphig\u00e9nie marque le retour de Racine \u00e0 des th\u00e8mes mythologiques apr\u00e8s une s\u00e9rie de sujets historiques (<em>Britannicus, B\u00e9r\u00e9nice, Bajazet, Mithridate</em>). Sur les rivages d'Aulis, les Grecs se pr\u00e9parent \u00e0 aller attaquer Troie. Mais ils ne peuvent atteindre Troie, car les dieux retiennent les vents n\u00e9cessaires au d\u00e9part de l'exp\u00e9dition. Agamemnon, leur chef, est donc contraint de consulter l\u2019oracle Calchas, qui lui ordonne de sacrifier sa fille, Iphig\u00e9nie, afin d\u2019apaiser la d\u00e9esse Art\u00e9mis. Dans le chaos provoqu\u00e9 par les ind\u00e9cisions d'Agamemnon, Iphig\u00e9nie se soumet aux volont\u00e9s de son p\u00e8re. Ambition d'Agamemnon, d\u00e9sir de gloire d'Achille, orgueil de Clytemnestre, jalousie d'\u00c9riphile : la pi\u00e8ce donne \u00e0 voir des passions d\u00e9cha\u00een\u00e9es qui, toutes, font d'Iphig\u00e9nie leur victime.\\n\" {}>",
+        "identifiers": "[<AttributedString '9782371183506' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:749d75e6-b50f-42a2-b06f-0c0ff3d3a33b' {'id': 'uid', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'fr' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Iphig\u00e9nie' {}>]"
     }
 }

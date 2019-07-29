@@ -7,43 +7,53 @@
     "manifest": {
         "t1": [
             "t1",
-            "wasteland-content.xhtml"
+            "wasteland-content.xhtml",
+            "application/xhtml+xml"
         ],
         "nav": [
             "nav",
-            "wasteland-nav.xhtml"
+            "wasteland-nav.xhtml",
+            "application/xhtml+xml"
         ],
         "cover": [
             "cover",
-            "wasteland-cover.jpg"
+            "wasteland-cover.jpg",
+            "image/jpeg"
         ],
         "css": [
             "css",
-            "wasteland.css"
+            "wasteland.css",
+            "text/css"
         ],
         "css-fonts": [
             "css-fonts",
-            "fonts.css"
+            "fonts.css",
+            "text/css"
         ],
         "css-night": [
             "css-night",
-            "wasteland-night.css"
+            "wasteland-night.css",
+            "text/css"
         ],
         "font.OldStandard.regular": [
             "font.OldStandard.regular",
-            "OldStandard-Regular.woff"
+            "OldStandard-Regular.woff",
+            "font/woff"
         ],
         "font.OldStandard.italic": [
             "font.OldStandard.italic",
-            "OldStandard-Italic.woff"
+            "OldStandard-Italic.woff",
+            "font/woff"
         ],
         "font.OldStandard.bold": [
             "font.OldStandard.bold",
-            "OldStandard-Bold.woff"
+            "OldStandard-Bold.woff",
+            "font/woff"
         ],
         "ncx": [
             "ncx",
-            "wasteland.ncx"
+            "wasteland.ncx",
+            "application/x-dtbncx+xml"
         ]
     },
     "toc": [
@@ -51,27 +61,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "T.S. Eliot"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2011-09-01T00:00:00",
-            "modification": null
-        },
-        "description": "Using WOFF fonts, fallback to sans-serif system font",
-        "identifiers": [
-            "code.google.com.epub-samples.wasteland-woff"
-        ],
-        "publisher": null,
-        "languages": [
-            "en-US"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "The Waste Land"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'T.S. Eliot' {}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2011, 9, 1, 0, 0), 'modification': None}",
+        "description": "<AttributedString 'Using WOFF fonts, fallback to sans-serif system font' {}>",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.wasteland-woff' {'id': 'uid'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en-US' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'The Waste Land' {}>]"
     }
 }

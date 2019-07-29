@@ -16,91 +16,113 @@
     "manifest": {
         "css": [
             "css",
-            "Style/style.css"
+            "Style/style.css",
+            "text/css"
         ],
         "nav": [
             "nav",
-            "Navigation/nav.xhtml"
+            "Navigation/nav.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "Navigation/toc.ncx"
+            "Navigation/toc.ncx",
+            "application/x-dtbncx+xml"
         ],
         "id-cover-xhtml": [
             "id-cover-xhtml",
-            "Content/cover.xhtml"
+            "Content/cover.xhtml",
+            "application/xhtml+xml"
         ],
         "white-xhtml": [
             "white-xhtml",
-            "Content/PageBlanche_Page_000.xhtml"
+            "Content/PageBlanche_Page_000.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_001-xhtml": [
             "id-PageBlanche_Page_001-xhtml",
-            "Content/PageBlanche_Page_001.xhtml"
+            "Content/PageBlanche_Page_001.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_002-xhtml": [
             "id-PageBlanche_Page_002-xhtml",
-            "Content/PageBlanche_Page_002.xhtml"
+            "Content/PageBlanche_Page_002.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_003-xhtml": [
             "id-PageBlanche_Page_003-xhtml",
-            "Content/PageBlanche_Page_003.xhtml"
+            "Content/PageBlanche_Page_003.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_004-xhtml": [
             "id-PageBlanche_Page_004-xhtml",
-            "Content/PageBlanche_Page_004.xhtml"
+            "Content/PageBlanche_Page_004.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_005-xhtml": [
             "id-PageBlanche_Page_005-xhtml",
-            "Content/PageBlanche_Page_005.xhtml"
+            "Content/PageBlanche_Page_005.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_006-xhtml": [
             "id-PageBlanche_Page_006-xhtml",
-            "Content/PageBlanche_Page_006.xhtml"
+            "Content/PageBlanche_Page_006.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_007-xhtml": [
             "id-PageBlanche_Page_007-xhtml",
-            "Content/PageBlanche_Page_007.xhtml"
+            "Content/PageBlanche_Page_007.xhtml",
+            "application/xhtml+xml"
         ],
         "id-PageBlanche_Page_008-xhtml": [
             "id-PageBlanche_Page_008-xhtml",
-            "Content/PageBlanche_Page_008.xhtml"
+            "Content/PageBlanche_Page_008.xhtml",
+            "application/xhtml+xml"
         ],
         "id-cover-jpg": [
             "id-cover-jpg",
-            "Image/cover.jpg"
+            "Image/cover.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_001-jpg": [
             "id-PageBlanche_Page_001-jpg",
-            "Image/PageBlanche_Page_001.jpg"
+            "Image/PageBlanche_Page_001.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_002-jpg": [
             "id-PageBlanche_Page_002-jpg",
-            "Image/PageBlanche_Page_002.jpg"
+            "Image/PageBlanche_Page_002.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_003-jpg": [
             "id-PageBlanche_Page_003-jpg",
-            "Image/PageBlanche_Page_003.jpg"
+            "Image/PageBlanche_Page_003.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_004-jpg": [
             "id-PageBlanche_Page_004-jpg",
-            "Image/PageBlanche_Page_004.jpg"
+            "Image/PageBlanche_Page_004.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_005-jpg": [
             "id-PageBlanche_Page_005-jpg",
-            "Image/PageBlanche_Page_005.jpg"
+            "Image/PageBlanche_Page_005.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_006-jpg": [
             "id-PageBlanche_Page_006-jpg",
-            "Image/PageBlanche_Page_006.jpg"
+            "Image/PageBlanche_Page_006.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_007-jpg": [
             "id-PageBlanche_Page_007-jpg",
-            "Image/PageBlanche_Page_007.jpg"
+            "Image/PageBlanche_Page_007.jpg",
+            "image/jpeg"
         ],
         "id-PageBlanche_Page_008-jpg": [
             "id-PageBlanche_Page_008-jpg",
-            "Image/PageBlanche_Page_008.jpg"
+            "Image/PageBlanche_Page_008.jpg",
+            "image/jpeg"
         ]
     },
     "toc": [
@@ -108,30 +130,15 @@
         []
     ],
     "meta": {
-        "contributors": [
-            "Vincent Gros"
-        ],
-        "creators": [
-            "Boulet",
-            "Bagieu P\u00e9n\u00e9lope"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2012-01-18T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.google.com.epub-samples.page-blanche"
-        ],
-        "publisher": "\u00e9ditions Delcourt",
-        "languages": [
-            "fr"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Page Blanche"
-        ]
+        "contributors": "[<AttributedString 'Vincent Gros' {'id': 'contributor'}>]",
+        "creators": "[<AttributedString 'Boulet' {'id': 'creator1'}>, <AttributedString 'Bagieu P\u00e9n\u00e9lope' {'id': 'creator2'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 1, 18, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.page-blanche' {'id': 'bookid'}>]",
+        "publisher": "<AttributedString '\u00e9ditions Delcourt' {}>",
+        "languages": "[<AttributedString 'fr' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Page Blanche' {'id': 'title'}>]"
     }
 }

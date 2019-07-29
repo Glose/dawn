@@ -222,8 +222,10 @@ class Manifest(dict):
 		super().__setitem__(k, v)
 
 	def byhref(self, href):
-		href = href.rsplit('#', 1)[0]
-		return next(filter(lambda item: item.href == href, self.values()))
+		href = href.split('#', 1)[0]
+		it = filter(lambda item: item.href == href, self.values())
+		try: return next(it)
+		except StopIteration: raise KeyError(href)
 
 
 class Spine(list):
@@ -548,7 +550,7 @@ def getxmlattr(tag, attr):
 def ns(name):
 	if ':' in name:
 		ns, name = name.split(':', 1)
-		return '{{{}}}{}'.format(NS[ns], name)
+		return '{' + NS[ns] + '}' + name
 	else:
 		return name
 

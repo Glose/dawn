@@ -22,107 +22,133 @@
     "manifest": {
         "hstyle": [
             "hstyle",
-            "css/horizontal.css"
+            "css/horizontal.css",
+            "text/css"
         ],
         "vstyle": [
             "vstyle",
-            "css/vertical.css"
+            "css/vertical.css",
+            "text/css"
         ],
         "\u8868\u7d19": [
             "\u8868\u7d19",
-            "xhtml/\u8868\u7d19.xhtml"
+            "xhtml/\u8868\u7d19.xhtml",
+            "application/xhtml+xml"
         ],
         "\u76ee\u6b21": [
             "\u76ee\u6b21",
-            "xhtml/\u76ee\u6b21.xhtml"
+            "xhtml/\u76ee\u6b21.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e00": [
             "\u4e00",
-            "xhtml/\u4e00.xhtml"
+            "xhtml/\u4e00.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e8c": [
             "\u4e8c",
-            "xhtml/\u4e8c.xhtml"
+            "xhtml/\u4e8c.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e09": [
             "\u4e09",
-            "xhtml/\u4e09.xhtml"
+            "xhtml/\u4e09.xhtml",
+            "application/xhtml+xml"
         ],
         "\u56db": [
             "\u56db",
-            "xhtml/\u56db.xhtml"
+            "xhtml/\u56db.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e94": [
             "\u4e94",
-            "xhtml/\u4e94.xhtml"
+            "xhtml/\u4e94.xhtml",
+            "application/xhtml+xml"
         ],
         "\u516d": [
             "\u516d",
-            "xhtml/\u516d.xhtml"
+            "xhtml/\u516d.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e03": [
             "\u4e03",
-            "xhtml/\u4e03.xhtml"
+            "xhtml/\u4e03.xhtml",
+            "application/xhtml+xml"
         ],
         "\u516b": [
             "\u516b",
-            "xhtml/\u516b.xhtml"
+            "xhtml/\u516b.xhtml",
+            "application/xhtml+xml"
         ],
         "\u4e5d": [
             "\u4e5d",
-            "xhtml/\u4e5d.xhtml"
+            "xhtml/\u4e5d.xhtml",
+            "application/xhtml+xml"
         ],
         "\u5341": [
             "\u5341",
-            "xhtml/\u5341.xhtml"
+            "xhtml/\u5341.xhtml",
+            "application/xhtml+xml"
         ],
         "\u5341\u4e00": [
             "\u5341\u4e00",
-            "xhtml/\u5341\u4e00.xhtml"
+            "xhtml/\u5341\u4e00.xhtml",
+            "application/xhtml+xml"
         ],
         "\u5341\u4e8c": [
             "\u5341\u4e8c",
-            "xhtml/\u5341\u4e8c.xhtml"
+            "xhtml/\u5341\u4e8c.xhtml",
+            "application/xhtml+xml"
         ],
         "\u5341\u4e09": [
             "\u5341\u4e09",
-            "xhtml/\u5341\u4e09.xhtml"
+            "xhtml/\u5341\u4e09.xhtml",
+            "application/xhtml+xml"
         ],
         "\u5f8c\u4ed8": [
             "\u5f8c\u4ed8",
-            "xhtml/\u5f8c\u4ed8.xhtml"
+            "xhtml/\u5f8c\u4ed8.xhtml",
+            "application/xhtml+xml"
         ],
         "\u590f\u76ee\u6f31\u77f3": [
             "\u590f\u76ee\u6f31\u77f3",
-            "images/\u590f\u76ee\u6f31\u77f3.jpg"
+            "images/\u590f\u76ee\u6f31\u77f3.jpg",
+            "image/jpeg"
         ],
         "\u66f8\u30c7\u30b8": [
             "\u66f8\u30c7\u30b8",
-            "images/\u66f8\u30c7\u30b8.png"
+            "images/\u66f8\u30c7\u30b8.png",
+            "image/png"
         ],
         "\u4e00_overlay": [
             "\u4e00_overlay",
-            "xhtml/\u4e00.smil"
+            "xhtml/\u4e00.smil",
+            "application/smil+xml"
         ],
         "\u4e8c_overlay": [
             "\u4e8c_overlay",
-            "xhtml/\u4e8c.smil"
+            "xhtml/\u4e8c.smil",
+            "application/smil+xml"
         ],
         "\u4e00_audio": [
             "\u4e00_audio",
-            "audio/fmse004b.mp3"
+            "audio/fmse004b.mp3",
+            "audio/mpeg"
         ],
         "\u4e8c_audio": [
             "\u4e8c_audio",
-            "audio/ulnr0036.mp3"
+            "audio/ulnr0036.mp3",
+            "audio/mpeg"
         ],
         "foobar": [
             "foobar",
-            "fonts/foobar.ttf"
+            "fonts/foobar.ttf",
+            "font/ttf"
         ],
         "ncxtoc": [
             "ncxtoc",
-            "xhtml/toc.ncx"
+            "xhtml/toc.ncx",
+            "application/x-dtbncx+xml"
         ]
     },
     "toc": [
@@ -130,25 +156,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:uuid:de453c9c-b52e-46e6-b110-ea31f9ffe9d5"
-        ],
-        "publisher": null,
-        "languages": [
-            "ja-jp"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "\u8349\u6795"
-        ]
+        "contributors": "[]",
+        "creators": "[]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:uuid:de453c9c-b52e-46e6-b110-ea31f9ffe9d5' {'id': 'identifier0'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'ja-jp' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString '\u8349\u6795' {'id': '\u984c\u540d'}>]"
     }
 }

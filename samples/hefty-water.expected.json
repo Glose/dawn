@@ -7,11 +7,13 @@
     "manifest": {
         "doc": [
             "doc",
-            "heftywater.xhtml"
+            "heftywater.xhtml",
+            "application/xhtml+xml"
         ],
         "nav": [
             "nav",
-            "nav.xhtml"
+            "nav.xhtml",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -19,25 +21,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [],
-        "dates": {
-            "creation": null,
-            "publication": "2012-03-29T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.google.com.epub-samples.hefty.water"
-        ],
-        "publisher": null,
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Hefty Water"
-        ]
+        "contributors": "[]",
+        "creators": "[]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 3, 29, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.hefty.water' {'id': 'pub-id'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Hefty Water' {'id': 'title'}>]"
     }
 }

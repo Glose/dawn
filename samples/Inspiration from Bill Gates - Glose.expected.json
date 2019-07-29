@@ -9,19 +9,23 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "0.html"
+            "0.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "1.html"
+            "1.html",
+            "application/xhtml+xml"
         ],
         "id2": [
             "id2",
-            "2.html"
+            "2.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -42,28 +46,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "None",
-        "identifiers": [
-            "9782954657776",
-            "urn:uuid:fd515765-4725-4601-81cf-a5a0e34eb834"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Inspiration from Bill Gates"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'None' {}>",
+        "identifiers": "[<AttributedString '9782954657776' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:fd515765-4725-4601-81cf-a5a0e34eb834' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Inspiration from Bill Gates' {}>]"
     }
 }

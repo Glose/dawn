@@ -7,43 +7,53 @@
     "manifest": {
         "cover": [
             "cover",
-            "images/cover.jpg"
+            "images/cover.jpg",
+            "image/jpeg"
         ],
         "nav": [
             "nav",
-            "content/nav.xhtml"
+            "content/nav.xhtml",
+            "application/xhtml+xml"
         ],
         "epub-css": [
             "epub-css",
-            "css/epub.css"
+            "css/epub.css",
+            "text/css"
         ],
         "t1": [
             "t1",
-            "content/text.xhtml"
+            "content/text.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "nav.ncx"
+            "nav.ncx",
+            "application/x-dtbncx+xml"
         ],
         "solar-system-xml": [
             "solar-system-xml",
-            "content/solar-system.xml"
+            "content/solar-system.xml",
+            "application/xml"
         ],
         "quiz-impl": [
             "quiz-impl",
-            "content/quiz/quiz-impl.xhtml"
+            "content/quiz/quiz-impl.xhtml",
+            "application/xhtml+xml"
         ],
         "quiz-js": [
             "quiz-js",
-            "content/quiz/quiz.js"
+            "content/quiz/quiz.js",
+            "application/javascript"
         ],
         "quiz-css": [
             "quiz-css",
-            "content/quiz/quiz.css"
+            "content/quiz/quiz.css",
+            "text/css"
         ],
         "quiz-jquery": [
             "quiz-jquery",
-            "content/quiz/jquery-1.7.1.min.js"
+            "content/quiz/jquery-1.7.1.min.js",
+            "application/javascript"
         ]
     },
     "toc": [
@@ -51,27 +61,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "E.L. Starr"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2012-01-17T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.google.com.epub-samples.basic-quiz"
-        ],
-        "publisher": null,
-        "languages": [
-            "en-US"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Basic Quiz"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'E.L. Starr' {}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 1, 17, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.google.com.epub-samples.basic-quiz' {'id': 'uid'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en-US' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Basic Quiz' {}>]"
     }
 }

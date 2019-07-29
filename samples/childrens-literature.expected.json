@@ -9,31 +9,38 @@
     "manifest": {
         "cover-img": [
             "cover-img",
-            "images/cover.png"
+            "images/cover.png",
+            "image/png"
         ],
         "css01": [
             "css01",
-            "css/epub.css"
+            "css/epub.css",
+            "text/css"
         ],
         "css02": [
             "css02",
-            "css/nav.css"
+            "css/nav.css",
+            "text/css"
         ],
         "cover": [
             "cover",
-            "cover.xhtml"
+            "cover.xhtml",
+            "application/xhtml+xml"
         ],
         "s04": [
             "s04",
-            "s04.xhtml"
+            "s04.xhtml",
+            "application/xhtml+xml"
         ],
         "nav": [
             "nav",
-            "nav.xhtml"
+            "nav.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "toc.ncx"
+            "toc.ncx",
+            "application/x-dtbncx+xml"
         ]
     },
     "toc": [
@@ -41,32 +48,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Charles Madison Curry",
-            "Erle Elsworth Clippinger"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2008-05-20T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "http://www.gutenberg.org/ebooks/25545"
-        ],
-        "publisher": null,
-        "languages": [
-            "en"
-        ],
-        "source": "http://www.gutenberg.org/files/25545/25545-h/25545-h.htm",
-        "subjects": [
-            "Children -- Books and reading",
-            "Children's literature -- Study and teaching"
-        ],
-        "titles": [
-            "Children's Literature",
-            "A Textbook of Sources for Teachers and Teacher-Training Classes"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Charles Madison Curry' {'id': 'curry'}>, <AttributedString 'Erle Elsworth Clippinger' {'id': 'clippinger'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2008, 5, 20, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'http://www.gutenberg.org/ebooks/25545' {'id': 'id'}>]",
+        "publisher": "None",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "<AttributedString 'http://www.gutenberg.org/files/25545/25545-h/25545-h.htm' {}>",
+        "subjects": "[<AttributedString 'Children -- Books and reading' {}>, <AttributedString \"Children's literature -- Study and teaching\" {}>]",
+        "titles": "[<AttributedString \"Children's Literature\" {'id': 't1'}>, <AttributedString 'A Textbook of Sources for Teachers and Teacher-Training Classes' {'id': 't2'}>]"
     }
 }

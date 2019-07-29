@@ -8,15 +8,18 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "Jack Dorsey.html"
+            "Jack Dorsey.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "Mark Zuckerberg.html"
+            "Mark Zuckerberg.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -33,28 +36,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Glose"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "None",
-        "identifiers": [
-            "9782954657738",
-            "urn:uuid:a23de2ac-0bf9-43ed-bb4e-bdfdf27b56b1"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Startup School 2013"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Glose' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'None' {}>",
+        "identifiers": "[<AttributedString '9782954657738' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:a23de2ac-0bf9-43ed-bb4e-bdfdf27b56b1' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Startup School 2013' {}>]"
     }
 }

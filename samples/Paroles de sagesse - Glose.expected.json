@@ -11,31 +11,38 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.png"
+            "cover.png",
+            "image/png"
         ],
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "Entrepreneurs.html"
+            "Entrepreneurs.html",
+            "application/xhtml+xml"
         ],
         "id1": [
             "id1",
-            "E\u0301crivains.html"
+            "E\u0301crivains.html",
+            "application/xhtml+xml"
         ],
         "id2": [
             "id2",
-            "Figures historiques.html"
+            "Figures historiques.html",
+            "application/xhtml+xml"
         ],
         "id3": [
             "id3",
-            "Personnalite\u0301s.html"
+            "Personnalite\u0301s.html",
+            "application/xhtml+xml"
         ],
         "id4": [
             "id4",
-            "Philosophes.html"
+            "Philosophes.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -64,26 +71,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "9782371182332",
-            "urn:uuid:7d71f4bf-d790-452d-bc17-7bb3157ce105"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Paroles de sagesse"
-        ]
+        "contributors": "[]",
+        "creators": "[]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString '9782371182332' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:7d71f4bf-d790-452d-bc17-7bb3157ce105' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Paroles de sagesse' {}>]"
     }
 }

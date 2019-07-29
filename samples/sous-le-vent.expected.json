@@ -19,91 +19,113 @@
     "manifest": {
         "css": [
             "css",
-            "Style/style.css"
+            "Style/style.css",
+            "text/css"
         ],
         "nav": [
             "nav",
-            "Navigation/nav.xhtml"
+            "Navigation/nav.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx": [
             "ncx",
-            "Navigation/toc.ncx"
+            "Navigation/toc.ncx",
+            "application/x-dtbncx+xml"
         ],
         "id1": [
             "id1",
-            "Font/agaramondpro-regular.otf"
+            "Font/agaramondpro-regular.otf",
+            "font/otf"
         ],
         "id2": [
             "id2",
-            "Font/agaramondpro-bold.otf"
+            "Font/agaramondpro-bold.otf",
+            "font/otf"
         ],
         "id3": [
             "id3",
-            "Font/agaramondpro-italic.otf"
+            "Font/agaramondpro-italic.otf",
+            "font/otf"
         ],
         "cover": [
             "cover",
-            "Image/9782709641609_Couv.jpg"
+            "Image/9782709641609_Couv.jpg",
+            "image/jpeg"
         ],
         "ch1": [
             "ch1",
-            "Content/pageNum-1.xhtml"
+            "Content/pageNum-1.xhtml",
+            "application/xhtml+xml"
         ],
         "ch2": [
             "ch2",
-            "Content/pageNum-2.xhtml"
+            "Content/pageNum-2.xhtml",
+            "application/xhtml+xml"
         ],
         "ch3": [
             "ch3",
-            "Content/pageNum-3.xhtml"
+            "Content/pageNum-3.xhtml",
+            "application/xhtml+xml"
         ],
         "ch4": [
             "ch4",
-            "Content/pageNum-4.xhtml"
+            "Content/pageNum-4.xhtml",
+            "application/xhtml+xml"
         ],
         "ch5": [
             "ch5",
-            "Content/pageNum-5.xhtml"
+            "Content/pageNum-5.xhtml",
+            "application/xhtml+xml"
         ],
         "ch8": [
             "ch8",
-            "Content/pageNum-8.xhtml"
+            "Content/pageNum-8.xhtml",
+            "application/xhtml+xml"
         ],
         "ch9": [
             "ch9",
-            "Content/pageNum-9.xhtml"
+            "Content/pageNum-9.xhtml",
+            "application/xhtml+xml"
         ],
         "img3": [
             "img3",
-            "Image/img-3.jpg"
+            "Image/img-3.jpg",
+            "image/jpeg"
         ],
         "ch10": [
             "ch10",
-            "Content/pageNum-10.xhtml"
+            "Content/pageNum-10.xhtml",
+            "application/xhtml+xml"
         ],
         "ch11": [
             "ch11",
-            "Content/pageNum-11.xhtml"
+            "Content/pageNum-11.xhtml",
+            "application/xhtml+xml"
         ],
         "ch12": [
             "ch12",
-            "Content/pageNum-12.xhtml"
+            "Content/pageNum-12.xhtml",
+            "application/xhtml+xml"
         ],
         "img4": [
             "img4",
-            "Image/img-4.jpg"
+            "Image/img-4.jpg",
+            "image/jpeg"
         ],
         "ch13": [
             "ch13",
-            "Content/pageNum-13.xhtml"
+            "Content/pageNum-13.xhtml",
+            "application/xhtml+xml"
         ],
         "ch14": [
             "ch14",
-            "Content/pageNum-14.xhtml"
+            "Content/pageNum-14.xhtml",
+            "application/xhtml+xml"
         ],
         "ch15": [
             "ch15",
-            "Content/pageNum-15.xhtml"
+            "Content/pageNum-15.xhtml",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -111,30 +133,15 @@
         []
     ],
     "meta": {
-        "contributors": [
-            "Vincent Gros"
-        ],
-        "creators": [
-            "Jean-Bernard Pouy",
-            "Joe G. Pinelli"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2012-02-01T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "code.gogle.com.epub-sample.sous-le-vent"
-        ],
-        "publisher": "\u00e9ditions Jean-Claude Latt\u00e8s",
-        "languages": [
-            "fr"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Sous le vent"
-        ]
+        "contributors": "[<AttributedString 'Vincent Gros' {'id': 'contributor'}>]",
+        "creators": "[<AttributedString 'Jean-Bernard Pouy' {'id': 'creator1'}>, <AttributedString 'Joe G. Pinelli' {'id': 'creator2'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 2, 1, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'code.gogle.com.epub-sample.sous-le-vent' {'id': 'bookid'}>]",
+        "publisher": "<AttributedString '\u00e9ditions Jean-Claude Latt\u00e8s' {}>",
+        "languages": "[<AttributedString 'fr' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Sous le vent' {'id': 'title'}>]"
     }
 }

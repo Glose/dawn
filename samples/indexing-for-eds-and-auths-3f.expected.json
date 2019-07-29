@@ -28,199 +28,248 @@
     "manifest": {
         "cover": [
             "cover",
-            "cover.xhtml"
+            "cover.xhtml",
+            "application/xhtml+xml"
         ],
         "cover-image": [
             "cover-image",
-            "images/9781573878296.jpg"
+            "images/9781573878296.jpg",
+            "image/jpeg"
         ],
         "style": [
             "style",
-            "css/stylesheet.css"
+            "css/stylesheet.css",
+            "text/css"
         ],
         "ncx": [
             "ncx",
-            "ncx.xhtml"
+            "ncx.xhtml",
+            "application/xhtml+xml"
         ],
         "ncx1": [
             "ncx1",
-            "toc.ncx"
+            "toc.ncx",
+            "application/x-dtbncx+xml"
         ],
         "page-template": [
             "page-template",
-            "css/page-template.xpgt"
+            "css/page-template.xpgt",
+            null
         ],
         "copyright": [
             "copyright",
-            "copyright.xhtml"
+            "copyright.xhtml",
+            "application/xhtml+xml"
         ],
         "toc": [
             "toc",
-            "toc.xhtml"
+            "toc.xhtml",
+            "application/xhtml+xml"
         ],
         "Art_1.jpg": [
             "Art_1.jpg",
-            "images/Art_1.jpg"
+            "images/Art_1.jpg",
+            "image/jpeg"
         ],
         "Art_2.jpg": [
             "Art_2.jpg",
-            "images/Art_2.jpg"
+            "images/Art_2.jpg",
+            "image/jpeg"
         ],
         "Art_3.jpg": [
             "Art_3.jpg",
-            "images/Art_3.jpg"
+            "images/Art_3.jpg",
+            "image/jpeg"
         ],
         "Art_4.jpg": [
             "Art_4.jpg",
-            "images/Art_4.jpg"
+            "images/Art_4.jpg",
+            "image/jpeg"
         ],
         "Art_5.jpg": [
             "Art_5.jpg",
-            "images/Art_5.jpg"
+            "images/Art_5.jpg",
+            "image/jpeg"
         ],
         "Art_6.jpg": [
             "Art_6.jpg",
-            "images/Art_6.jpg"
+            "images/Art_6.jpg",
+            "image/jpeg"
         ],
         "Art_7.jpg": [
             "Art_7.jpg",
-            "images/Art_7.jpg"
+            "images/Art_7.jpg",
+            "image/jpeg"
         ],
         "Art_8.jpg": [
             "Art_8.jpg",
-            "images/Art_8.jpg"
+            "images/Art_8.jpg",
+            "image/jpeg"
         ],
         "Art_P1.jpg": [
             "Art_P1.jpg",
-            "images/Art_P1.jpg"
+            "images/Art_P1.jpg",
+            "image/jpeg"
         ],
         "Art_P2.jpg": [
             "Art_P2.jpg",
-            "images/Art_P2.jpg"
+            "images/Art_P2.jpg",
+            "image/jpeg"
         ],
         "box.jpg": [
             "box.jpg",
-            "images/box.jpg"
+            "images/box.jpg",
+            "image/jpeg"
         ],
         "titlepage": [
             "titlepage",
-            "titlepage.xhtml"
+            "titlepage.xhtml",
+            "application/xhtml+xml"
         ],
         "foreword001": [
             "foreword001",
-            "foreword001.xhtml"
+            "foreword001.xhtml",
+            "application/xhtml+xml"
         ],
         "introduction001": [
             "introduction001",
-            "introduction001.xhtml"
+            "introduction001.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter001": [
             "chapter001",
-            "chapter001.xhtml"
+            "chapter001.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter002": [
             "chapter002",
-            "chapter002.xhtml"
+            "chapter002.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter003": [
             "chapter003",
-            "chapter003.xhtml"
+            "chapter003.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter004": [
             "chapter004",
-            "chapter004.xhtml"
+            "chapter004.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter005": [
             "chapter005",
-            "chapter005.xhtml"
+            "chapter005.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter006": [
             "chapter006",
-            "chapter006.xhtml"
+            "chapter006.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter007": [
             "chapter007",
-            "chapter007.xhtml"
+            "chapter007.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter008": [
             "chapter008",
-            "chapter008.xhtml"
+            "chapter008.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter009": [
             "chapter009",
-            "chapter009.xhtml"
+            "chapter009.xhtml",
+            "application/xhtml+xml"
         ],
         "chapter010": [
             "chapter010",
-            "chapter010.xhtml"
+            "chapter010.xhtml",
+            "application/xhtml+xml"
         ],
         "appendix001": [
             "appendix001",
-            "appendix001.xhtml"
+            "appendix001.xhtml",
+            "application/xhtml+xml"
         ],
         "appendix002": [
             "appendix002",
-            "appendix002.xhtml"
+            "appendix002.xhtml",
+            "application/xhtml+xml"
         ],
         "appendix003": [
             "appendix003",
-            "appendix003.xhtml"
+            "appendix003.xhtml",
+            "application/xhtml+xml"
         ],
         "author_bio001": [
             "author_bio001",
-            "author_bio001.xhtml"
+            "author_bio001.xhtml",
+            "application/xhtml+xml"
         ],
         "index": [
             "index",
-            "index.xhtml"
+            "index.xhtml",
+            "application/xhtml+xml"
         ],
         "Times_New_Roman": [
             "Times_New_Roman",
-            "fonts/times.ttf"
+            "fonts/times.ttf",
+            "font/ttf"
         ],
         "Times_New_Roman_bold": [
             "Times_New_Roman_bold",
-            "fonts/timesbd.ttf"
+            "fonts/timesbd.ttf",
+            "font/ttf"
         ],
         "Times_New_Roman_italic": [
             "Times_New_Roman_italic",
-            "fonts/timesi.ttf"
+            "fonts/timesi.ttf",
+            "font/ttf"
         ],
         "Times_New_Roman_bolditalic": [
             "Times_New_Roman_bolditalic",
-            "fonts/timesbi.ttf"
+            "fonts/timesbi.ttf",
+            "font/ttf"
         ],
         "HelveticaLTStd-Bold": [
             "HelveticaLTStd-Bold",
-            "fonts/HelveticaLTStd-Bold.otf"
+            "fonts/HelveticaLTStd-Bold.otf",
+            "font/otf"
         ],
         "HelveticaLTStd-Obl": [
             "HelveticaLTStd-Obl",
-            "fonts/HelveticaLTStd-Obl.otf"
+            "fonts/HelveticaLTStd-Obl.otf",
+            "font/otf"
         ],
         "HelveticaLTStd-Roman": [
             "HelveticaLTStd-Roman",
-            "fonts/HelveticaLTStd-Roman.otf"
+            "fonts/HelveticaLTStd-Roman.otf",
+            "font/otf"
         ],
         "HelveticaLTStd-BoldObl": [
             "HelveticaLTStd-BoldObl",
-            "fonts/HelveticaLTStd-BoldObl.otf"
+            "fonts/HelveticaLTStd-BoldObl.otf",
+            "font/otf"
         ],
         "Century_Gothic": [
             "Century_Gothic",
-            "fonts/GOTHIC.TTF"
+            "fonts/GOTHIC.TTF",
+            "font/ttf"
         ],
         "Century_Gothic-Obl": [
             "Century_Gothic-Obl",
-            "fonts/GOTHICI.TTF"
+            "fonts/GOTHICI.TTF",
+            "font/ttf"
         ],
         "Century_Gothic-Roman": [
             "Century_Gothic-Roman",
-            "fonts/GOTHICBI.TTF"
+            "fonts/GOTHICBI.TTF",
+            "font/ttf"
         ],
         "Century_GothicObl": [
             "Century_GothicObl",
-            "fonts/GOTHICB.TTF"
+            "fonts/GOTHICB.TTF",
+            "font/ttf"
         ]
     },
     "toc": [
@@ -228,29 +277,15 @@
         []
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Fred Leise",
-            "Kate Mertes",
-            "Nan Badgett"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "9781573878296"
-        ],
-        "publisher": "Information Today, Inc.",
-        "languages": [
-            "en-US"
-        ],
-        "source": "urn:isbn:9781573878296",
-        "subjects": [],
-        "titles": [
-            "Indexing for Editors and Authors: A Practical Guide to Understanding Indexes"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Fred Leise' {}>, <AttributedString 'Kate Mertes' {}>, <AttributedString 'Nan Badgett' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString '9781573878296' {'id': 'p9781573878296'}>]",
+        "publisher": "<AttributedString 'Information Today, Inc.' {}>",
+        "languages": "[<AttributedString 'en-US' {}>]",
+        "source": "<AttributedString 'urn:isbn:9781573878296' {'id': 'src-id'}>",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Indexing for Editors and Authors: A Practical Guide to Understanding Indexes' {'id': 'title'}>]"
     }
 }

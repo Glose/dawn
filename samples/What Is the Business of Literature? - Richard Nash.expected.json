@@ -7,11 +7,13 @@
     "manifest": {
         "style": [
             "style",
-            "style.css"
+            "style.css",
+            "text/css"
         ],
         "id0": [
             "id0",
-            "0.html"
+            "0.html",
+            "application/xhtml+xml"
         ]
     },
     "toc": [
@@ -24,28 +26,15 @@
         ]
     ],
     "meta": {
-        "contributors": [],
-        "creators": [
-            "Richard Nash"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": null,
-            "modification": null
-        },
-        "description": "As technology disrupts the business model of traditional publishers, the industry must imagine new ways of capturing the value of a book.",
-        "identifiers": [
-            "9782371180017",
-            "urn:uuid:d1fa5c8f-1cdc-4126-960c-0642407ab2da"
-        ],
-        "publisher": "Glose",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "What Is the Business of Literature?"
-        ]
+        "contributors": "[]",
+        "creators": "[<AttributedString 'Richard Nash' {}>]",
+        "dates": "{'creation': None, 'publication': None, 'modification': None}",
+        "description": "<AttributedString 'As technology disrupts the business model of traditional publishers, the industry must imagine new ways of capturing the value of a book.' {}>",
+        "identifiers": "[<AttributedString '9782371180017' {'scheme': 'ISBN'}>, <AttributedString 'urn:uuid:d1fa5c8f-1cdc-4126-960c-0642407ab2da' {'id': 'uuid_id', 'scheme': 'uuid'}>]",
+        "publisher": "<AttributedString 'Glose' {}>",
+        "languages": "[<AttributedString 'en' {}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'What Is the Business of Literature?' {}>]"
     }
 }

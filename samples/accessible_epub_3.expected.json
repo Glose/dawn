@@ -28,143 +28,178 @@
     "manifest": {
         "htmltoc": [
             "htmltoc",
-            "bk01-toc.xhtml"
+            "bk01-toc.xhtml",
+            "application/xhtml+xml"
         ],
         "epub-css": [
             "epub-css",
-            "css/epub.css"
+            "css/epub.css",
+            "text/css"
         ],
         "epub-tss-css": [
             "epub-tss-css",
-            "css/synth.css"
+            "css/synth.css",
+            "text/css"
         ],
         "cover": [
             "cover",
-            "cover.xhtml"
+            "cover.xhtml",
+            "application/xhtml+xml"
         ],
         "cover-image": [
             "cover-image",
-            "covers/9781449328030_lrg.jpg"
+            "covers/9781449328030_lrg.jpg",
+            "image/jpeg"
         ],
         "id-id2442754": [
             "id-id2442754",
-            "index.xhtml"
+            "index.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2632344": [
             "id-id2632344",
-            "pr01.xhtml"
+            "pr01.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2604743": [
             "id-id2604743",
-            "pr01s02.xhtml"
+            "pr01s02.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2629773": [
             "id-id2629773",
-            "pr01s03.xhtml"
+            "pr01s03.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2620395": [
             "id-id2620395",
-            "pr01s04.xhtml"
+            "pr01s04.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2638681": [
             "id-id2638681",
-            "pr01s05.xhtml"
+            "pr01s05.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2611884": [
             "id-id2611884",
-            "ch01.xhtml"
+            "ch01.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2627310": [
             "id-id2627310",
-            "ch01s02.xhtml"
+            "ch01s02.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2635343": [
             "id-id2635343",
-            "ch02.xhtml"
+            "ch02.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2622654": [
             "id-id2622654",
-            "ch02s02.xhtml"
+            "ch02s02.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2624850": [
             "id-id2624850",
-            "ch02s03.xhtml"
+            "ch02s03.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2640702": [
             "id-id2640702",
-            "ch03.xhtml"
+            "ch03.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2641220": [
             "id-id2641220",
-            "ch03s02.xhtml"
+            "ch03s02.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2642385": [
             "id-id2642385",
-            "ch03s03.xhtml"
+            "ch03s03.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2644001": [
             "id-id2644001",
-            "ch03s04.xhtml"
+            "ch03s04.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2644238": [
             "id-id2644238",
-            "ch03s05.xhtml"
+            "ch03s05.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2645594": [
             "id-id2645594",
-            "ch03s06.xhtml"
+            "ch03s06.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2645682": [
             "id-id2645682",
-            "ch04.xhtml"
+            "ch04.xhtml",
+            "application/xhtml+xml"
         ],
         "id-id2645862": [
             "id-id2645862",
-            "co01.xhtml"
+            "co01.xhtml",
+            "application/xhtml+xml"
         ],
         "id2670620": [
             "id2670620",
-            "images/web/epub3_0401.png"
+            "images/web/epub3_0401.png",
+            "image/png"
         ],
         "spi_ad": [
             "spi_ad",
-            "spi-ad.xhtml"
+            "spi-ad.xhtml",
+            "application/xhtml+xml"
         ],
         "spi_global_ad": [
             "spi_global_ad",
-            "images/spi_global_ad.png"
+            "images/spi_global_ad.png",
+            "image/png"
         ],
         "epub.embedded.font.1": [
             "epub.embedded.font.1",
-            "fonts/UbuntuMono-B.ttf"
+            "fonts/UbuntuMono-B.ttf",
+            "font/ttf"
         ],
         "epub.embedded.font.2": [
             "epub.embedded.font.2",
-            "fonts/UbuntuMono-BI.ttf"
+            "fonts/UbuntuMono-BI.ttf",
+            "font/ttf"
         ],
         "epub.embedded.font.3": [
             "epub.embedded.font.3",
-            "fonts/UbuntuMono-R.ttf"
+            "fonts/UbuntuMono-R.ttf",
+            "font/ttf"
         ],
         "epub.embedded.font.4": [
             "epub.embedded.font.4",
-            "fonts/UbuntuMono-RI.ttf"
+            "fonts/UbuntuMono-RI.ttf",
+            "font/ttf"
         ],
         "epub.embedded.font.5": [
             "epub.embedded.font.5",
-            "fonts/FreeSerif.otf"
+            "fonts/FreeSerif.otf",
+            "font/otf"
         ],
         "epub.embedded.font.6": [
             "epub.embedded.font.6",
-            "fonts/FreeSansBold.otf"
+            "fonts/FreeSansBold.otf",
+            "font/otf"
         ],
         "pls-en": [
             "pls-en",
-            "lexicon/en.pls"
+            "lexicon/en.pls",
+            "application/pls+xml"
         ],
         "pls-fr": [
             "pls-fr",
-            "lexicon/fr.pls"
+            "lexicon/fr.pls",
+            "application/pls+xml"
         ]
     },
     "toc": [
@@ -172,34 +207,15 @@
         []
     ],
     "meta": {
-        "contributors": [
-            "O\u2019Reilly Production Services",
-            "David Futato",
-            "Robert Romano",
-            "Brian Sawyer",
-            "Dan Fauxsmith",
-            "Karen Montgomery"
-        ],
-        "creators": [
-            "Matt Garrish"
-        ],
-        "dates": {
-            "creation": null,
-            "publication": "2012-02-20T00:00:00",
-            "modification": null
-        },
-        "description": null,
-        "identifiers": [
-            "urn:isbn:9781449328030"
-        ],
-        "publisher": "O\u2019Reilly Media, Inc.",
-        "languages": [
-            "en"
-        ],
-        "source": null,
-        "subjects": [],
-        "titles": [
-            "Accessible EPUB 3"
-        ]
+        "contributors": "[<AttributedString 'O\u2019Reilly Production Services' {}>, <AttributedString 'David Futato' {}>, <AttributedString 'Robert Romano' {}>, <AttributedString 'Brian Sawyer' {}>, <AttributedString 'Dan Fauxsmith' {}>, <AttributedString 'Karen Montgomery' {}>]",
+        "creators": "[<AttributedString 'Matt Garrish' {'id': 'pub-creator12'}>]",
+        "dates": "{'creation': None, 'publication': datetime.datetime(2012, 2, 20, 0, 0), 'modification': None}",
+        "description": "None",
+        "identifiers": "[<AttributedString 'urn:isbn:9781449328030' {'id': 'pub-identifier'}>]",
+        "publisher": "<AttributedString 'O\u2019Reilly Media, Inc.' {}>",
+        "languages": "[<AttributedString 'en' {'id': 'pub-language'}>]",
+        "source": "None",
+        "subjects": "[]",
+        "titles": "[<AttributedString 'Accessible EPUB 3' {'id': 'pub-title'}>]"
     }
 }
