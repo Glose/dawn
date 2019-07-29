@@ -2,7 +2,7 @@
   stage: test
   image: us.gcr.io/glose-platform/python:3.7
   before_script:
-  - apk update && apk add build-base libffi-dev openssl-dev
+  - apk update && apk add build-base libffi-dev openssl-dev libxml2-dev libxslt-dev
   - PYTHON=$(which python3 || which pypy3)
   - pip3 list
   script: [ $PYTHON setup.py pytest --addopts="-v" ]
