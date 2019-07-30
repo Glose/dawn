@@ -11,41 +11,51 @@ import uuid
 import zipfile
 
 
-def open(infile, mode='r', version=None):
-	if mode not in ('r', 'w'):
-		raise TypeError()
+class open:
+	def __init__(self, infile, mode='r', version=None, opfpath=None):
+		if mode not in ('r', 'w'):
+			raise TypeError('Supported modes are r, w and a')
+		if mode == 'r' and opfpath is not None:
+			raise TypeError('opfpath should only be used in w mode')
+		if mode == 'w' and version is None:
+			raise TypeError('version is required in w mode')
 
-	if mode == 'r':
-		return _open_read(infile, version)
-	else:
-		return _open_write(infile, version)
-
-
-class _open_read:
-	def __init__(self, infile, mode='r', version=None):
-		self.infile = infile
-		self.mode = mode
-		self.version = version
+		self._mode = mode
+		self._opfpath = opfpath
+		self._version = version
+		self._zf = zipfile.ZipFile(infile, mode=mode)
 
 	def __enter__(self):
-		self._zf = zipfile.ZipFile(self.infile, mode='r')
 		self._zf.__enter__()
 
-		with self._zf.open('META-INF/container.xml') as f:
-			tree = lxml.etree.parse(f)
-		opfpath = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
-		with self._zf.open(opfpath) as f:
-			opftree = lxml.etree.parse(f).getroot()
+		if self._mode == 'r':
+			with self._zf.open('META-INF/container.xml') as f:
+				tree = lxml.etree.parse(f)
 
-		if self.version is None:
-			self.version = opftree.get('version')
+			opfpath = tree.find('./container:rootfiles/container:rootfile', NS).get('full-path')
 
-		res = _Epub._versions[self.version](self._zf, opfpath, opftree)
-		res._init_read()
-		return res
+			with self._zf.open(opfpath) as f:
+				opftree = lxml.etree.parse(f).getroot()
+
+			version = self._version or opftree.get('version')
+
+			self._epub = _Epub._versions[version](self._zf, opfpath)
+			self._epub._init_read(opftree)
+
+		else:
+			assert self._mode == 'w'
+			opfpath = self._opfpath or 'content.opf'
+			self._epub = _Epub._versions[self._version](self._zf, opfpath)
+			self._epub._init_write()
+
+		return self._epub
 
 	def __exit__(self, *args):
+		if self._mode == 'w':
+			self._epub._write_opf()
 		self._zf.__exit__(*args)
+		del self._epub
+		del self._zf
 
 
 class _Epub(abc.ABC):
@@ -56,9 +66,8 @@ class _Epub(abc.ABC):
 		super().__init_subclass__(*args, **kwargs)
 		cls._versions[cls.version] = cls
 
-	def __init__(self, zf, opfpath, opftree):
+	def __init__(self, zf, opfpath):
 		self._opfpath = opfpath
-		self._opftree = opftree
 		self._zf = zf
 
 		self.manifest = Manifest()
@@ -77,13 +86,13 @@ class _Epub(abc.ABC):
 			'titles': [], # list of AS with lang
 		}
 
-	def _init_read(self):
-		self._read_manifest()
-		self._read_spine()
-		self._read_toc()
-		self._read_meta()
+	def _init_read(self, opftree):
+		self._read_manifest(opftree)
+		self._read_spine(opftree)
+		self._read_toc(opftree)
+		self._read_meta(opftree)
 
-		uid_id = self._opftree.get('unique-identifier')
+		uid_id = opftree.get('unique-identifier')
 		self.uid = next(filter(lambda i: i.get('id') == uid_id, self.meta['identifiers']), None)
 
 	def _init_write(self):
@@ -97,7 +106,7 @@ class _Epub(abc.ABC):
 		container = E['container'].container(
 			E['container'].rootfiles(
 				E['container'].rootfile({
-					'full-path': self.opf,
+					'full-path': self._opfpath,
 					'media-type': 'application/oebps-package+xml',
 				}),
 			),
@@ -122,19 +131,19 @@ class _Epub(abc.ABC):
 		self._writestr(self._opfpath, lxml.etree.tostring(pkg, pretty_print=True))
 
 	@abc.abstractmethod
-	def _read_toc(self): # pragma: no cover
+	def _read_toc(self, opftree): # pragma: no cover
 		...
 
 	@abc.abstractmethod
-	def _read_meta(self): # pragma: no cover
+	def _read_meta(self, opftree): # pragma: no cover
 		...
 
-	def _read_manifest(self):
-		for item in self._opftree.findall('./opf:manifest/opf:item', NS):
+	def _read_manifest(self, opftree):
+		for item in opftree.findall('./opf:manifest/opf:item', NS):
 			self.manifest[getxmlattr(item, 'id')] = getxmlattr(item, 'href')
 
-	def _read_spine(self):
-		for item in self._opftree.findall('./opf:spine/opf:itemref', NS):
+	def _read_spine(self, opftree):
+		for item in opftree.findall('./opf:spine/opf:itemref', NS):
 			item = self.manifest[getxmlattr(item, 'idref')]
 			self.spine.append(item)
 
@@ -260,21 +269,22 @@ class Toc(list):
 
 
 class AttributedString(collections.UserDict, str):
-	def __new__(cls, value, data=None):
+	def __new__(cls, value, **kwargs):
 		return super().__new__(cls, value)
 
-	def __init__(self, value, data=None):
-		self.data = data or {}
+	def __init__(self, value, **kwargs):
+		self.data = kwargs
 
 	def __repr__(self):
 		return '<AttributedString {!r} {}>'.format(str(self), self.data)
+AS = AttributedString
 
 
 class Epub20(_Epub):
 	version = '2.0'
 
-	def _read_toc(self):
-		toc_id = getxmlattr(self._opftree.find('./opf:spine', NS), 'toc')
+	def _read_toc(self, opftree):
+		toc_id = getxmlattr(opftree.find('./opf:spine', NS), 'toc')
 		if toc_id is None:
 			return
 
@@ -315,11 +325,11 @@ class Epub20(_Epub):
 		# Drop coverage
 		# Drop rights
 	]
-	def _read_meta(self):
-		metadata = self._opftree.find('./opf:metadata', NS)
+	def _read_meta(self, opftree):
+		metadata = opftree.find('./opf:metadata', NS)
 		def extract(tag, attrs):
 			for t in metadata.findall('dc:' + tag, NS):
-				yield AttributedString(t.text, {
+				yield AttributedString(t.text, **{
 					k.split(':', 1)[-1]: getxmlattr(t, k)
 					for k in attrs
 					if getxmlattr(t, k) is not None
@@ -391,8 +401,8 @@ class Epub20(_Epub):
 class Epub30(_Epub):
 	version = '3.0'
 
-	def _read_toc(self):
-		toc_id = self._opftree.find('./opf:metadata/opf:item[@properties="nav"]', NS)
+	def _read_toc(self, opftree):
+		toc_id = opftree.find('./opf:metadata/opf:item[@properties="nav"]', NS)
 		if toc_id is None:
 			return
 
@@ -435,12 +445,12 @@ class Epub30(_Epub):
 		('date', 'publication'),
 		('modified', 'modification'),
 	]
-	def _read_meta(self):
-		metadata = self._opftree.find('./opf:metadata', NS)
+	def _read_meta(self, opftree):
+		metadata = opftree.find('./opf:metadata', NS)
 
 		def extract(tag, attrs):
 			for t in metadata.findall('dc:' + tag, NS):
-				res = AttributedString(t.text, {
+				res = AttributedString(t.text, **{
 					k.split(':', 1)[-1]: getxmlattr(t, k)
 					for k in attrs
 					if getxmlattr(t, k) is not None

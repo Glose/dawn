@@ -57,6 +57,10 @@ def test_wrong_mode():
 	with pytest.raises(TypeError):
 		dawn.open(None, 'a')
 
+def test_read_with_opfpath():
+	with pytest.raises(TypeError):
+		dawn.open(None, 'r', opfpath='blih')
+
 def test_repr(dummy):
 	assert repr(dummy) == '<Epub 2.0 (len(manifest): 1, len(spine): 1)>'
 	assert repr(dummy.manifest) == "{'id0': <Manifest.Item {'iid': 'id0', 'href': 'data.html'}>}"
