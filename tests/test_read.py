@@ -9,7 +9,6 @@ import urllib.request
 
 
 samples = glob.glob('samples/data/*.expected.json')
-print(samples)
 
 _dummy = 'samples/data/9780312591199 - Dummy ePub - Glose.epub'
 @pytest.fixture
@@ -29,7 +28,6 @@ def test_read(expected):
 
 	def _ser_toc_item(it):
 		res = {'href': it.href, 'title': it.title}
-		assert it.children.title is None
 		if it.children:
 			res['children'] = [_ser_toc_item(c) for c in it.children]
 		return res
