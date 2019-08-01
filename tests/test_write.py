@@ -29,7 +29,7 @@ pytestmark = pytest.mark.usefixtures('reproductible')
 
 @pytest.mark.parametrize('version,expected', [
 	['2.0', 'eeed938231a3ba4c1ed154e7994919130f8e4146'],
-	['3.0', '168bee6b701a9ad78a8c19fa925226833b6b828f'],
+	['3.0', 'a3e37e04c5929e94053b73cad9d5f71b7c2ec60a'],
 ])
 def test_epub(version, expected):
 	out = io.BytesIO()

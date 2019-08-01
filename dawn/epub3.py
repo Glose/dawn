@@ -90,7 +90,7 @@ class Epub30(Epub):
 				identifier['scheme'] = identifier.pop('identifier-type')
 
 		for tag, k in self.__dates:
-			date = metadata.find('dc:' + tag, NS)
+			date = metadata.find('opf:meta/[@property="dcterms:{}"]'.format(tag), NS)
 			if date is not None:
 				self.meta['dates'][k] = parse_date(date.text)
 
@@ -100,7 +100,10 @@ class Epub30(Epub):
 		for tag, k in self.__dates:
 			val = self.meta['dates'].get(k)
 			if val:
-				meta.append(getattr(E['dc'], tag)(val.strftime('%Y-%m-%dT%H:%M:%SZ')))
+				meta.append(E['opf'].meta(
+					{'property': 'dcterms:{}'.format(tag)},
+					val.strftime('%Y-%m-%dT%H:%M:%SZ'),
+				))
 
 		for tag, attrs, multi in self.__meta:
 			todo = self.meta.get(tag + ('s' if multi else ''))
@@ -112,7 +115,7 @@ class Epub30(Epub):
 				attrs_to_add = dict(astr)
 				m = getattr(E['dc'], tag)(str(astr))
 				for k in attrs:
-					if k == 'scheme': k == 'identifier-type'
+					if k == 'scheme': k = 'identifier-type'
 					val = attrs_to_add.pop(k.split(':', 1)[-1], None)
 					if val:
 						m.attrib[ns(k)] = val
@@ -139,22 +142,32 @@ class Epub30(Epub):
 		return manifest
 
 	def _write_toc(self):
-		if self.toc.item is None:
-			self.toc.item = self.manifest.Item('__toc', 'toc.html')
-
 		def ol(toc):
+			res = E['html'].ol()
 			for item in toc:
-				yield E['html'].ol(
+				np = E['html'].li(
 					E['html'].a(item.title, {'href': item.href}),
-					E['html'].ol(*(ol(item.children))),
 				)
+				if item.children:
+					np.append(ol(item.children))
+				res.append(np)
+			return res
 
-		toc = E['html'].html(
-			{'version': '2005-1'},
-			E['html'].head(),
-			E['html'].h1(self.toc.title or ''),
-			E['html'].ol(*ol(self.toc)),
+		data = E['html'].html(
+			E['html'].head(
+				E['html'].meta({ns('html:charset'): 'utf-8'}),
+			),
+			E['html'].body(
+				E['html'].nav(
+					{ns('ops:type'): 'toc'},
+					E['html'].h2(self.toc.title or ''),
+					ol(self.toc),
+				),
+			),
 		)
+		data = lxml.etree.tostring(data, pretty_print=True, method='html')
 
-		data = lxml.etree.tostring(toc, pretty_print=True, method='html')
+		if self.toc.item is None:
+			self.toc.item = self.manifest.add('toc.html')
 		self.writestr(self.toc.item, data)
+		del self.manifest[self.toc.item.iid]
