@@ -1,3 +1,4 @@
+import itertools
 import lxml.etree
 
 from .epub import AttributedString
@@ -116,18 +117,25 @@ class Epub20(Epub):
 		if self.toc.item is None:
 			self.toc.item = self.manifest.Item('__toc', 'toc.ncx')
 
-		def navmap(toc):
+		ids = itertools.count()
+
+		def navpoints(toc):
 			for item in toc:
-				yield E['ncx'].navPoint(
+				np = E['ncx'].navPoint(
+					{'id': 'np-{}'.format(next(ids))},
 					E['ncx'].navLabel(E['ncx'].text(item.title)),
-					E['ncx'].navMap(*(navmap(item.children))),
+					E['ncx'].content({'src': item.href}),
 				)
+				if item.children:
+					for c in navpoints(item.children):
+						np.append(c)
+				yield np
 
 		toc = E['ncx'].ncx(
 			{'version': '2005-1'},
 			E['ncx'].head(),
 			E['ncx'].docTitle(E['ncx'].text(self.toc.title or '')),
-			E['ncx'].navMap(*navmap(self.toc)),
+			E['ncx'].navMap(*navpoints(self.toc)),
 		)
 
 		data = lxml.etree.tostring(toc, pretty_print=True)

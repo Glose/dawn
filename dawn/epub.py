@@ -165,9 +165,6 @@ class Manifest(dict):
 			else:
 				return mimetypes.guess_type(self.href)[0]
 
-		def __hash__(self):
-			return hash(self.iid)
-
 		def __repr__(self):
 			return '<Manifest.Item {}>'.format(self.__dict__)
 

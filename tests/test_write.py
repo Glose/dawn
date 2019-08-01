@@ -28,15 +28,15 @@ def reproductible():
 pytestmark = pytest.mark.usefixtures('reproductible')
 
 @pytest.mark.parametrize('version,expected', [
-	['2.0', '8e10b17d7905b1586ead9cf846eb0fc10fcc56a9'],
-	['3.0', 'b88d39831425c40bf248356bc0eaaf55bb431099'],
+	['2.0', 'eeed938231a3ba4c1ed154e7994919130f8e4146'],
+	['3.0', '168bee6b701a9ad78a8c19fa925226833b6b828f'],
 ])
 def test_epub(version, expected):
 	out = io.BytesIO()
 	with dawn.open(out, mode='w', version=version) as epub:
 		epub.meta['creators'] = [dawn.AS('Me', role='author')]
 		epub.meta['description'] = dawn.AS('Awesome book')
-		epub.meta['title'] = dawn.AS('My ePub', lang='en')
+		epub.meta['titles'] = [dawn.AS('My ePub', lang='en')]
 
 		for href, title in [
 			('README.md', 'README'),
@@ -46,6 +46,13 @@ def test_epub(version, expected):
 				item = epub.writestr(href, f.read())
 			epub.spine.append(item)
 			epub.toc.append(href, title=title)
+
+		epub.toc.append('main section', 'main title', [
+			('sub href', 'sub title'),
+			('sub href2', 'sub title2', [
+				('sub sub href', 'sub sub title'),
+			]),
+		])
 
 	dbg = '/tmp/epub{}.epub'.format(version)
 
@@ -60,3 +67,33 @@ def test_epub(version, expected):
 def test_missing_version():
 	with pytest.raises(TypeError):
 		dawn.open(None, mode='w')
+
+
+@pytest.fixture
+def dummy():
+	with dawn.open(io.BytesIO(), mode='w', version='2.0') as epub:
+		yield epub
+
+def test_write_method(dummy):
+	with pytest.raises(NotImplementedError):
+		dummy.write()
+
+def test_writestr_zipinfo(dummy):
+	with pytest.raises(NotImplementedError):
+		dummy.writestr(zipfile.ZipInfo('path'), b'')
+
+def test_manifest_wrong_type(dummy):
+	with pytest.raises(TypeError):
+		dummy.manifest['blih'] = None
+
+def test_spine_wrong_type(dummy):
+	with pytest.raises(TypeError):
+		dummy.spine.append('blih')
+
+def test_toc_add_missing_title(dummy):
+	with pytest.raises(TypeError):
+		dummy.toc.append('blih')
+
+def test_toc_add_wrong_type(dummy):
+	with pytest.raises(TypeError):
+		dummy.toc.append(None)
