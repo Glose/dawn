@@ -28,8 +28,8 @@ def reproductible():
 pytestmark = pytest.mark.usefixtures('reproductible')
 
 @pytest.mark.parametrize('version,expected', [
-	['2.0', '1a068c8bfad79a508cff66136077a64c92755533'],
-	['3.0', 'd2c5792286a7e6a03f367bc22f6cc079f32e86de'],
+	['2.0', '8e10b17d7905b1586ead9cf846eb0fc10fcc56a9'],
+	['3.0', 'b88d39831425c40bf248356bc0eaaf55bb431099'],
 ])
 def test_epub(version, expected):
 	out = io.BytesIO()
@@ -56,3 +56,7 @@ def test_epub(version, expected):
 	assert H == expected, 'Debug file is at {}'.format(dbg)
 
 	os.unlink(dbg)
+
+def test_missing_version():
+	with pytest.raises(TypeError):
+		dawn.open(None, mode='w')

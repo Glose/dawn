@@ -1,4 +1,5 @@
 import lxml.etree
+import uuid
 
 from .epub import AttributedString
 from .epub import Epub
@@ -34,8 +35,8 @@ class Epub30(Epub):
 			self.toc.title = title_tag.text
 
 	__meta = [
-		# tag, attributes, refine attribute map, multiple
-		('identifier', (), True), # manually map identifier-type to scheme
+		# tag, attributes, multiple
+		('identifier', ('identifier-type',), True), # identifier-type is mapped to scheme
 		('title', ('lang',), True),
 		('language', (), True),
 		('contributor', (), True),
@@ -68,7 +69,7 @@ class Epub30(Epub):
 				})
 				if getxmlattr(t, 'id') is not None:
 					res['id'] = getxmlattr(t, 'id')
-					for refine in metadata.findall('meta/[@refine="#{}"]'.format(res['id'])):
+					for refine in metadata.findall('opf:meta/[@refines="#{}"]'.format(res['id']), NS):
 						res[getxmlattr(refine, 'property')] = refine.text
 				yield res
 
@@ -88,12 +89,10 @@ class Epub30(Epub):
 	def _xml_meta(self):
 		meta = super()._xml_meta()
 
-		for k, v in self.meta['dates'].items():
-			if v is not None:
-				meta.append(E['dc'].date(
-					v.strftime('%Y-%m-%dT%H:%M:%SZ'),
-					{ns('opf:event'): k},
-				))
+		for tag, k in self.__dates:
+			val = self.meta['dates'].get(k)
+			if val:
+				meta.append(getattr(E['dc'], tag)(val.strftime('%Y-%m-%dT%H:%M:%SZ')))
 
 		for tag, attrs, multi in self.__meta:
 			todo = self.meta.get(tag + ('s' if multi else ''))
@@ -102,11 +101,21 @@ class Epub30(Epub):
 			if not multi:
 				todo = [todo]
 			for astr in todo:
-				meta.append(getattr(E['dc'], tag)(
-					str(astr),
-					# TODO
-					{ns(k): astr[k.split(':', 1)[-1]] for k in attrs},
-				))
+				attrs_to_add = dict(astr)
+				m = getattr(E['dc'], tag)(str(astr))
+				for k in attrs:
+					if k == 'scheme': k == 'identifier-type'
+					val = attrs_to_add.pop(k.split(':', 1)[-1], None)
+					if val:
+						m.attrib[ns(k)] = val
+				meta.append(m)
+				if attrs_to_add:
+					m.attrib['id'] = str(uuid.uuid4())
+					for k in attrs_to_add:
+						meta.append(E['opf'].meta(str(astr[k]), {
+							'refines': '#{}'.format(m.attrib['id']),
+							'property': k,
+						}))
 
 		return meta
 

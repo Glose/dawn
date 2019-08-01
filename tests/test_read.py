@@ -34,7 +34,7 @@ def test_read(expected):
 
 	with dawn.open(epub) as epub:
 		res = {
-			'uid': epub.uid,
+			'uid': repr(epub.uid),
 			'version': epub.version,
 			'spine': [v.iid for v in epub.spine],
 			'manifest': {k: [v.iid, v.href, v.mimetype] for k, v in epub.manifest.items()},

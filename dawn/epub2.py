@@ -58,7 +58,7 @@ class Epub20(Epub):
 		metadata = opftree.find('./opf:metadata', NS)
 		def extract(tag, attrs):
 			for t in metadata.findall('dc:' + tag, NS):
-				yield AttributedString(t.text, **{
+				yield AttributedString(t.text or '', **{
 					k.split(':', 1)[-1]: getxmlattr(t, k)
 					for k in attrs
 					if getxmlattr(t, k) is not None

@@ -228,12 +228,16 @@ class Toc(TocItems):
 		super().__init__()
 
 
-class AttributedString(collections.UserDict, str):
-	def __new__(cls, value, **kwargs):
-		return super().__new__(cls, value)
-
+class AttributedString(collections.UserDict):
 	def __init__(self, value, **kwargs):
+		self.value = value
 		self.data = kwargs
 
+	def __bool__(self):
+		return bool(self.value)
+
+	def __str__(self):
+		return self.value
+
 	def __repr__(self):
-		return '<AttributedString {!r} {}>'.format(str(self), self.data)
+		return '<AttributedString {!r} {}>'.format(self.value, self.data)
