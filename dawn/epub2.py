@@ -19,7 +19,7 @@ class Epub20(Epub):
 			return
 
 		def parse(tag):
-			for np in tag.findall('./ncx:navMap/ncx:navPoint', NS):
+			for np in tag.findall('./ncx:navPoint', NS):
 				yield (
 					getxmlattr(np.find('./ncx:content', NS), 'src'),
 					np.find('./ncx:navLabel/ncx:text', NS).text,
@@ -30,7 +30,7 @@ class Epub20(Epub):
 		with self.open(self.toc.item) as f:
 			ncx = lxml.etree.parse(f).getroot()
 
-		for a in parse(ncx):
+		for a in parse(ncx.find('./ncx:navMap', NS)):
 			self.toc.append(*a)
 
 		title_tag = ncx.find('./ncx:docTitle/ncx:text', NS)
