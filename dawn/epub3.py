@@ -14,23 +14,31 @@ class Epub30(Epub):
 	version = '3.0'
 
 	def _read_toc(self, opftree):
-		toc_id = opftree.find('./opf:metadata/opf:item[@properties="nav"]', NS)
+		toc_id = opftree.find('./opf:manifest/opf:item[@properties="nav"]', NS)
 		if toc_id is None:
 			return
+		toc_id = getxmlattr(toc_id, 'id')
 
 		def parse(tag):
-			for li in tag.findall('./html:ol/html:li/html:a', NS):
+			if tag is None:
+				return
+			for li in tag.findall('./html:li', NS):
 				a = li.find('./html:a', NS)
-				yield (getxmlattr(a, 'href'), a.text, parse(np))
+				nested = li.find('./html:ol', NS)
+				href = getxmlattr(a, 'href')
+				if href is not None:
+					yield (href, a.text, parse(nested))
 
-		self._toc_item = self.manifest.pop(toc_id)
+		self.toc.item = self.manifest.pop(toc_id)
 		with self.open(self.toc.item) as f:
 			toc = lxml.etree.parse(f).getroot()
 
-		for a in parse(toc.find('.//html:nav[@ops:type="toc"]', NS)):
+		nav = toc.find('.//html:nav[@ops:type="toc"]', NS)
+
+		for a in parse(nav.find('./html:ol', NS)):
 			self.toc.append(*a)
 
-		title_tag = toc.find('.//html:h1', NS)
+		title_tag = nav.find('.//html:h2', NS)
 		if title_tag is not None:
 			self.toc.title = title_tag.text
 
