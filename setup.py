@@ -9,7 +9,7 @@ requirements = [
 
 setup(
 	name='dawn',
-	version='0.1.2',
+	version='0.2.0',
 	description='Open and modify ePubs',
 	author='Arthur Darcet',
 	author_email='hello+dawn@glose.com',
